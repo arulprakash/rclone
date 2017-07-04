@@ -12,6 +12,7 @@ CREATE TABLE users
 CREATE TABLE groups
 (id VARCHAR(50) PRIMARY KEY,
  description TEXT,
+ rules TEXT,
  created TIME,
  changed TIME,
  created_by VARCHAR(50) REFERENCES users(id));
