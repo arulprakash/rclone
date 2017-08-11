@@ -35,7 +35,8 @@
                  [ring/ring-core "1.6.1"]
                  [ring/ring-defaults "0.3.0"]
                  [secretary "1.2.3"]
-                 [selmer "1.10.7"]]
+                 [selmer "1.10.7"]
+                 [com.walmartlabs/lacinia "0.19.0"]]
 
   :min-lein-version "2.0.0"
 
@@ -57,14 +58,14 @@
             [lein-kibit "0.1.2"]]
   :cucumber-feature-paths ["test/clj/features"]
 
-   :sassc
-   [{:src "resources/scss/screen.scss"
-     :output-to "resources/public/css/screen.css"
-     :style "nested"
-     :import-path "resources/scss"}] 
+  :sassc
+  [{:src "resources/scss/screen.scss"
+    :output-to "resources/public/css/screen.css"
+    :style "nested"
+    :import-path "resources/scss"}] 
   
-   :auto
-   {"sassc" {:file-pattern #"\.(scss|sass)$" :paths ["resources/scss"]}} 
+  :auto
+  {"sassc" {:file-pattern #"\.(scss|sass)$" :paths ["resources/scss"]}} 
   
   :hooks [leiningen.sassc]
   :clean-targets ^{:protect false}
