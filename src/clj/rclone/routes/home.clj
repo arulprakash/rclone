@@ -7,21 +7,47 @@
             [clojure.edn :as edn]
             [clojure.java.io :as io]
             [com.walmartlabs.lacinia.schema :as schema]
-            [com.walmartlabs.lacinia.util :as util]))
+            [com.walmartlabs.lacinia.util :as util]
+            [com.walmartlabs.lacinia :refer [execute]]))
 
 (defn home-page []
   (layout/render "home.html"))
 
-(defn star-wars-schema
+(defn get-user
+  [context arguments value]
+  (let [{:keys [id]} arguments
+        temp (println arguments)
+        temp1 (println context)]
+    (db/get-user {:id id})))
+
+(defn get-user-comments
   []
-  (-> (io/resource "schema.edn")
+  )
+
+(defn get-user-posts
+  [])
+
+(defn get-user-subs
+  [])
+
+(defn create-user!
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    ))
+
+(defn compile-schema
+  []
+  (-> (io/resource "edn/schema.edn")
       slurp
       edn/read-string
-      (util/attach-resolvers {:hero db/resolve-user
-                              :human db/resolve-post
-                              :droid db/resolve-comment
-                              :friends db/resolve-subscription})
+      (util/attach-resolvers {:get-user get-user
+                              :create-user create-user!
+                              :get-user-comments get-user-comments
+                              :get-user-posts get-user-posts
+                              :get-user-subs get-user-subs})
       schema/compile))
+
+(def compiled-schema (compile-schema))
 
 (defroutes home-routes
   (GET "/" []

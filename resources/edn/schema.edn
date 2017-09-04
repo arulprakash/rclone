@@ -1,0 +1,88 @@
+{
+ :interfaces
+ {:thread
+  {:fields
+   {:id          {:type String}
+    :description {:type String}
+    :votes       {:type String}}}}
+
+ :objects
+ {:User
+  {:fields
+   {:id            {:type String}
+    :first_name    {:type String}
+    :last_name     {:type String}
+    :is_active     {:type Boolean}
+    :created       {:type String}
+    :changed       {:type String}
+    :comments      {:type    (list :thread)
+                    :resolve :get-user-comments}
+    :posts         {:type    (list :thread)
+                    :resolve :get-user-posts}
+    :subscriptions {:type    (list :String)
+                    :resolve :get-user-subs}}}}
+
+ :Group
+ {:fields
+  {:id          {:type String}
+   :description {:type String}
+   :created     {:type String}
+   :changed     {:type String}
+   :created_by  {:type :User}}}
+
+ :Subscription
+ {:fields
+  {:id            {:type String}
+   :created       {:type String}
+   :subscriber    {:type :User}
+   :subscribed_to {:type :Group}}}
+
+ :Comment
+ {:implements [:thread]
+  :fields
+  {:id           {:type String}
+   :created      {:type String}
+   :changed      {:type String}
+   :description  {:type String}
+   :posted_to    {:type :Post}
+   :replied_to   {:type :Comment}
+   :votes        {:type String}
+   :commented_by {:type :User}}}
+
+ :Post
+ {:implements [:thread]
+  :fields
+  {:id          {:type String}
+   :created     {:type String}
+   :changed     {:type String}
+   :title       {:type String}
+   :description {:type String}
+   :url         {:type String}
+   :posted_by   {:type :User}
+   :posted_in   {:type :Group}
+   :votes       {:type String}}}
+
+ :Privilege
+ {:fields
+  {:id         {:type String}
+   :first_name {:type String}
+   :last_name  {:type String}
+   :is_active  {:type Boolean}
+   :created    {:type String}
+   :changed    {:type String}}}
+
+ :queries
+ {:user
+  {:type    (non-null :User)
+   :args    {:id {:type String}}
+   :resolve :get-user}}
+
+ :mutations
+ {:user
+  {:type    :User
+   :args    {:id         {:type (non-null String)}
+             :email      {:type (non-null String)}
+             :first_name {:type (non-null String)}
+             :last_name  {:type (non-null String)}
+             :pass       {:type (non-null String)}}
+   :resolve :create-user}}}
