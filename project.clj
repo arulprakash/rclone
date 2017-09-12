@@ -55,21 +55,11 @@
             [org.clojars.punkisdead/lein-cucumber "1.0.5"]
             [lein-cljsbuild "1.1.5"]
             [lein-immutant "2.1.0"]
-            [lein-sassc "0.10.4"]
             [lein-auto "0.1.2"]
             [lein-kibit "0.1.2"]]
   :cucumber-feature-paths ["test/clj/features"]
 
-  :sassc
-  [{:src "resources/scss/screen.scss"
-    :output-to "resources/public/css/screen.css"
-    :style "nested"
-    :import-path "resources/scss"}] 
-  
-  :auto
-  {"sassc" {:file-pattern #"\.(scss|sass)$" :paths ["resources/scss"]}} 
-  
-  :hooks [leiningen.sassc]
+
   :clean-targets ^{:protect false}
   [:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
   :figwheel
@@ -140,7 +130,8 @@
                   :doo {:build "test"}
                   :source-paths ["env/dev/clj"]
                   :resource-paths ["env/dev/resources"]
-                  :repl-options {:init-ns user}
+                  :repl-options {:init-ns user
+                                 :timeout 120000}
                   :injections [(require 'pjstadig.humane-test-output)
                                (pjstadig.humane-test-output/activate!)]}
    :project/test {:resource-paths ["env/test/resources"]

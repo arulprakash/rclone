@@ -6,8 +6,50 @@
             [clojure.java.io :as io]
             [com.walmartlabs.lacinia.schema :as schema]
             [com.walmartlabs.lacinia.util :as util]
-            [com.walmartlabs.lacinia :refer [execute]]
-            [clojure.edn :as edn]))
+            [clojure.edn :as edn]
+            [clj-time.local :as local]))
+(defn home-page []
+  (layout/render "home.html"))
+
+(defn get-user
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-user {:id id})))
+
+(defn get-user-comments
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-user-comments {:id id})))
+
+(defn get-user-posts
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-user-posts {:id id})))
+
+(defn get-user-subs
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-user-subs {:id id})))
+
+(defn get-comments
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-user {:id id})))
+
+(defn create-user!
+  [context arguments value]
+  (let [{:keys [id first_name last_name email pass]} arguments
+        admin false
+        created (local/local-now)]
+    (db/create-user! {:id id
+                      :first_name first_name
+                      :last_name last_name
+                      :email email
+                      :pass pass
+                      :created created
+                      :admin admin
+                      :is_active false})))
+
 (defn compile-schema
   []
   (-> (io/resource "edn/schema.edn")
@@ -22,37 +64,11 @@
       schema/compile))
 
 (def compiled-schema (compile-schema))
-
-(defn home-page []
-  (layout/render "home.html"))
-
-(defn get-user
-  [context arguments value]
-  (let [{:keys [id]} arguments]
-    (db/get-user {:id id})))
-
-(defn get-user-comments
-  []
-  )
-
-(defn get-user-posts
-  [])
-
-(defn get-user-subs
-  [])
-
-(defn get-comments
-  [])
-
-(defn create-user!
-  [context arguments value]
-  (let [{:keys [id]} arguments]
-    ))
-
 (defroutes home-routes
   (GET "/" []
        (home-page))
   (GET "/docs" []
        (-> (response/ok (-> "docs/docs.md" io/resource slurp))
            (response/header "Content-Type" "text/plain; charset=utf-8"))))
+
 

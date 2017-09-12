@@ -40,29 +40,29 @@
  :Comment
  {:implements [:thread]
   :fields
-  {:id           {:type String}
-   :created      {:type String}
-   :changed      {:type String}
-   :description  {:type String}
-   :posted_to    {:type :Post}
-   :replied_to   {:type :Comment}
-   :votes        {:type String}
-   :commented_by {:type :User}}}
+              {:id           {:type String}
+               :created      {:type String}
+               :changed      {:type String}
+               :description  {:type String}
+               :posted_to    {:type :Post}
+               :replied_to   {:type :Comment}
+               :votes        {:type String}
+               :commented_by {:type :User}}}
 
  :Post
  {:implements [:thread]
   :fields
-  {:id          {:type String}
-   :created     {:type String}
-   :changed     {:type String}
-   :title       {:type String}
-   :description {:type String}
-   :url         {:type String}
-   :posted_by   {:type :User}
-   :posted_in   {:type :Group}
-   :votes       {:type String}
-   :comments {:type (list :Comment)
-              :resolve :get-comments}}}
+              {:id          {:type String}
+               :created     {:type String}
+               :changed     {:type String}
+               :title       {:type String}
+               :description {:type String}
+               :url         {:type String}
+               :posted_by   {:type :User}
+               :posted_in   {:type :Group}
+               :votes       {:type String}
+               :comments    {:type    (list :Comment)
+                             :resolve :get-comments}}}
 
  :Privilege
  {:fields
@@ -81,10 +81,13 @@
 
  :mutations
  {:user
-  {:type    :User
-   :args    {:id         {:type (non-null String)}
-             :email      {:type (non-null String)}
-             :first_name {:type (non-null String)}
-             :last_name  {:type (non-null String)}
-             :pass       {:type (non-null String)}}
-   :resolve :create-user}}}
+           {:type :User
+            :args {:id         {:type (non-null String)}
+                   :email      {:type (non-null String)}
+                   :first_name {:type (non-null String)}
+                   :last_name  {:type (non-null String)}
+                   :pass       {:type (non-null String)}
+                   :admin      {:type (non-null Boolean)}
+                   :is-active  {:type (non-null Boolean)}
+                   :created    {:type (non-null String)}}}
+  :resolve :create-user}}

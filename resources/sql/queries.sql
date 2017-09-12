@@ -58,12 +58,36 @@ UPDATE posts
 SET description = :description, rules = :rules, changed = :changed
 WHERE id = :id
 
--- :name get-group :? :1
--- :doc retrieve a user given the id.
-SELECT * FROM groups
-WHERE id = :id
+-- :name get-user-posts :? :n
+-- :doc retrieve all the posts posted by the user
+SELECT * FROM posts
+WHERE posted_by = :id
 
 -- :name delete-group! :! :n
 -- :doc delete a user given the id
-DELETE FROM groups
+DELETE FROM posts
+WHERE id = :id
+
+--------------------------COMMENTS-------------------------
+
+-- :name create-comments! :! :n
+-- :doc creates a new post
+INSERT INTO comments
+(id, title, url, description, created, posted_by, posted_in)
+VALUES (:id, :title, :url, :description, :created, :posted_by, :posted_in)
+
+-- :name update-posts! :! :n
+-- :doc update an existing group's description or rules
+UPDATE posts
+SET description = :description, rules = :rules, changed = :changed
+WHERE id = :id
+
+-- :name get-user-comments :? :n
+-- :doc retrieve all the posts posted by the user
+SELECT * FROM posts
+WHERE posted_by = :id
+
+-- :name delete-group! :! :n
+-- :doc delete a user given the id
+DELETE FROM posts
 WHERE id = :id

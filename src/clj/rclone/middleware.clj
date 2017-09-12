@@ -15,7 +15,8 @@
             [buddy.auth :refer [authenticated?]]
             [buddy.auth.backends.session :refer [session-backend]]
             [clojure.java.io :as io]
-            [clojure.data.json :as json])  
+            [clojure.data.json :as json]
+            [com.walmartlabs.lacinia :refer [execute]])
   (:import [javax.servlet ServletContext]))
 
 (defn wrap-context [handler]

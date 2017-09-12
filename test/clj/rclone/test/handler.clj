@@ -1,4 +1,5 @@
 (ns rclone.test.handler
+  (:use midje.sweet)
   (:require [clojure.test :refer :all]
             [ring.mock.request :refer :all]
             [rclone.handler :refer :all]))
