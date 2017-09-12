@@ -37,7 +37,8 @@
                  [secretary "1.2.3"]
                  [selmer "1.10.7"]
                  [com.walmartlabs/lacinia "0.19.0"]
-                 [org.clojure/data.json "0.2.6"]                 ]
+                 [org.clojure/data.json "0.2.6"] 
+                 ]
 
   :min-lein-version "2.0.0"
 
@@ -114,6 +115,7 @@
                                  [figwheel-sidecar "0.5.10"]
                                  [org.apache.httpcomponents/httpcore "4.4"]
                                  [org.clojure/core.cache "0.6.3"]
+                                 [midje "1.8.3"]
                                  [org.seleniumhq.selenium/selenium-server "2.48.2" :exclusions [org.bouncycastle/bcprov-jdk15on org.bouncycastle/bcpkix-jdk15on]]]
                   :plugins      [[com.jakemccrary/lein-test-refresh "0.19.0"]
                                  [lein-doo "0.1.7"]
