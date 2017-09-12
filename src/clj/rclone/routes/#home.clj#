@@ -8,6 +8,7 @@
             [com.walmartlabs.lacinia.util :as util]
             [com.walmartlabs.lacinia :refer [execute]]
             [clojure.edn :as edn]))
+
 (defn compile-schema
   []
   (-> (io/resource "edn/schema.edn")

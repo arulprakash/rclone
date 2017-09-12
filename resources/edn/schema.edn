@@ -60,7 +60,9 @@
    :url         {:type String}
    :posted_by   {:type :User}
    :posted_in   {:type :Group}
-   :votes       {:type String}}}
+   :votes       {:type String}
+   :comments {:type (list :Comment)
+              :resolve :get-comments}}}
 
  :Privilege
  {:fields

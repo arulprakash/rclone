@@ -1,5 +1,6 @@
 (ns rclone.middleware
   (:require [rclone.env :refer [defaults]]
+            [rclone.routes.home :refer [compiled-schema]]
             [clojure.tools.logging :as log]
             [rclone.layout :refer [*app-context* error-page]]
             [ring.middleware.anti-forgery :refer [wrap-anti-forgery]]
@@ -12,7 +13,9 @@
             [buddy.auth.middleware :refer [wrap-authentication wrap-authorization]]
             [buddy.auth.accessrules :refer [restrict]]
             [buddy.auth :refer [authenticated?]]
-            [buddy.auth.backends.session :refer [session-backend]])
+            [buddy.auth.backends.session :refer [session-backend]]
+            [clojure.java.io :as io]
+            [clojure.data.json :as json])  
   (:import [javax.servlet ServletContext]))
 
 (defn wrap-context [handler]
@@ -70,6 +73,76 @@
         (wrap-authentication backend)
         (wrap-authorization backend))))
 
+(defn variable-map
+  "Reads the `variables` query parameter, which contains a JSON string
+  for any and all GraphQL variables to be associated with this request.
+  Returns a map of the variables (using keyword keys)."
+  [request]
+  (let [variables (condp = (:request-method request)
+                    ;; We do a little bit more error handling here in the case
+                    ;; where the client gives us non-valid JSON. We still haven't
+                    ;; handed over the values of the request object to lacinia
+                    ;; GraphQL so we are still responsible for minimal error
+                    ;; handling
+                    :get (try (-> request
+                                  (get-in [:query-params "variables"])
+                                  (json/read-str :key-fn keyword))
+                              (catch Exception e nil))
+                    :post (try (-> request
+                                   :body
+                                   (json/read-str :key-fn keyword)
+                                   :variables)
+                               (catch Exception e nil)))]
+    (if-not (empty? variables)
+      variables
+      {})))
+
+(defn extract-query
+  "Reads the `query` query parameters, which contains a JSON string
+  for the GraphQL query associated with this request. Returns a
+  string.  Note that this differs from the PersistentArrayMap returned
+  by variable-map. e.g. The variable map is a hashmap whereas the
+  query is still a plain string."
+  [request]
+  (case (:request-method request)
+    :get  (get-in request [:query-params "query"])
+    ;; Additional error handling because the clojure ring server still
+    ;; hasn't handed over the values of the request to lacinia GraphQL
+    :post (try (-> request
+                   :body
+                   (json/read-str :key-fn keyword)
+                   :query)
+               (catch Exception e ""))
+    :else ""))
+
+(defn ^:private graphql-handler
+  "Accepts a GraphQL query via GET or POST, and executes the query.
+  Returns the result as text/json."
+  [comp-schema]
+  (let [context {:cache (atom {})}]
+    (fn [request]
+      (let [vars (variable-map request)
+            query (extract-query request)
+            result (execute comp-schema query vars context)
+            status (if (-> result :errors seq)
+                     400
+                     200)]
+        {:status status
+         :headers {"Content-Type" "application/json"}
+         :body (json/write-str result)}))))
+
+(defn wrap-graphql
+  [handler]
+  (fn [request]
+    (let [uri (:uri request)]
+      (if (= uri "/graphql")
+        ;; hits the proper uri, process request
+        ((graphql-handler (compiled-schema)) request)
+        ;; not serving any other requests
+        {:status 404
+         :headers {"Content-Type" "text/html"}
+         :body (str "Only GraphQL JSON requests to /graphql are accepted on this server")}))))
+
 (defn wrap-base [handler]
   (-> ((:middleware defaults) handler)
       wrap-auth
@@ -77,8 +150,8 @@
       wrap-flash
       (wrap-session {:cookie-attrs {:http-only true}})
       (wrap-defaults
-        (-> site-defaults
-            (assoc-in [:security :anti-forgery] false)
-            (dissoc :session)))
+       (-> site-defaults
+           (assoc-in [:security :anti-forgery] false)
+           (dissoc :session)))
       wrap-context
       wrap-internal-error))

@@ -36,7 +36,8 @@
                  [ring/ring-defaults "0.3.0"]
                  [secretary "1.2.3"]
                  [selmer "1.10.7"]
-                 [com.walmartlabs/lacinia "0.19.0"]]
+                 [com.walmartlabs/lacinia "0.19.0"]
+                 [org.clojure/data.json "0.2.6"]                 ]
 
   :min-lein-version "2.0.0"
 
