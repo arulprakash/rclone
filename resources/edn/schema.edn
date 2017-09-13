@@ -15,6 +15,7 @@
     :is_active     {:type Boolean}
     :created       {:type String}
     :changed       {:type String}
+    :status        {:type String}
     :comments      {:type    (list :thread)
                     :resolve :get-user-comments}
     :posts         {:type    (list :thread)
@@ -77,17 +78,35 @@
  {:user
   {:type    (non-null :User)
    :args    {:id {:type String}}
-   :resolve :get-user}}
+   :resolve :get-user}
+  :post
+  {:type (non-null :Post)
+   :args {:id {:type String}}
+   :resolve :top-posts}}
 
  :mutations
- {:user
-           {:type :User
-            :args {:id         {:type (non-null String)}
-                   :email      {:type (non-null String)}
-                   :first_name {:type (non-null String)}
-                   :last_name  {:type (non-null String)}
-                   :pass       {:type (non-null String)}
-                   :admin      {:type (non-null Boolean)}
-                   :is-active  {:type (non-null Boolean)}
-                   :created    {:type (non-null String)}}}
-  :resolve :create-user}}
+ {:createuser
+  {:type    :User
+   :args    {:id         {:type (non-null String)}
+             :email      {:type (non-null String)}
+             :first_name {:type (non-null String)}
+             :last_name  {:type (non-null String)}
+             :pass       {:type (non-null String)}
+             :admin      {:type (non-null Boolean)}
+             :is_active  {:type (non-null Boolean)}
+             :created    {:type (non-null String)}}
+   :resolve :create-user}
+  :removeuser
+  {:type    :User
+   :args    {:id {:type (non-null String)}}
+   :resolve :delete-user}
+  :updateuser
+  {:type    :User
+   :args    {:email      {:type (non-null String)}
+             :first_name {:type (non-null String)}
+             :last_name  {:type (non-null String)}
+             :pass       {:type (non-null String)}
+             :admin      {:type (non-null Boolean)}
+             :is_active  {:type (non-null Boolean)}
+             :changed    {:type (non-null String)}}
+   :resolve :delete-user}}}

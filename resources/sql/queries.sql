@@ -63,6 +63,12 @@ WHERE id = :id
 SELECT * FROM posts
 WHERE posted_by = :id
 
+-- :name get-top-posts :? :n
+-- :doc retrieve all the posts posted by the user
+SELECT * FROM posts
+ORDER BY votes
+LIMIT 50
+
 -- :name delete-group! :! :n
 -- :doc delete a user given the id
 DELETE FROM posts
@@ -116,7 +122,7 @@ WHERE subscriber = :id
 DELETE subscriptions
 WHERE subscribed_to =:group_id AND subscriber = :user_id
 
---------------------------PRIVILEGS-------------------------
+--------------------------PRIVILEGES-------------------------
 
 -- :name create-privilege! :! :1
 -- :doc creates a new subscription
