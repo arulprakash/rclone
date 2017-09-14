@@ -21,58 +21,56 @@
     :posts         {:type    (list :thread)
                     :resolve :get-user-posts}
     :subscriptions {:type    (list :String)
-                    :resolve :get-user-subs}}}}
+                    :resolve :get-user-subs}}}
 
- :Group
- {:fields
-  {:id          {:type String}
-   :description {:type String}
-   :created     {:type String}
-   :changed     {:type String}
-   :created_by  {:type :User}}}
+  :Group
+  {:fields
+   {:id          {:type String}
+    :description {:type String}
+    :created     {:type String}
+    :changed     {:type String}
+    :created_by  {:type :User}}}
 
- :Subscription
- {:fields
-  {:id            {:type String}
-   :created       {:type String}
-   :subscriber    {:type :User}
-   :subscribed_to {:type :Group}}}
+  :Subscription
+  {:fields
+   {:id            {:type String}
+    :created       {:type String}
+    :subscriber    {:type :User}
+    :subscribed_to {:type :Group}}}
 
- :Comment
- {:implements [:thread]
-  :fields
-              {:id           {:type String}
-               :created      {:type String}
-               :changed      {:type String}
-               :description  {:type String}
-               :posted_to    {:type :Post}
-               :replied_to   {:type :Comment}
-               :votes        {:type String}
-               :commented_by {:type :User}}}
+  :Post
+  {:implements [:thread]
+   :fields     {:id          {:type String}
+                :created     {:type String}
+                :changed     {:type String}
+                :title       {:type String}
+                :description {:type String}
+                :url         {:type String}
+                :posted_by   {:type :User}
+                :posted_in   {:type :Group}
+                :votes       {:type String}
+                :comments    {:type    (list :Comment)
+                              :resolve :get-comments}}}
 
- :Post
- {:implements [:thread]
-  :fields
-              {:id          {:type String}
-               :created     {:type String}
-               :changed     {:type String}
-               :title       {:type String}
-               :description {:type String}
-               :url         {:type String}
-               :posted_by   {:type :User}
-               :posted_in   {:type :Group}
-               :votes       {:type String}
-               :comments    {:type    (list :Comment)
-                             :resolve :get-comments}}}
+  :Comment
+  {:implements [:thread]
+   :fields     {:id           {:type String}
+                :created      {:type String}
+                :changed      {:type String}
+                :description  {:type String}
+                :posted_to    {:type :Post}
+                :replied_to   {:type :Comment}
+                :votes        {:type String}
+                :commented_by {:type :User}}}
 
- :Privilege
- {:fields
-  {:id         {:type String}
-   :first_name {:type String}
-   :last_name  {:type String}
-   :is_active  {:type Boolean}
-   :created    {:type String}
-   :changed    {:type String}}}
+  :Privilege
+  {:fields
+   {:id         {:type String}
+    :first_name {:type String}
+    :last_name  {:type String}
+    :is_active  {:type Boolean}
+    :created    {:type String}
+    :changed    {:type String}}}}
 
  :queries
  {:user
@@ -80,8 +78,8 @@
    :args    {:id {:type String}}
    :resolve :get-user}
   :post
-  {:type (non-null :Post)
-   :args {:id {:type String}}
+  {:type    (non-null :Post)
+   :args    {:id {:type String}}
    :resolve :top-posts}}
 
  :mutations

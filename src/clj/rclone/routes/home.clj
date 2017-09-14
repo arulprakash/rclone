@@ -76,6 +76,11 @@
       {:status "Not Deleted"})))
 
 
+(defn get-top-hosts
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-top-posts)))
+
 (defn compile-schema
   []
   (-> (io/resource "edn/schema.edn")
@@ -88,7 +93,7 @@
                               :get-user-subs     get-user-subs
                               :get-comments      get-comments
                               :delete-user       delete-user
-                              :top_posts         (db/get-top-posts)})
+                              :top-posts         get-top-hosts})
       schema/compile))
 
 (def compiled-schema (compile-schema))
@@ -98,5 +103,3 @@
            (GET "/docs" []
              (-> (response/ok (-> "docs/docs.md" io/resource slurp))
                  (response/header "Content-Type" "text/plain; charset=utf-8"))))
-
-

@@ -37,9 +37,9 @@
                  [secretary "1.2.3"]
                  [selmer "1.10.7"]
                  [com.walmartlabs/lacinia "0.19.0"]
-                 [org.clojure/data.json "0.2.6"] 
+                 [org.clojure/data.json "0.2.6"]
                  [cljs-react-material-ui "0.2.48"]
-                 [cljsjs/semantic-ui-react "0.72.0-0"]]
+                 [cljsjs/semantic-ui-react "0.73.0-0"]]
 
   :min-lein-version "2.0.0"
 
@@ -69,7 +69,7 @@
    :css-dirs ["resources/public/css"]
    :nrepl-middleware
    [cemerick.piggieback/wrap-cljs-repl cider.nrepl/cider-middleware]}
-  
+
 
   :profiles
   {:uberjar {:omit-source true
@@ -85,8 +85,8 @@
                  :closure-warnings
                  {:externs-validation :off :non-standard-jsdoc :off}
                  :externs ["react/externs/react.js"]}}}}
-             
-             
+
+
              :aot :all
              :uberjar-name "rclone.jar"
              :source-paths ["env/prod/clj"]
@@ -125,14 +125,14 @@
                       :source-map true
                       :optimizations :none
                       :pretty-print true}}}}
-                  
-                  
-                  
+
+
+
                   :doo {:build "test"}
                   :source-paths ["env/dev/clj"]
                   :resource-paths ["env/dev/resources"]
                   :repl-options {:init-ns user
-                                 :timeout 120000}
+                                 :timeout 180000}
                   :injections [(require 'pjstadig.humane-test-output)
                                (pjstadig.humane-test-output/activate!)]}
    :project/test {:resource-paths ["env/test/resources"]
@@ -145,7 +145,7 @@
                       :main "rclone.doo-runner"
                       :optimizations :whitespace
                       :pretty-print true}}}}
-                  
+
                   }
    :profiles/dev {}
    :profiles/test {}})

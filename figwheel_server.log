@@ -1,0 +1,333 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:25  column:1  ----[0m
+
+  [1mcontainer at line 24 is being replaced[0m
+
+  [36m21[0m  [36m    (apply goog.object/getValueByKeys semantic-ui k ks)[0m
+  [36m22[0m  [36m    (goog.object/get semantic-ui k)))[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [33m25[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 24 is being replaced[0m
+  [36m26[0m  [36m(def container (component "Container"))[0m
+  [36m27[0m  [36m(def container (component "Container"))[0m
+  [36m28[0m  [36m(def container (component "Container"))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:26  column:1  ----[0m
+
+  [1mcontainer at line 25 is being replaced[0m
+
+  [36m22[0m  [36m    (goog.object/get semantic-ui k)))[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Container"))[0m
+  [33m26[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 25 is being replaced[0m
+  [36m27[0m  [36m(def container (component "Container"))[0m
+  [36m28[0m  [36m(def container (component "Container"))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m31[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:27  column:1  ----[0m
+
+  [1mcontainer at line 26 is being replaced[0m
+
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Container"))[0m
+  [36m26[0m  [36m(def container (component "Container"))[0m
+  [33m27[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 26 is being replaced[0m
+  [36m28[0m  [36m(def container (component "Container"))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m31[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+  [36m32[0m  [36m    [:li.nav-item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:28  column:1  ----[0m
+
+  [1mcontainer at line 27 is being replaced[0m
+
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Container"))[0m
+  [36m26[0m  [36m(def container (component "Container"))[0m
+  [36m27[0m  [36m(def container (component "Container"))[0m
+  [33m28[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 27 is being replaced[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m31[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+  [36m32[0m  [36m    [:li.nav-item[0m
+  [36m33[0m  [36m     {:class (when (= page @selected-page) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.056 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:25  column:1  ----[0m
+
+  [1mcontainer at line 24 is being replaced[0m
+
+  [36m21[0m  [36m    (apply goog.object/getValueByKeys semantic-ui k ks)[0m
+  [36m22[0m  [36m    (goog.object/get semantic-ui k)))[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [33m25[0m  [1m(def container (component "Button"))[0m
+  [0m  [0m  [33m^--- container at line 24 is being replaced[0m
+  [36m26[0m  [36m(def container (component "Container"))[0m
+  [36m27[0m  [36m(def container (component "Container"))[0m
+  [36m28[0m  [36m(def container (component "Container"))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:26  column:1  ----[0m
+
+  [1mcontainer at line 25 is being replaced[0m
+
+  [36m22[0m  [36m    (goog.object/get semantic-ui k)))[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [33m26[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 25 is being replaced[0m
+  [36m27[0m  [36m(def container (component "Container"))[0m
+  [36m28[0m  [36m(def container (component "Container"))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m31[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:27  column:1  ----[0m
+
+  [1mcontainer at line 26 is being replaced[0m
+
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [36m26[0m  [36m(def container (component "Container"))[0m
+  [33m27[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 26 is being replaced[0m
+  [36m28[0m  [36m(def container (component "Container"))[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m31[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+  [36m32[0m  [36m    [:li.nav-item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:28  column:1  ----[0m
+
+  [1mcontainer at line 27 is being replaced[0m
+
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [36m26[0m  [36m(def container (component "Container"))[0m
+  [36m27[0m  [36m(def container (component "Container"))[0m
+  [33m28[0m  [1m(def container (component "Container"))[0m
+  [0m  [0m  [33m^--- container at line 27 is being replaced[0m
+  [36m29[0m  [36m[0m
+  [36m30[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m31[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+  [36m32[0m  [36m    [:li.nav-item[0m
+  [36m33[0m  [36m     {:class (when (= page @selected-page) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 13.735 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:25  column:1  ----[0m
+
+  [1mcontainer at line 24 is being replaced[0m
+
+  [36m21[0m  [36m    (apply goog.object/getValueByKeys semantic-ui k ks)[0m
+  [36m22[0m  [36m    (goog.object/get semantic-ui k)))[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [33m25[0m  [1m(def container (component "Button"))[0m
+  [0m  [0m  [33m^--- container at line 24 is being replaced[0m
+  [36m26[0m  [36m(def container (component "Input"))[0m
+  [36m27[0m  [36m(def container (component "Label"))[0m
+  [36m28[0m  [36m(def container (component "List"))[0m
+  [36m29[0m  [36m(def container (component "List"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:26  column:1  ----[0m
+
+  [1mcontainer at line 25 is being replaced[0m
+
+  [36m22[0m  [36m    (goog.object/get semantic-ui k)))[0m
+  [36m23[0m  [36m[0m
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [33m26[0m  [1m(def container (component "Input"))[0m
+  [0m  [0m  [33m^--- container at line 25 is being replaced[0m
+  [36m27[0m  [36m(def container (component "Label"))[0m
+  [36m28[0m  [36m(def container (component "List"))[0m
+  [36m29[0m  [36m(def container (component "List"))[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn nav-link [uri title page collapsed?][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:27  column:1  ----[0m
+
+  [1mcontainer at line 26 is being replaced[0m
+
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [36m26[0m  [36m(def container (component "Input"))[0m
+  [33m27[0m  [1m(def container (component "Label"))[0m
+  [0m  [0m  [33m^--- container at line 26 is being replaced[0m
+  [36m28[0m  [36m(def container (component "List"))[0m
+  [36m29[0m  [36m(def container (component "List"))[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m32[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:28  column:1  ----[0m
+
+  [1mcontainer at line 27 is being replaced[0m
+
+  [36m24[0m  [36m(def container (component "Container"))[0m
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [36m26[0m  [36m(def container (component "Input"))[0m
+  [36m27[0m  [36m(def container (component "Label"))[0m
+  [33m28[0m  [1m(def container (component "List"))[0m
+  [0m  [0m  [33m^--- container at line 27 is being replaced[0m
+  [36m29[0m  [36m(def container (component "List"))[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m32[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+  [36m33[0m  [36m    [:li.nav-item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:29  column:1  ----[0m
+
+  [1mcontainer at line 28 is being replaced[0m
+
+  [36m25[0m  [36m(def container (component "Button"))[0m
+  [36m26[0m  [36m(def container (component "Input"))[0m
+  [36m27[0m  [36m(def container (component "Label"))[0m
+  [36m28[0m  [36m(def container (component "List"))[0m
+  [33m29[0m  [1m(def container (component "List"))[0m
+  [0m  [0m  [33m^--- container at line 28 is being replaced[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn nav-link [uri title page collapsed?][0m
+  [36m32[0m  [36m  (let [selected-page (rf/subscribe [:page])][0m
+  [36m33[0m  [36m    [:li.nav-item[0m
+  [36m34[0m  [36m     {:class (when (= page @selected-page) "active")}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 17.872 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 13.098 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 13.445 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 14.61 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.192 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.818 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 15.47 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 14.135 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 13.201 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.275 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 8.185 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.904 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.639 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.999 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.089 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 20.42 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 14.986 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:64  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m60[0m  [36m(defn post-widget[0m
+  [36m61[0m  [36m  [][0m
+  [36m62[0m  [36m  [:> container[0m
+  [36m63[0m  [36m   [:> container[0m
+  [33m64[0m  [1m    [:> icon][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m65[0m  [36m    [:> icon]][0m
+  [36m66[0m  [36m   [:> container[0m
+  [36m67[0m  [36m    [:> header[0m
+  [36m68[0m  [36m     [:> label]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:65  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m61[0m  [36m  [][0m
+  [36m62[0m  [36m  [:> container[0m
+  [36m63[0m  [36m   [:> container[0m
+  [36m64[0m  [36m    [:> icon][0m
+  [33m65[0m  [1m    [:> icon]][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m66[0m  [36m   [:> container[0m
+  [36m67[0m  [36m    [:> header[0m
+  [36m68[0m  [36m     [:> label]]]])[0m
+  [36m69[0m  [36m[0m
+  [36m70[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:67  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/header[0m
+
+  [36m63[0m  [36m   [:> container[0m
+  [36m64[0m  [36m    [:> icon][0m
+  [36m65[0m  [36m    [:> icon]][0m
+  [36m66[0m  [36m   [:> container[0m
+  [33m67[0m  [1m    [:> header[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/header[0m
+  [36m68[0m  [36m     [:> label]]]])[0m
+  [36m69[0m  [36m[0m
+  [36m70[0m  [36m(defn home-page [][0m
+  [36m71[0m  [36m  [:div.container[0m
+  [36m72[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.704 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 7.467 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js

@@ -8,8 +8,26 @@
             [ajax.core :refer [GET POST]]
             [rclone.ajax :refer [load-interceptors!]]
             [rclone.handlers]
-            [rclone.subscriptions])
+            [rclone.subscriptions]
+            [cljsjs.semantic-ui-react]
+            [goog.object])
   (:import goog.History))
+
+(def semantic-ui js/semanticUIReact)
+
+(defn component
+  [k & ks]
+  (if (seq ks)
+    (apply goog.object/getValueByKeys semantic-ui k ks)
+    (goog.object/get semantic-ui k)))
+
+(def container (component "Container"))
+(def segment (component "Segment"))
+(def button (component "Button"))
+(def input (component "Input"))
+(def label (component "Label"))
+(def slist (component "List"))
+
 
 (defn nav-link [uri title page collapsed?]
   (let [selected-page (rf/subscribe [:page])]
@@ -32,10 +50,22 @@
        [nav-link "#/about" "About" :about collapsed?]]]]))
 
 (defn about-page []
-  [:div.container
-   [:div.row
-    [:div.col-md-12
-     [:img {:src (str js/context "/img/warning_clojure.png")}]]]])
+  [:> container
+   [:> segment {:basic true}
+    [:p "Testing Semantic UI"]
+    [:> button {:primary true
+                :size :big
+                :onClick #(js/console.log "Clicked")} "Click"]]])
+
+(defn post-widget
+  []
+  [:> container
+   [:> container
+    [:> icon]
+    [:> icon]]
+   [:> container
+    [:> header
+     [:> label]]]])
 
 (defn home-page []
   [:div.container
