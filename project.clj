@@ -38,7 +38,8 @@
                  [selmer "1.10.7"]
                  [com.walmartlabs/lacinia "0.19.0"]
                  [org.clojure/data.json "0.2.6"] 
-                 ]
+                 [cljs-react-material-ui "0.2.48"]
+                 [cljsjs/semantic-ui-react "0.72.0-0"]]
 
   :min-lein-version "2.0.0"
 

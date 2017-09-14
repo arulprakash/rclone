@@ -38,9 +38,12 @@
     <orderEntry type="library" name="Leiningen: clj-tuple:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: clj-webdriver:0.7.2" level="project" />
     <orderEntry type="library" name="Leiningen: cljs-ajax:0.6.0" level="project" />
+    <orderEntry type="library" name="Leiningen: cljs-react-material-ui:0.2.48" level="project" />
+    <orderEntry type="library" name="Leiningen: cljsjs/material-ui:0.19.0-0" level="project" />
     <orderEntry type="library" name="Leiningen: cljsjs/react-dom-server:15.4.2-2" level="project" />
     <orderEntry type="library" name="Leiningen: cljsjs/react-dom:15.4.2-2" level="project" />
-    <orderEntry type="library" name="Leiningen: cljsjs/react:15.4.2-2" level="project" />
+    <orderEntry type="library" name="Leiningen: cljsjs/react:15.6.1-1" level="project" />
+    <orderEntry type="library" name="Leiningen: cljsjs/semantic-ui-react:0.72.0-0" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-future-spec:1.9.0-alpha17" level="project" />
     <orderEntry type="library" name="Leiningen: clojurewerkz/scrypt:1.2.0" level="project" />
@@ -247,6 +250,7 @@
     <orderEntry type="library" name="Leiningen: ring/ring-headers:0.3.0" level="project" />
     <orderEntry type="library" name="Leiningen: ring/ring-mock:0.3.0" level="project" />
     <orderEntry type="library" name="Leiningen: ring/ring-ssl:0.3.0" level="project" />
+    <orderEntry type="library" name="Leiningen: sablono:0.8.0" level="project" />
     <orderEntry type="library" name="Leiningen: secretary:1.2.3" level="project" />
     <orderEntry type="library" name="Leiningen: selmer:1.10.7" level="project" />
     <orderEntry type="library" name="Leiningen: simple-lein-profile-merge:0.1.4" level="project" />
