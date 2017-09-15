@@ -1,5 +1,6 @@
 (ns rclone.core
-  (:require [reagent.core :as r]
+  (:require [react-dom :as react-dom]
+            [reagent.core :as r]
             [re-frame.core :as rf]
             [secretary.core :as secretary]
             [goog.events :as events]

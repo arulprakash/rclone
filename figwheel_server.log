@@ -331,3 +331,58 @@ notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 7.467 seconds.[0m
 notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:65  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m61[0m  [36m(defn post-widget[0m
+  [36m62[0m  [36m  [][0m
+  [36m63[0m  [36m  [:> container[0m
+  [36m64[0m  [36m   [:> container[0m
+  [33m65[0m  [1m    [:> icon][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m66[0m  [36m    [:> icon]][0m
+  [36m67[0m  [36m   [:> container[0m
+  [36m68[0m  [36m    [:> header[0m
+  [36m69[0m  [36m     [:> label]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:66  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m62[0m  [36m  [][0m
+  [36m63[0m  [36m  [:> container[0m
+  [36m64[0m  [36m   [:> container[0m
+  [36m65[0m  [36m    [:> icon][0m
+  [33m66[0m  [1m    [:> icon]][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m67[0m  [36m   [:> container[0m
+  [36m68[0m  [36m    [:> header[0m
+  [36m69[0m  [36m     [:> label]]]])[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:68  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/header[0m
+
+  [36m64[0m  [36m   [:> container[0m
+  [36m65[0m  [36m    [:> icon][0m
+  [36m66[0m  [36m    [:> icon]][0m
+  [36m67[0m  [36m   [:> container[0m
+  [33m68[0m  [1m    [:> header[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/header[0m
+  [36m69[0m  [36m     [:> label]]]])[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m(defn home-page [][0m
+  [36m72[0m  [36m  [:div.container[0m
+  [36m73[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.731 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
