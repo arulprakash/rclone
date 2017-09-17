@@ -5,51 +5,49 @@
 
   :dependencies [[buddy "1.3.0"]
                  [cider/cider-nrepl "0.15.0-SNAPSHOT"]
-                 [clj-time "0.13.0"]
-                 [cljs-ajax "0.6.0"]
+                 [clj-time "0.14.0"]
+                 [cljs-ajax "0.7.2"]
                  [compojure "1.6.0"]
-                 [conman "0.6.4"]
-                 [cprop "0.1.10"]
-                 [funcool/struct "1.0.0"]
+                 [conman "0.6.8"]
+                 [cprop "0.1.11"]
+                 [funcool/struct "1.1.0"]
                  [luminus-immutant "0.2.3"]
-                 [luminus-migrations "0.3.5"]
+                 [luminus-migrations "0.4.2"]
                  [luminus-nrepl "0.1.4"]
                  [luminus/ring-ttl-session "0.3.2"]
-                 [markdown-clj "0.9.99"]
-                 [metosin/muuntaja "0.2.1"]
+                 [markdown-clj "1.0.1"]
+                 [metosin/muuntaja "0.3.2"]
                  [metosin/ring-http-response "0.9.0"]
                  [mount "0.1.11"]
                  [org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.562" :scope "provided"]
+                 [org.clojure/clojurescript "1.9.908" :scope "provided"]
                  [org.clojure/tools.cli "0.3.5"]
-                 [org.clojure/tools.logging "0.3.1"]
-                 [org.postgresql/postgresql "42.0.0"]
+                 [org.clojure/tools.logging "0.4.0"]
+                 [org.postgresql/postgresql "42.1.3"]
                  [org.webjars.bower/tether "1.4.0"]
                  [org.webjars/bootstrap "4.0.0-alpha.5"]
                  [org.webjars/font-awesome "4.7.0"]
                  [org.webjars/webjars-locator-jboss-vfs "0.1.0"]
                  [re-frame "0.10.1"]
-                 [reagent "0.8.0-alpha1"]
+                 [day8.re-frame/http-fx "0.1.4"]
+                 [reagent "0.7.0"]
                  [reagent-utils "0.2.1"]
                  [ring-webjars "0.2.0"]
-                 [ring/ring-core "1.6.1"]
-                 [ring/ring-defaults "0.3.0"]
+                 [ring/ring-core "1.6.2"]
+                 [ring/ring-defaults "0.3.1"]
                  [secretary "1.2.3"]
-                 [selmer "1.10.7"]
+                 [selmer "1.11.1"]
                  [com.walmartlabs/lacinia "0.19.0"]
                  [org.clojure/data.json "0.2.6"]
                  [cljs-react-material-ui "0.2.48"]
                  [cljsjs/semantic-ui-react "0.73.0-0"]
-                 ;;Experiment
-                 [cljsjs/react "15.6.1-2"]
-                 [cljsjs/react-dom "15.6.1-2"]
-                 [cljsjs/react-dom-server "15.6.1-2"]
-                 [cljsjs/create-react-class "15.6.0-3"]]
+                 [vincit/venia "0.2.3"]
+                 ]
 
   :min-lein-version "2.0.0"
 
   :jvm-opts ["-server" "-Dconf=.lein-env"]
-  :source-paths ["src/clj" "src/cljc"]
+  :source-paths ["src/clj" "src/cljc" "src/cljs" "env/dev/cljs"]
   :test-paths ["test/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
   :target-path "target/%s/"
@@ -67,29 +65,29 @@
 
 
   :clean-targets ^{:protect false}
-[:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
+  [:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
   :figwheel
   {:http-server-root "public"
    :nrepl-port       7002
    :css-dirs         ["resources/public/css"]
    :nrepl-middleware
-                     [cemerick.piggieback/wrap-cljs-repl cider.nrepl/cider-middleware]}
+   [cemerick.piggieback/wrap-cljs-repl cider.nrepl/cider-middleware]}
 
 
   :profiles
   {:uberjar       {:omit-source    true
                    :prep-tasks     ["compile" ["cljsbuild" "once" "min"]]
                    :cljsbuild
-                                   {:builds
-                                    {:min
-                                     {:source-paths ["src/cljc" "src/cljs" "env/prod/cljs"]
-                                      :compiler
-                                                    {:output-to     "target/cljsbuild/public/js/app.js"
-                                                     :optimizations :advanced
-                                                     :pretty-print  false
-                                                     :closure-warnings
-                                                                    {:externs-validation :off :non-standard-jsdoc :off}
-                                                     :externs       ["react/externs/react.js"]}}}}
+                   {:builds
+                    {:min
+                     {:source-paths ["src/cljc" "src/cljs" "env/prod/cljs"]
+                      :compiler
+                      {:output-to     "target/cljsbuild/public/js/app.js"
+                       :optimizations :advanced
+                       :pretty-print  false
+                       :closure-warnings
+                       {:externs-validation :off :non-standard-jsdoc :off}
+                       :externs       ["react/externs/react.js"]}}}}
 
 
                    :aot            :all
@@ -118,18 +116,18 @@
                                     [lein-figwheel "0.5.10"]
                                     [org.clojure/clojurescript "1.9.562"]]
                    :cljsbuild
-                                   {:builds
-                                    {:app
-                                     {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
-                                      :figwheel     {:on-jsload "rclone.core/mount-components"}
-                                      :compiler
-                                                    {:main          "rclone.app"
-                                                     :asset-path    "/js/out"
-                                                     :output-to     "target/cljsbuild/public/js/app.js"
-                                                     :output-dir    "target/cljsbuild/public/js/out"
-                                                     :source-map    true
-                                                     :optimizations :none
-                                                     :pretty-print  true}}}}
+                   {:builds
+                    {:app
+                     {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
+                      :figwheel     {:on-jsload "rclone.core/mount-components"}
+                      :compiler
+                      {:main          "rclone.app"
+                       :asset-path    "/js/out"
+                       :output-to     "target/cljsbuild/public/js/app.js"
+                       :output-dir    "target/cljsbuild/public/js/out"
+                       :source-map    true
+                       :optimizations :none
+                       :pretty-print  true}}}}
 
 
 
@@ -138,18 +136,19 @@
                    :resource-paths ["env/dev/resources"]
                    :repl-options   {:init-ns user
                                     :timeout 180000}
+                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]
                    :injections     [(require 'pjstadig.humane-test-output)
                                     (pjstadig.humane-test-output/activate!)]}
    :project/test  {:resource-paths ["env/test/resources"]
                    :cljsbuild
-                                   {:builds
-                                    {:test
-                                     {:source-paths ["src/cljc" "src/cljs" "test/cljs"]
-                                      :compiler
-                                                    {:output-to     "target/test.js"
-                                                     :main          "rclone.doo-runner"
-                                                     :optimizations :whitespace
-                                                     :pretty-print  true}}}}
+                   {:builds
+                    {:test
+                     {:source-paths ["src/cljc" "src/cljs" "test/cljs"]
+                      :compiler
+                      {:output-to     "target/test.js"
+                       :main          "rclone.doo-runner"
+                       :optimizations :whitespace
+                       :pretty-print  true}}}}
 
                    }
    :profiles/dev  {}

@@ -386,3 +386,321 @@ notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core
 notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
 notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
 notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:65  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m61[0m  [36m(defn post-widget[0m
+  [36m62[0m  [36m  [][0m
+  [36m63[0m  [36m  [:> container {:id "arulcomp"}[0m
+  [36m64[0m  [36m   [:> container[0m
+  [33m65[0m  [1m    [:> icon][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m66[0m  [36m    [:> icon]][0m
+  [36m67[0m  [36m   [:> container[0m
+  [36m68[0m  [36m    [:> header[0m
+  [36m69[0m  [36m     [:> label]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:66  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m62[0m  [36m  [][0m
+  [36m63[0m  [36m  [:> container {:id "arulcomp"}[0m
+  [36m64[0m  [36m   [:> container[0m
+  [36m65[0m  [36m    [:> icon][0m
+  [33m66[0m  [1m    [:> icon]][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m67[0m  [36m   [:> container[0m
+  [36m68[0m  [36m    [:> header[0m
+  [36m69[0m  [36m     [:> label]]]])[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:68  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/header[0m
+
+  [36m64[0m  [36m   [:> container[0m
+  [36m65[0m  [36m    [:> icon][0m
+  [36m66[0m  [36m    [:> icon]][0m
+  [36m67[0m  [36m   [:> container[0m
+  [33m68[0m  [1m    [:> header[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/header[0m
+  [36m69[0m  [36m     [:> label]]]])[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m(defn home-page [][0m
+  [36m72[0m  [36m  [:div.container[0m
+  [36m73[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.756 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:66  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m62[0m  [36m(defn post-widget[0m
+  [36m63[0m  [36m  [][0m
+  [36m64[0m  [36m  [:> container {:id "arulcomp"}[0m
+  [36m65[0m  [36m   [:> container[0m
+  [33m66[0m  [1m    [:> icon][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m67[0m  [36m    [:> icon]][0m
+  [36m68[0m  [36m   [:> container[0m
+  [36m69[0m  [36m    [:> header[0m
+  [36m70[0m  [36m     [:> label]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:67  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m63[0m  [36m  [][0m
+  [36m64[0m  [36m  [:> container {:id "arulcomp"}[0m
+  [36m65[0m  [36m   [:> container[0m
+  [36m66[0m  [36m    [:> icon][0m
+  [33m67[0m  [1m    [:> icon]][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m68[0m  [36m   [:> container[0m
+  [36m69[0m  [36m    [:> header[0m
+  [36m70[0m  [36m     [:> label]]]])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:69  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/header[0m
+
+  [36m65[0m  [36m   [:> container[0m
+  [36m66[0m  [36m    [:> icon][0m
+  [36m67[0m  [36m    [:> icon]][0m
+  [36m68[0m  [36m   [:> container[0m
+  [33m69[0m  [1m    [:> header[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/header[0m
+  [36m70[0m  [36m     [:> label]]]])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn home-page [][0m
+  [36m73[0m  [36m  [:div.container[0m
+  [36m74[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:117  column:3  ----[0m
+
+  [1mWrong number of args (0) passed to reagent.dom/render[0m
+
+  [36m114[0m  [36m(defn mount-components [][0m
+  [36m115[0m  [36m  (rf/clear-subscription-cache!)[0m
+  [36m116[0m  [36m  (r/render [#'page] (.getElementById js/document "app"))[0m
+  [33m117[0m  [1m  (dom/render ))[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to reagent.dom/render[0m
+  [36m118[0m  [36m[0m
+  [36m119[0m  [36m(defn init! [][0m
+  [36m120[0m  [36m  (rf/dispatch-sync [:initialize-db])[0m
+  [36m121[0m  [36m  (load-interceptors!)[0m
+  [36m122[0m  [36m  (fetch-docs!)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.181 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.152 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs  ----[0m
+
+  [1mNo such namespace: clsjs.react-dom, could not locate clsjs/react_dom.cljs, clsjs/react_dom.cljc, or Closure namespace "clsjs.react-dom" [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:66  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m62[0m  [36m(defn post-widget[0m
+  [36m63[0m  [36m  [][0m
+  [36m64[0m  [36m  [:> container {:id "arulcomp"}[0m
+  [36m65[0m  [36m   [:> container[0m
+  [33m66[0m  [1m    [:> icon][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m67[0m  [36m    [:> icon]][0m
+  [36m68[0m  [36m   [:> container[0m
+  [36m69[0m  [36m    [:> header[0m
+  [36m70[0m  [36m     [:> label]]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:67  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m63[0m  [36m  [][0m
+  [36m64[0m  [36m  [:> container {:id "arulcomp"}[0m
+  [36m65[0m  [36m   [:> container[0m
+  [36m66[0m  [36m    [:> icon][0m
+  [33m67[0m  [1m    [:> icon]][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m68[0m  [36m   [:> container[0m
+  [36m69[0m  [36m    [:> header[0m
+  [36m70[0m  [36m     [:> label]]]])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:69  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/header[0m
+
+  [36m65[0m  [36m   [:> container[0m
+  [36m66[0m  [36m    [:> icon][0m
+  [36m67[0m  [36m    [:> icon]][0m
+  [36m68[0m  [36m   [:> container[0m
+  [33m69[0m  [1m    [:> header[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/header[0m
+  [36m70[0m  [36m     [:> label]]]])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn home-page [][0m
+  [36m73[0m  [36m  [:div.container[0m
+  [36m74[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:117  column:3  ----[0m
+
+  [1mWrong number of args (0) passed to reagent.dom/render[0m
+
+  [36m114[0m  [36m(defn mount-components [][0m
+  [36m115[0m  [36m  (rf/clear-subscription-cache!)[0m
+  [36m116[0m  [36m  (r/render [#'page] (.getElementById js/document "app"))[0m
+  [33m117[0m  [1m  (dom/render ))[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to reagent.dom/render[0m
+  [36m118[0m  [36m[0m
+  [36m119[0m  [36m(defn init! [][0m
+  [36m120[0m  [36m  (rf/dispatch-sync [:initialize-db])[0m
+  [36m121[0m  [36m  (load-interceptors!)[0m
+  [36m122[0m  [36m  (fetch-docs!)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 4.97 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:70  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/header[0m
+
+  [36m66[0m  [36m    ; [:> icon][0m
+  [36m67[0m  [36m    ;[:> icon][0m
+  [36m68[0m  [36m    ][0m
+  [36m69[0m  [36m   [:> container[0m
+  [33m70[0m  [1m    [:> header[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/header[0m
+  [36m71[0m  [36m     [:> label]]]])[0m
+  [36m72[0m  [36m[0m
+  [36m73[0m  [36m(defn home-page [][0m
+  [36m74[0m  [36m  [:div.container[0m
+  [36m75[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:118  column:3  ----[0m
+
+  [1mWrong number of args (0) passed to reagent.dom/render[0m
+
+  [36m115[0m  [36m(defn mount-components [][0m
+  [36m116[0m  [36m  (rf/clear-subscription-cache!)[0m
+  [36m117[0m  [36m  (r/render [#'page] (.getElementById js/document "app"))[0m
+  [33m118[0m  [1m  (dom/render ))[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to reagent.dom/render[0m
+  [36m119[0m  [36m[0m
+  [36m120[0m  [36m(defn init! [][0m
+  [36m121[0m  [36m  (rf/dispatch-sync [:initialize-db])[0m
+  [36m122[0m  [36m  (load-interceptors!)[0m
+  [36m123[0m  [36m  (fetch-docs!)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.767 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:118  column:3  ----[0m
+
+  [1mWrong number of args (0) passed to reagent.dom/render[0m
+
+  [36m115[0m  [36m(defn mount-components [][0m
+  [36m116[0m  [36m  (rf/clear-subscription-cache!)[0m
+  [36m117[0m  [36m  (r/render [#'page] (.getElementById js/document "app"))[0m
+  [33m118[0m  [1m  (dom/render ))[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (0) passed to reagent.dom/render[0m
+  [36m119[0m  [36m[0m
+  [36m120[0m  [36m(defn init! [][0m
+  [36m121[0m  [36m  (rf/dispatch-sync [:initialize-db])[0m
+  [36m122[0m  [36m  (load-interceptors!)[0m
+  [36m123[0m  [36m  (fetch-docs!)[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.218 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.288 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.031 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.126 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.805 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs  ----[0m
+
+  [1mNo such namespace: venia.core, could not locate venia/core.cljs, venia/core.cljc, or Closure namespace "venia.core" [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.56 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs  ----[0m
+
+  [1mNo such namespace: clsjs.react-dom, could not locate clsjs/react_dom.cljs, clsjs/react_dom.cljc, or Closure namespace "clsjs.react-dom" [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.969 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.734 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.491 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.259 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.77 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.825 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs  ----[0m
+
+  [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m

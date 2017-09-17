@@ -1,17 +1,19 @@
 (ns rclone.core
-  (:require [react-dom :as react-dom]
-            [reagent.core :as r]
-            [re-frame.core :as rf]
-            [secretary.core :as secretary]
-            [goog.events :as events]
-            [goog.history.EventType :as HistoryEventType]
-            [markdown.core :refer [md->html]]
-            [ajax.core :refer [GET POST]]
-            [rclone.ajax :refer [load-interceptors!]]
-            [rclone.handlers]
-            [rclone.subscriptions]
-            [cljsjs.semantic-ui-react]
-            [goog.object])
+  (:require   [reagent.core :as r]
+              [re-frame.core :as rf]
+              [day8.re-frame.http-fx]
+              [secretary.core :as secretary]
+              [goog.events :as events]
+              [goog.history.EventType :as HistoryEventType]
+              [markdown.core :refer [md->html]]
+              [ajax.core :refer [GET POST]]
+              [rclone.ajax :refer [load-interceptors!]]
+              [rclone.handlers]
+              [rclone.subscriptions]
+              [cljsjs.semantic-ui-react]
+              [goog.object]
+              [reagent.dom :as dom]
+              [venia.core :as v])
   (:import goog.History))
 
 (def semantic-ui js/semanticUIReact)
@@ -28,14 +30,14 @@
 (def input (component "Input"))
 (def label (component "Label"))
 (def slist (component "List"))
-
+(def header (component "Header"))
 
 (defn nav-link [uri title page collapsed?]
   (let [selected-page (rf/subscribe [:page])]
     [:li.nav-item
      {:class (when (= page @selected-page) "active")}
      [:a.nav-link
-      {:href uri
+      {:href     uri
        :on-click #(reset! collapsed? true)} title]]))
 
 (defn navbar []
@@ -51,22 +53,8 @@
        [nav-link "#/about" "About" :about collapsed?]]]]))
 
 (defn about-page []
-  [:> container
-   [:> segment {:basic true}
-    [:p "Testing Semantic UI"]
-    [:> button {:primary true
-                :size :big
-                :onClick #(js/console.log "Clicked")} "Click"]]])
+  [:p "Testing Semantic UI"])
 
-(defn post-widget
-  []
-  [:> container
-   [:> container
-    [:> icon]
-    [:> icon]]
-   [:> container
-    [:> header
-     [:> label]]]])
 
 (defn home-page []
   [:div.container
@@ -76,7 +64,7 @@
              {:__html (md->html docs)}}]])])
 
 (def pages
-  {:home #'home-page
+  {:home  #'home-page
    :about #'about-page})
 
 (defn page []
@@ -100,9 +88,9 @@
 (defn hook-browser-navigation! []
   (doto (History.)
     (events/listen
-      HistoryEventType/NAVIGATE
-      (fn [event]
-        (secretary/dispatch! (.-token event))))
+     HistoryEventType/NAVIGATE
+     (fn [event]
+       (secretary/dispatch! (.-token event))))
     (.setEnabled true)))
 
 ;; -------------------------

@@ -1,6 +1,6 @@
 (ns rclone.routes.home
   (:require [rclone.layout :as layout]
-            [rclone.db.core :as db]
+            [rclone.db.core :as db] 
             [compojure.core :refer [defroutes GET]]
             [ring.util.http-response :as response]
             [clojure.java.io :as io]
@@ -8,7 +8,7 @@
             [com.walmartlabs.lacinia.util :as util]
             [com.walmartlabs.lacinia :refer [execute]]
             [clojure.edn :as edn]
-            [clj-time.local :as local]))
+            [clj-time.local :as local]            ))
 (defn home-page []
   (layout/render "home.html"))
 
@@ -97,9 +97,10 @@
       schema/compile))
 
 (def compiled-schema (compile-schema))
+
 (defroutes home-routes
-           (GET "/" []
-             (home-page))
-           (GET "/docs" []
-             (-> (response/ok (-> "docs/docs.md" io/resource slurp))
-                 (response/header "Content-Type" "text/plain; charset=utf-8"))))
+  (GET "/" []
+       (home-page)) 
+  (GET "/docs" []
+       (-> (response/ok (-> "docs/docs.md" io/resource slurp))
+           (response/header "Content-Type" "text/plain; charset=utf-8"))))
