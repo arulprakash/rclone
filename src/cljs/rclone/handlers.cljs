@@ -1,6 +1,6 @@
 (ns rclone.handlers
   (:require [rclone.db :as db]
-            [ajax.core :refer [GET POST json-response-format json-request-format]]
+            [ajax.core :refer [GET POST json-response-format json-request-format url-request-format]]
             [re-frame.core :refer [dispatch reg-event-db reg-event-fx]]
             [day8.re-frame.http-fx]))
 
@@ -22,23 +22,20 @@
 (reg-event-db
  :good-http-result
  (fn [db [_ result]]
-   (js/console.log result)))
+   (js/console.log "Success")))
 
 (reg-event-db
  :bad-http-result
  (fn [db [_ result]]
-   (js/console.log result)))
+   (js/console.log "Failure")))
 
 (reg-event-fx
  :graphql-handler
  (fn [{:keys [db]} _]
-   {    :http-xhrio {:method          :get
-                     :uri             "/graphql"
-                     :params           {"query"  "{user(id:\"arul\") {first_name}}"}
-                     :response-format (json-response-format {:keywords? true})
-                     :on-success      [:good-http-result]
-                     :on-failure      [:bad-http-result]}}))
-
-;;:format  {:content-type "application/graphql"}
-
-(GET "/graphql" {:params {"query"  "{user(id:\"arul\") {first_name}}"}})
+   {:http-xhrio {:method          :get
+                 :uri             "/graphql"
+                 :params          {"query" "{user(id:\"arul\") {first_name}}"}
+                 :format          (url-request-format)
+                 :response-format (json-response-format {:keywords? true})
+                 :on-success      [:good-http-result]
+                 :on-failure      [:bad-http-result]}}))

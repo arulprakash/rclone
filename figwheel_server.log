@@ -1031,3 +1031,35 @@ notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\hand
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 18.466 seconds.[0m
 notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 10.188 seconds.[0m
+[36m----  Could not Analyze  /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+
+  [1mInvalid :refer, var ajax.core/uri-request-format does not exist [0m
+
+[36m----  Analysis Error : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 9.769 seconds.[0m
+[36m----  Could not Analyze  /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+
+  [1mInvalid :refer, var ajax.core/uri-request-format does not exist [0m
+
+[36m----  Analysis Error : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 23.981 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 23.14 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 22.177 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 22.294 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 19.293 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 33.402 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
