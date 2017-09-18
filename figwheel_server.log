@@ -704,6 +704,7 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core
   [1mNo such namespace: day8.re-frame.http-fx, could not locate day8/re_frame/http_fx.cljs, day8/re_frame/http_fx.cljc, or JavaScript source providing "day8.re-frame.http-fx" [0m
 
 [36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+<<<<<<< HEAD
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.94 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
@@ -790,3 +791,364 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/hand
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.623 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+=======
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 20.29 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:22  column:2  ----[0m
+
+  [1mUse of undeclared Var rclone.handlers/reg-event-fx[0m
+
+  [36m18[0m  [36m (fn [db [_ docs]][0m
+  [36m19[0m  [36m   (assoc db :docs docs)))[0m
+  [36m20[0m  [36m[0m
+  [36m21[0m  [36m[0m
+  [33m22[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var rclone.handlers/reg-event-fx[0m
+  [36m23[0m  [36m :handler-with-http[0m
+  [36m24[0m  [36m (fn [{:keys [db]} _][0m
+  [36m25[0m  [36m   {:db   db[0m
+  [36m26[0m  [36m    :http-xhrio {:method          :get[0m
+  [36m27[0m  [36m                 :uri             "/graphql"[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:30  column:36  ----[0m
+
+  [1mNo such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+
+  [36m26[0m  [36m:http-xhrio {:method          :get[0m
+  [36m27[0m  [36m             :uri             "/graphql"[0m
+  [36m28[0m  [36m             :timeout         8000[0m
+  [36m29[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m30[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+  [36m31[0m  [36m             :on-success      [:good-http-result][0m
+  [36m32[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:30  column:36  ----[0m
+
+  [1mUse of undeclared Var ajax/json-response-format[0m
+
+  [36m26[0m  [36m:http-xhrio {:method          :get[0m
+  [36m27[0m  [36m             :uri             "/graphql"[0m
+  [36m28[0m  [36m             :timeout         8000[0m
+  [36m29[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m30[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var ajax/json-response-format[0m
+  [36m31[0m  [36m             :on-success      [:good-http-result][0m
+  [36m32[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.76 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:31  column:2  ----[0m
+
+  [1mUse of undeclared Var rclone.handlers/reg-event-fx[0m
+
+  [36m27[0m  [36m :bad-http-result[0m
+  [36m28[0m  [36m (fn [db [_ result]][0m
+  [36m29[0m  [36m   (js/console.log result)))[0m
+  [36m30[0m  [36m[0m
+  [33m31[0m  [1m(reg-event-fx[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var rclone.handlers/reg-event-fx[0m
+  [36m32[0m  [36m :handler-with-http[0m
+  [36m33[0m  [36m (fn [{:keys [db]} _][0m
+  [36m34[0m  [36m   {:db   db[0m
+  [36m35[0m  [36m    :http-xhrio {:method          :get[0m
+  [36m36[0m  [36m                 :uri             "/graphql"[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:39  column:36  ----[0m
+
+  [1mNo such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+
+  [36m35[0m  [36m:http-xhrio {:method          :get[0m
+  [36m36[0m  [36m             :uri             "/graphql"[0m
+  [36m37[0m  [36m             :timeout         8000[0m
+  [36m38[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m39[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+  [36m40[0m  [36m             :on-success      [:good-http-result][0m
+  [36m41[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:39  column:36  ----[0m
+
+  [1mUse of undeclared Var ajax/json-response-format[0m
+
+  [36m35[0m  [36m:http-xhrio {:method          :get[0m
+  [36m36[0m  [36m             :uri             "/graphql"[0m
+  [36m37[0m  [36m             :timeout         8000[0m
+  [36m38[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m39[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var ajax/json-response-format[0m
+  [36m40[0m  [36m             :on-success      [:good-http-result][0m
+  [36m41[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.059 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs   line:39  column:36  ----[0m
+
+  [1mNo such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+
+  [36m35[0m  [36m:http-xhrio {:method          :get[0m
+  [36m36[0m  [36m             :uri             "/graphql"[0m
+  [36m37[0m  [36m             :timeout         8000[0m
+  [36m38[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m39[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+  [36m40[0m  [36m             :on-success      [:good-http-result][0m
+  [36m41[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs   line:39  column:36  ----[0m
+
+  [1mUse of undeclared Var ajax/json-response-format[0m
+
+  [36m35[0m  [36m:http-xhrio {:method          :get[0m
+  [36m36[0m  [36m             :uri             "/graphql"[0m
+  [36m37[0m  [36m             :timeout         8000[0m
+  [36m38[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m39[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var ajax/json-response-format[0m
+  [36m40[0m  [36m             :on-success      [:good-http-result][0m
+  [36m41[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.114 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:40  column:36  ----[0m
+
+  [1mUse of undeclared Var rclone.ajax/json-response-format[0m
+
+  [36m36[0m  [36m:http-xhrio {:method          :get[0m
+  [36m37[0m  [36m             :uri             "/graphql"[0m
+  [36m38[0m  [36m             :timeout         8000[0m
+  [36m39[0m  [36m             :data "query {user(id=\"100\") {first_name}}"[0m
+  [33m40[0m  [1m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var rclone.ajax/json-response-format[0m
+  [36m41[0m  [36m             :on-success      [:good-http-result][0m
+  [36m42[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.617 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 5.172 seconds.[0m
+[36m----  Could not Analyze  /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+
+  [1mNo such namespace: cljs.ajax, could not locate cljs/ajax.cljs, cljs/ajax.cljc, or JavaScript source providing "cljs.ajax" [0m
+
+[36m----  Analysis Error : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.749 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 19.191 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.99 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.562 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.396 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 11.927 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 16.94 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 9.658 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.41 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.224 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 18.274 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:40  column:27  ----[0m
+
+  [1mNo such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+
+  [36m36[0m  [36m:http-xhrio {:method          :get[0m
+  [36m37[0m  [36m             :uri             "/graphql"[0m
+  [36m38[0m  [36m             :timeout         8000[0m
+  [36m39[0m  [36m             :params {:query-params  {"query"  "{user(id=\"100\") {first_name}}"}}[0m
+  [33m40[0m  [1m             :format (ajax/json-request-format)[0m
+  [0m  [0m  [33m                      ^--- No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+  [36m41[0m  [36m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [36m42[0m  [36m             :on-success      [:good-http-result][0m
+  [36m43[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:40  column:27  ----[0m
+
+  [1mUse of undeclared Var ajax/json-request-format[0m
+
+  [36m36[0m  [36m:http-xhrio {:method          :get[0m
+  [36m37[0m  [36m             :uri             "/graphql"[0m
+  [36m38[0m  [36m             :timeout         8000[0m
+  [36m39[0m  [36m             :params {:query-params  {"query"  "{user(id=\"100\") {first_name}}"}}[0m
+  [33m40[0m  [1m             :format (ajax/json-request-format)[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var ajax/json-request-format[0m
+  [36m41[0m  [36m             :response-format (ajax/json-response-format {:keywords? true})[0m
+  [36m42[0m  [36m             :on-success      [:good-http-result][0m
+  [36m43[0m  [36m             :on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:41  column:36  ----[0m
+
+  [1mNo such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+
+  [36m37[0m  [36m:uri             "/graphql"[0m
+  [36m38[0m  [36m:timeout         8000[0m
+  [36m39[0m  [36m:params {:query-params  {"query"  "{user(id=\"100\") {first_name}}"}}[0m
+  [36m40[0m  [36m:format (ajax/json-request-format)[0m
+  [33m41[0m  [1m:response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                  ^--- No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or JavaScript source providing "ajax"[0m
+  [36m42[0m  [36m:on-success      [:good-http-result][0m
+  [36m43[0m  [36m:on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/handlers.cljs   line:41  column:36  ----[0m
+
+  [1mUse of undeclared Var ajax/json-response-format[0m
+
+  [36m37[0m  [36m:uri             "/graphql"[0m
+  [36m38[0m  [36m:timeout         8000[0m
+  [36m39[0m  [36m:params {:query-params  {"query"  "{user(id=\"100\") {first_name}}"}}[0m
+  [36m40[0m  [36m:format (ajax/json-request-format)[0m
+  [33m41[0m  [1m:response-format (ajax/json-response-format {:keywords? true})[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var ajax/json-response-format[0m
+  [36m42[0m  [36m:on-success      [:good-http-result][0m
+  [36m43[0m  [36m:on-failure      [:bad-http-result]}}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/handlers.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.519 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 9.586 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 10.052 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 22.892 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 22.638 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 21.82 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 25.243 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 17.909 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 13.47 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 15.595 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 12.748 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 16.396 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 14.313 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 16.176 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 16.221 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 17.326 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 20.615 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 16.624 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 21.423 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 19.483 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 18.98 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 21.223 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 15.685 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 21.614 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 20.262 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 18.466 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 10.188 seconds.[0m
+[36m----  Could not Analyze  /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+
+  [1mInvalid :refer, var ajax.core/uri-request-format does not exist [0m
+
+[36m----  Analysis Error : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 9.769 seconds.[0m
+[36m----  Could not Analyze  /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+
+  [1mInvalid :refer, var ajax.core/uri-request-format does not exist [0m
+
+[36m----  Analysis Error : Please see /u:/Clojure/reddit-clone/src/cljs/rclone/handlers.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 23.981 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 23.14 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 22.177 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 22.294 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 19.293 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 33.402 seconds.[0m
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+>>>>>>> 06ecdbd76684ac65f43843f12ec06ff85829db7e

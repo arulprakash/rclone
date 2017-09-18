@@ -55,7 +55,9 @@
     (fn [request]
       (let [vars (variable-map request)
             query (extract-query request)
+            rrr (spit "request.edn" request)
             result (execute comp-schema query vars context)
+            rrq (prn (:errors result))
             status (if (-> result :errors seq)
                      400
                      200)]
@@ -66,6 +68,6 @@
 
 (defn graphql-routes [request]
   (let [uri (:uri request)]
-    (when (= uri "/graphql") 
-      ((graphql-handler (compiled-schema)) request))))
+    (when  (= uri "/graphql") 
+      ((graphql-handler compiled-schema) request))))
 
