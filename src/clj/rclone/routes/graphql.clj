@@ -54,10 +54,12 @@
   (let [context {:cache (atom {})}]
     (fn [request]
       (let [vars (variable-map request)
-            query (extract-query request)
-            rrr (spit "request.edn" request)
+            query (extract-query request) 
             result (execute comp-schema query vars context)
-            rrq (prn (:errors result))
+            temp            (spit "request.edn" (str "\nRequest    : " request
+                                                     "\nVariables  : " vars
+                                                     "\nQuery      : " query
+                                                     "\nResult     : " result))
             status (if (-> result :errors seq)
                      400
                      200)]
