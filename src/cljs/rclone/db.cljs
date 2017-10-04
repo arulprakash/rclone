@@ -1,4 +1,5 @@
 (ns rclone.db)
 
 (def default-db
-  {:page :home})
+  {:page :home
+   :top-posts {}})

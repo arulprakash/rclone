@@ -46,11 +46,10 @@
                 :title       {:type String}
                 :description {:type String}
                 :url         {:type String}
-                :posted_by   {:type :User}
-                :posted_in   {:type :Group}
-                :votes       {:type String}
-                :comments    {:type    (list :Comment)
-                              :resolve :get-comments}}}
+                :posted_by   {:type String}
+                :posted_in   {:type String}
+                :votes       {:type String}                
+                }}
 
   :Comment
   {:implements [:thread]
@@ -76,11 +75,16 @@
  {:user
   {:type    (non-null :User)
    :args    {:id {:type String}}
-   :resolve :get-user}
-  :post
-  {:type    (non-null :Post)
-   :args    {:id {:type String}}
-   :resolve :top-posts}}
+   :resolve :get-user }
+  
+  :top_posts
+  {:type (list :Post)
+   :resolve :top-posts}
+  
+  :comments
+  {:type    (list :Comment)
+   :args {:id {:type String}}
+   :resolve :get-comments}}
 
  :mutations
  {:createuser
