@@ -30,6 +30,7 @@
 (def label (component "Label"))
 (def slist (component "List"))
 (def header (component "Header"))
+(def grid (component "Grid"))
 
 (defn nav-link [uri title page collapsed?]
   (let [selected-page (rf/subscribe [:page])]
@@ -54,13 +55,17 @@
 (defn about-page []
   [:p "Testing Semantic UI"])
 
+(defn top-posts [] 
+  (let [posts @(rf/subscribe [:top-posts])]
+    [:div.container
+     [grid {:columns :one}]]))
 
 (defn home-page []
   [:div.container
    (when-let [docs @(rf/subscribe [:docs])]
      [:div.row>div.col-sm-12
-      [:div {:dangerouslySetInnerHTML
-             {:__html (md->html docs)}}]])])
+      [:div
+       [top-posts]]])])
 
 (def pages
   {:home  #'home-page

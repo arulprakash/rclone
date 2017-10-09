@@ -7,6 +7,11 @@
     (:page db)))
 
 (reg-sub
-  :docs
-  (fn [db _]
-    (:docs db)))
+ :docs
+ (fn [db _]
+   (:docs db)))
+
+(reg-sub
+ :top-posts
+ (fn [db _]
+   (:top_posts db)))

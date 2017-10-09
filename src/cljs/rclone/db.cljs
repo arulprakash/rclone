@@ -2,4 +2,5 @@
 
 (def default-db
   {:page :home
-   :top-posts {}})
+   :top_posts {}
+   :error {}})

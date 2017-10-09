@@ -71,7 +71,7 @@
    :nrepl-port       7002
    :css-dirs         ["resources/public/css"]
    :nrepl-middleware
-   [cemerick.piggieback/wrap-cljs-repl cider.nrepl/cider-middleware]}
+   [cemerick.piggieback/wrap-cljs-repl]}
 
 
   :profiles
@@ -106,14 +106,15 @@
                                     [clj-webdriver/clj-webdriver "0.7.2"]
                                     [com.cemerick/piggieback "0.2.2"]
                                     [doo "0.1.7"]
-                                    [figwheel-sidecar "0.5.13"]
+                                    [figwheel-sidecar "0.5.14"]
                                     [org.apache.httpcomponents/httpcore "4.4"]
                                     [org.clojure/core.cache "0.6.3"]
                                     [midje "1.8.3"]
+                                    [re-frisk "0.5.0"]
                                     [org.seleniumhq.selenium/selenium-server "2.48.2" :exclusions [org.bouncycastle/bcprov-jdk15on org.bouncycastle/bcpkix-jdk15on]]]
                    :plugins        [[com.jakemccrary/lein-test-refresh "0.19.0"]
                                     [lein-doo "0.1.7"]
-                                    [lein-figwheel "0.5.10"]
+                                    [lein-figwheel "0.5.14"]
                                     [org.clojure/clojurescript "1.9.562"]]
                    :cljsbuild
                    {:builds
@@ -126,6 +127,7 @@
                        :output-to     "target/cljsbuild/public/js/app.js"
                        :output-dir    "target/cljsbuild/public/js/out"
                        :source-map    true
+                       :preloads [re-frisk.preload]
                        :optimizations :none
                        :pretty-print  true}}}}
 

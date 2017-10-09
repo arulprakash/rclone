@@ -1551,3 +1551,140 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/hand
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.946 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.532 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.36 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.797 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.111 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.565 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.434 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.171 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.192 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.667 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.501 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.398 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.524 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.511 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.602 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs   line:66  column:1  ----[0m
+
+  [1mUnsupported binding key: :div.container[0m
+
+  [36m64[0m  [36m             {:__html (md->html docs)}}]])])[0m
+  [36m65[0m  [36m[0m
+  [33m66[0m  [1m(defn top-posts[0m
+  [0m  [0m  [33m^--- Unsupported binding key: :div.container[0m
+  [36m67[0m  [36m  [:div.container[0m
+  [36m68[0m  [36m   [grid {:columns :one}]])[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.53 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs   line:66  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m64[0m  [36m             {:__html (md->html docs)}}]])])[0m
+  [36m65[0m  [36m[0m
+  [33m66[0m  [1m(defn top-posts[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m67[0m  [36m  (let [posts @(rf/subscribe [:top-posts])])[0m
+  [36m68[0m  [36m  [:div.container[0m
+  [36m69[0m  [36m   [grid {:columns :one}]])[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.589 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs   line:66  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m64[0m  [36m             {:__html (md->html docs)}}]])])[0m
+  [36m65[0m  [36m[0m
+  [33m66[0m  [1m(defn top-posts[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m67[0m  [36m  (let [posts @(rf/subscribe [:top-posts])])[0m
+  [36m68[0m  [36m  [:div.container[0m
+  [36m69[0m  [36m   [grid {:columns :one}]])[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.528 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs   line:66  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m64[0m  [36m             {:__html (md->html docs)}}]])])[0m
+  [36m65[0m  [36m[0m
+  [33m66[0m  [1m(defn top-posts[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m67[0m  [36m  (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m68[0m  [36m    [:div.container[0m
+  [36m69[0m  [36m     [grid {:columns :one}]]))[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.863 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:64  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/top-posts[0m
+
+  [36m60[0m  [36m  [:div.container[0m
+  [36m61[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+  [36m62[0m  [36m     [:div.row>div.col-sm-12[0m
+  [36m63[0m  [36m      [:div[0m
+  [33m64[0m  [1m       [top-posts]]])])[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/top-posts[0m
+  [36m65[0m  [36m[0m
+  [36m66[0m  [36m(defn top-posts [] [0m
+  [36m67[0m  [36m  (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m68[0m  [36m    [:div.container[0m
+  [36m69[0m  [36m     [grid {:columns :one}]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.674 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.952 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
