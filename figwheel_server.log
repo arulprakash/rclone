@@ -1688,3 +1688,158 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.952 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.344 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.008 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.034 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.712 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.251 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.479 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.494 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.458 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.369 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.485 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.536 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.008 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:63  column:31  ----[0m
+
+  [1mUse of undeclared Var rclone.core/_[0m
+
+  [36m59[0m  [36m(defn top-posts [] [0m
+  [36m60[0m  [36m  (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m61[0m  [36m    [:> container[0m
+  [36m62[0m  [36m     (apply #([:> segment {:basic true}[0m
+  [33m63[0m  [1m               [:p (get-in % [_ :title])]]) posts)]))[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var rclone.core/_[0m
+  [36m64[0m  [36m[0m
+  [36m65[0m  [36m(defn home-page [][0m
+  [36m66[0m  [36m  [:div.container[0m
+  [36m67[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+  [36m68[0m  [36m     [:div.row>div.col-sm-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.013 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.592 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.713 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.653 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.548 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs   line:60  column:3  ----[0m
+
+  [1mwhen-let requires exactly 2 forms in binding vector in rclone.core:60[0m
+
+  [36m59[0m  [36m(defn top-posts [] [0m
+  [33m60[0m  [1m  (when-let [posts @(rf/subscribe [:top-posts])[0m
+  [0m  [0m  [33m  ^--- when-let requires exactly 2 forms in binding vector in rclone.core:60[0m
+  [36m61[0m  [36m             c (js/console.log posts)][0m
+  [36m62[0m  [36m    [:> container[0m
+  [36m63[0m  [36m     (apply #([:> segment {:basic true}[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.403 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.439 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.401 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.665 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.374 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.45 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.187 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:62  column:6  ----[0m
+
+  [1mWrong number of args (2) passed to cljs.core/not[0m
+
+  [36m59[0m  [36m(defn top-posts [][0m
+  [36m60[0m  [36m  [:> container [0m
+  [36m61[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+  [33m62[0m  [1m     (not (empty? posts) [0m
+  [0m  [0m  [33m     ^--- Wrong number of args (2) passed to cljs.core/not[0m
+  [36m63[0m  [36m          (apply #([:> segment {:basic true}[0m
+  [36m64[0m  [36m                    [:p %]]) posts)))])[0m
+  [36m65[0m  [36m[0m
+  [36m66[0m  [36m(defn home-page [][0m
+  [36m67[0m  [36m  [:div.container[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.364 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.124 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.244 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.129 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.156 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.197 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.227 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.084 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.308 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.847 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.129 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js

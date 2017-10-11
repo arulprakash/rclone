@@ -31,6 +31,13 @@
 (def slist (component "List"))
 (def header (component "Header"))
 (def grid (component "Grid"))
+(def gridc (component "Grid" "Column"))
+
+(def card (component "Card"))
+(def cardhdr (component "Card" "Header"))
+(def cardtxt (component "Card" "Description"))
+(def cardcnt (component "Card" "Content"))
+(def cardgrp (component "Card" "Group"))
 
 (defn nav-link [uri title page collapsed?]
   (let [selected-page (rf/subscribe [:page])]
@@ -55,10 +62,15 @@
 (defn about-page []
   [:p "Testing Semantic UI"])
 
-(defn top-posts [] 
-  (let [posts @(rf/subscribe [:top-posts])]
-    [:div.container
-     [grid {:columns :one}]]))
+(defn top-posts []
+  [:> container 
+   (let [posts @(rf/subscribe [:top-posts])]
+     (when (not-empty posts) 
+       (map #(identity [:> card {:key (:id %)}
+                        [:> cardcnt
+                         [:> cardhdr
+                          [:a {:href (:url %)} (:title %)]]
+                         [:> cardtxt (:description %)]]]) posts)))])
 
 (defn home-page []
   [:div.container
@@ -81,6 +93,7 @@
 (secretary/set-config! :prefix "#")
 
 (secretary/defroute "/" []
+  (rf/dispatch [:query-server [:top_posts [:id :created :changed :title :description :url :posted_by :posted_in :votes]]]) 
   (rf/dispatch [:set-active-page :home]))
 
 (secretary/defroute "/about" []
