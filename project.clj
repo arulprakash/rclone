@@ -24,7 +24,6 @@
                  [org.clojure/tools.cli "0.3.5"]
                  [org.clojure/tools.logging "0.4.0"]
                  [org.postgresql/postgresql "42.1.3"]
-                 [org.webjars.npm/semantic-ui-css "2.2.12"]
                  [org.webjars.bower/tether "1.4.0"] 
                  [org.webjars/font-awesome "4.7.0"]
                  [org.webjars/webjars-locator-jboss-vfs "0.1.0"]

@@ -75,6 +75,18 @@
       {:status "Deleted"}
       {:status "Not Deleted"})))
 
+(defn create-post
+  [context arguments value]
+  (let [{:keys [id title url description created posted_by posted_in]} arguments
+        admin false
+        created (local/local-now)]
+    (db/create-user! {:id         id
+                      :title title
+                      :url url
+                      :description description
+                      :created created
+                      :posted_by posted_by
+                      :posted_in posted_in})))
 
 (defn get-top-hosts
   [context arguments value]
