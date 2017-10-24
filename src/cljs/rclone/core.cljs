@@ -24,6 +24,7 @@
     (goog.object/get semantic-ui k)))
 
 (def container (component "Container"))
+(def image (component "Image"))
 (def segment (component "Segment"))
 (def button (component "Button"))
 (def input (component "Input"))
@@ -32,6 +33,7 @@
 (def header (component "Header"))
 (def grid (component "Grid"))
 (def gridc (component "Grid" "Column"))
+(def gridr (component "Grid" "Row"))
 
 (def card (component "Card"))
 (def cardhdr (component "Card" "Header"))
@@ -72,20 +74,44 @@
                           [:a {:href (:url %)} (:title %)]]
                          [:> cardtxt (:description %)]]]) posts)))])
 
+(defn top-grids []
+  [:> container
+   (let [posts @(rf/subscribe [:top-posts])]
+     (when (not-empty posts)
+       [:> grid {:rows (count posts)
+                 :columns 1}
+        (map #(identity [:> gridr {:key (:id %)
+                                   :columns 2}
+                         [:> gridc {:width 1}                          
+                          [:> gridr
+                           [:> button {:icon "chevron up"
+                                       :size "mini"
+                                       :on-click
+                                       (fn []
+                                         (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]
+                          [:> gridr
+                           [:> button {:icon "chevron down"
+                                       :size "mini"
+                                       :on-click (fn [] (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]]
+                         [:> gridc {:width 7}                        
+                          [:> gridr {:key :tle}
+                           [:> gridc [:a {:href (:url %)} (:title %)]]]
+                          [:> gridr {:key :txt}
+                           [:> gridc (:description %)]]]]) posts)]))])
+
 (defn home-page []
   [:div.container
    (when-let [docs @(rf/subscribe [:docs])]
-     [:div.row>div.col-sm-12
+     [:div.row
       [:div
-       [top-posts]]])])
+       [top-grids]]])])
 
 (def pages
   {:home  #'home-page
    :about #'about-page})
 
 (defn page []
-  [:div
-   [navbar]
+  [:div 
    [(pages @(rf/subscribe [:page]))]])
 
 ;; -------------------------

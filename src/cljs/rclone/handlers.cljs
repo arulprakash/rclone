@@ -25,9 +25,19 @@
     (assoc db :page page)))
 
 (reg-event-db
-  :set-docs
-  (fn [db [_ docs]]
-    (assoc db :docs docs)))
+ :set-docs
+ (fn [db [_ docs]]
+   (assoc db :docs docs)))
+
+(reg-event-db
+ :assoc-db
+ (fn [db [_ vec val]]
+   (assoc-in db vec val)))
+
+(reg-event-db
+ :update-db
+ (fn [db [_ vec f]]
+   (update-in db vec f)))
 
 (reg-event-db
  :good-http-result

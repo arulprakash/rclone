@@ -37,7 +37,9 @@
   query is still a plain string."
   [request]
   (case (:request-method request)
-    :get (get-in request [:query-params "query"])
+    :get (if-let [query (get-in request [:query-params "query"])]
+           query
+           (str "mutation " (get-in request [:query-params "mutation"])))
     ;; Additional error handling because the clojure ring server still
     ;; hasn't handed over the values of the request to lacinia GraphQL
     :post (try (-> request
@@ -55,11 +57,11 @@
     (fn [request]
       (let [vars (variable-map request)
             query (extract-query request) 
-            result (execute comp-schema query vars context)
-            temp            (spit "request.edn" (str "\nRequest    : " request
-                                                     "\nVariables  : " vars
-                                                     "\nQuery      : " query
-                                                     "\nResult     : " result))
+            result (execute comp-schema query vars context) 
+            temp1            (spit "request.edn" (str "\nRequest    : " request
+                                                      "\nVariables  : " vars
+                                                      "\nQuery      : " query
+                                                      "\nResult     : " result))
             status (if (-> result :errors seq)
                      400
                      200)]

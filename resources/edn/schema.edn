@@ -111,4 +111,12 @@
              :admin      {:type (non-null Boolean)}
              :is_active  {:type (non-null Boolean)}
              :changed    {:type (non-null String)}}
-   :resolve :delete-user}}}
+   :resolve :delete-user}
+  :upvote
+  {:type :Post
+   :args {:id {:type (non-null String)}}
+   :resolve :upvote-post}
+  :downvote
+  {:type :Post
+   :args {:id {:type (non-null String)}}
+   :resolve :downvote-post}}}

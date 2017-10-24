@@ -52,10 +52,16 @@ INSERT INTO posts
 (id, title, url, description, created, posted_by, posted_in)
 VALUES (:id, :title, :url, :description, :created, :posted_by, :posted_in)
 
--- :name update-post! :! :1
--- :doc update an existing post
+-- :name upvote-post! :! :1
+-- :doc upvote an existing post
 UPDATE posts
-SET description = :description, rules = :rules, changed = :changed
+SET votes = votes + 1
+WHERE id = :id
+
+-- :name downvote-post! :! :1
+-- :doc downvote an existing post
+UPDATE posts
+SET votes = votes - 1
 WHERE id = :id
 
 -- :name get-user-posts :? :*

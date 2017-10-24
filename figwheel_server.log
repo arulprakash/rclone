@@ -1843,3 +1843,442 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.129 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:35  column:1  ----[0m
+
+  [1mgridc at line 34 is being replaced[0m
+
+  [36m31[0m  [36m(def slist (component "List"))[0m
+  [36m32[0m  [36m(def header (component "Header"))[0m
+  [36m33[0m  [36m(def grid (component "Grid"))[0m
+  [36m34[0m  [36m(def gridc (component "Grid" "Column"))[0m
+  [33m35[0m  [1m(def gridc (component "Grid" "Row"))[0m
+  [0m  [0m  [33m^--- gridc at line 34 is being replaced[0m
+  [36m36[0m  [36m[0m
+  [36m37[0m  [36m(def card (component "Card"))[0m
+  [36m38[0m  [36m(def cardhdr (component "Card" "Header"))[0m
+  [36m39[0m  [36m(def cardtxt (component "Card" "Description"))[0m
+  [36m40[0m  [36m(def cardcnt (component "Card" "Content"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.217 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:35  column:1  ----[0m
+
+  [1mgridc at line 34 is being replaced[0m
+
+  [36m31[0m  [36m(def slist (component "List"))[0m
+  [36m32[0m  [36m(def header (component "Header"))[0m
+  [36m33[0m  [36m(def grid (component "Grid"))[0m
+  [36m34[0m  [36m(def gridc (component "Grid" "Column"))[0m
+  [33m35[0m  [1m(def gridc (component "Grid" "Row"))[0m
+  [0m  [0m  [33m^--- gridc at line 34 is being replaced[0m
+  [36m36[0m  [36m[0m
+  [36m37[0m  [36m(def card (component "Card"))[0m
+  [36m38[0m  [36m(def cardhdr (component "Card" "Header"))[0m
+  [36m39[0m  [36m(def cardtxt (component "Card" "Description"))[0m
+  [36m40[0m  [36m(def cardcnt (component "Card" "Content"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:81  column:28  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m77[0m  [36m[:> container[0m
+  [36m78[0m  [36m (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m   (when (not-empty posts)[0m
+  [36m80[0m  [36m     [:> grid {:columns (count posts)}][0m
+  [33m81[0m  [1m     (map #(identity [:> gridr {:key (:id %)}[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m82[0m  [36m                      [:> gridr {:key :title}[0m
+  [36m83[0m  [36m                       [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [36m84[0m  [36m                      [:> gridr {:key :title}[0m
+  [36m85[0m  [36m                       [:> gridc (:description %)]]]) posts)))])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:82  column:29  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m78[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m     (when (not-empty posts)[0m
+  [36m80[0m  [36m       [:> grid {:columns (count posts)}][0m
+  [36m81[0m  [36m       (map #(identity [:> gridr {:key (:id %)}[0m
+  [33m82[0m  [1m                        [:> gridr {:key :title}[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m83[0m  [36m                         [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [36m84[0m  [36m                        [:> gridr {:key :title}[0m
+  [36m85[0m  [36m                         [:> gridc (:description %)]]]) posts)))])[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:84  column:29  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m80[0m  [36m       [:> grid {:columns (count posts)}][0m
+  [36m81[0m  [36m       (map #(identity [:> gridr {:key (:id %)}[0m
+  [36m82[0m  [36m                        [:> gridr {:key :title}[0m
+  [36m83[0m  [36m                         [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [33m84[0m  [1m                        [:> gridr {:key :title}[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m85[0m  [36m                         [:> gridc (:description %)]]]) posts)))])[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn home-page [][0m
+  [36m88[0m  [36m  [:div.container[0m
+  [36m89[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.68 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:35  column:1  ----[0m
+
+  [1mgridc at line 34 is being replaced[0m
+
+  [36m31[0m  [36m(def slist (component "List"))[0m
+  [36m32[0m  [36m(def header (component "Header"))[0m
+  [36m33[0m  [36m(def grid (component "Grid"))[0m
+  [36m34[0m  [36m(def gridc (component "Grid" "Column"))[0m
+  [33m35[0m  [1m(def gridc (component "Grid" "Row"))[0m
+  [0m  [0m  [33m^--- gridc at line 34 is being replaced[0m
+  [36m36[0m  [36m[0m
+  [36m37[0m  [36m(def card (component "Card"))[0m
+  [36m38[0m  [36m(def cardhdr (component "Card" "Header"))[0m
+  [36m39[0m  [36m(def cardtxt (component "Card" "Description"))[0m
+  [36m40[0m  [36m(def cardcnt (component "Card" "Content"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:81  column:28  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m77[0m  [36m[:> container[0m
+  [36m78[0m  [36m (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m   (when (not-empty posts)[0m
+  [36m80[0m  [36m     [:> grid {:columns (count posts)}][0m
+  [33m81[0m  [1m     (map #(identity [:> gridr {:key (:id %)}[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m82[0m  [36m                      [:> gridr {:key :title}[0m
+  [36m83[0m  [36m                       [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [36m84[0m  [36m                      [:> gridr {:key :description}[0m
+  [36m85[0m  [36m                       [:> gridc (:description %)]]]) posts)))])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:82  column:29  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m78[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m     (when (not-empty posts)[0m
+  [36m80[0m  [36m       [:> grid {:columns (count posts)}][0m
+  [36m81[0m  [36m       (map #(identity [:> gridr {:key (:id %)}[0m
+  [33m82[0m  [1m                        [:> gridr {:key :title}[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m83[0m  [36m                         [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [36m84[0m  [36m                        [:> gridr {:key :description}[0m
+  [36m85[0m  [36m                         [:> gridc (:description %)]]]) posts)))])[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:84  column:29  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m80[0m  [36m       [:> grid {:columns (count posts)}][0m
+  [36m81[0m  [36m       (map #(identity [:> gridr {:key (:id %)}[0m
+  [36m82[0m  [36m                        [:> gridr {:key :title}[0m
+  [36m83[0m  [36m                         [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [33m84[0m  [1m                        [:> gridr {:key :description}[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m85[0m  [36m                         [:> gridc (:description %)]]]) posts)))])[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn home-page [][0m
+  [36m88[0m  [36m  [:div.container[0m
+  [36m89[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.483 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:35  column:1  ----[0m
+
+  [1mgridc at line 34 is being replaced[0m
+
+  [36m31[0m  [36m(def slist (component "List"))[0m
+  [36m32[0m  [36m(def header (component "Header"))[0m
+  [36m33[0m  [36m(def grid (component "Grid"))[0m
+  [36m34[0m  [36m(def gridc (component "Grid" "Column"))[0m
+  [33m35[0m  [1m(def gridc (component "Grid" "Row"))[0m
+  [0m  [0m  [33m^--- gridc at line 34 is being replaced[0m
+  [36m36[0m  [36m[0m
+  [36m37[0m  [36m(def card (component "Card"))[0m
+  [36m38[0m  [36m(def cardhdr (component "Card" "Header"))[0m
+  [36m39[0m  [36m(def cardtxt (component "Card" "Description"))[0m
+  [36m40[0m  [36m(def cardcnt (component "Card" "Content"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:81  column:28  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m77[0m  [36m[:> container[0m
+  [36m78[0m  [36m (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m   (when (not-empty posts)[0m
+  [36m80[0m  [36m     [:> grid {:columns (count posts)}][0m
+  [33m81[0m  [1m     (map #(identity [:> gridr {:key (:id %)}[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m82[0m  [36m                      [:> gridr {:key :tle}[0m
+  [36m83[0m  [36m                       [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [36m84[0m  [36m                      [:> gridr {:key :txt}[0m
+  [36m85[0m  [36m                       [:> gridc (:description %)]]]) posts)))])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:82  column:29  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m78[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m     (when (not-empty posts)[0m
+  [36m80[0m  [36m       [:> grid {:columns (count posts)}][0m
+  [36m81[0m  [36m       (map #(identity [:> gridr {:key (:id %)}[0m
+  [33m82[0m  [1m                        [:> gridr {:key :tle}[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m83[0m  [36m                         [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [36m84[0m  [36m                        [:> gridr {:key :txt}[0m
+  [36m85[0m  [36m                         [:> gridc (:description %)]]]) posts)))])[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn home-page [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:84  column:29  ----[0m
+
+  [1mUse of undeclared Var rclone.core/gridr[0m
+
+  [36m80[0m  [36m       [:> grid {:columns (count posts)}][0m
+  [36m81[0m  [36m       (map #(identity [:> gridr {:key (:id %)}[0m
+  [36m82[0m  [36m                        [:> gridr {:key :tle}[0m
+  [36m83[0m  [36m                         [:> gridc [:a {:href (:url %)} (:title %)]]][0m
+  [33m84[0m  [1m                        [:> gridr {:key :txt}[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var rclone.core/gridr[0m
+  [36m85[0m  [36m                         [:> gridc (:description %)]]]) posts)))])[0m
+  [36m86[0m  [36m[0m
+  [36m87[0m  [36m(defn home-page [][0m
+  [36m88[0m  [36m  [:div.container[0m
+  [36m89[0m  [36m   (when-let [docs @(rf/subscribe [:docs])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.478 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.406 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.301 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.363 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.398 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.449 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.31 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.421 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.168 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.232 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.213 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.12 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.27 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.777 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.351 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.441 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.377 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.441 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.418 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.26 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.599 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.256 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.486 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.25 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.4 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.109 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.227 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.334 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:80  column:12  ----[0m
+
+  [1mUse of undeclared Var rclone.core/grid#celled[0m
+
+  [36m76[0m  [36m(defn top-grids [][0m
+  [36m77[0m  [36m  [:> container[0m
+  [36m78[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+  [36m79[0m  [36m     (when (not-empty posts)[0m
+  [33m80[0m  [1m       [:> grid#celled {:rows (count posts)[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var rclone.core/grid#celled[0m
+  [36m81[0m  [36m                        :columns 1}][0m
+  [36m82[0m  [36m       (map #(identity [:> gridr {:key (:id %)[0m
+  [36m83[0m  [36m                                  :columns 2}[0m
+  [36m84[0m  [36m                        [:> gridc                          [0m
+  [36m85[0m  [36m                         [:> gridr "Up"][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.139 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.181 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.328 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.715 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.901 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.545 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.828 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.63 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.823 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.579 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.448 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.907 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.476 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.245 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.885 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.494 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.237 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.505 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/core.cljs   line:89  column:52  ----[0m
+
+  [1mNested #()s are not allowed[0m
+
+  [36m87[0m  [36m [:> button {:icon "chevron up"[0m
+  [36m88[0m  [36m             :size "mini"[0m
+  [33m89[0m  [1m             :on-click #(rf/dispatch [:mutate-server [:upvote [:id (:id %)]]])}]][0m
+  [0m  [0m  [33m                         ^--- Nested #()s are not allowed[0m
+  [36m90[0m  [36m[:> gridr[0m
+  [36m91[0m  [36m [:> button {:icon "chevron down"[0m
+  [36m92[0m  [36m             :size "mini"[0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.249 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.372 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.403 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.923 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.865 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.277 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.203 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.42 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.336 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.027 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.146 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js

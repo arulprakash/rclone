@@ -1,6 +1,6 @@
 (ns rclone.routes.home
   (:require [rclone.layout :as layout]
-            [rclone.db.core :as db] 
+            [rclone.db.core :as db]
             [compojure.core :refer [defroutes GET]]
             [ring.util.http-response :as response]
             [clojure.java.io :as io]
@@ -8,7 +8,8 @@
             [com.walmartlabs.lacinia.util :as util]
             [com.walmartlabs.lacinia :refer [execute]]
             [clojure.edn :as edn]
-            [clj-time.local :as local]            ))
+            [clj-time.local :as local]))
+
 (defn home-page []
   (layout/render "home.html"))
 
@@ -93,6 +94,21 @@
   (let [{:keys [id]} arguments]
     (db/get-top-posts)))
 
+(defn upvote-posts
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/upvote-post! {:id id})))
+
+(defn downvote-posts
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/downvote-post! {:id id})))
+
+(defn execute-crud
+  [context arguments value]
+  (let [{:keys [id]} arguments]
+    (db/get-top-posts)))
+
 (defn compile-schema
   []
   (-> (io/resource "edn/schema.edn")
@@ -105,14 +121,16 @@
                               :get-user-subs     get-user-subs
                               :get-comments      get-comments
                               :delete-user       delete-user
-                              :top-posts         get-top-hosts})
+                              :top-posts         execute-crud
+                              :upvote-post upvote-posts
+                              :downvote-post downvote-posts})
       schema/compile))
 
 (def compiled-schema (compile-schema))
 
 (defroutes home-routes
   (GET "/" []
-       (home-page)) 
+       (home-page))
   (GET "/docs" []
        (-> (response/ok (-> "docs/docs.md" io/resource slurp))
            (response/header "Content-Type" "text/plain; charset=utf-8"))))
