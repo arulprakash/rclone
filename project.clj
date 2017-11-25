@@ -59,7 +59,8 @@
             [lein-cljsbuild "1.1.5"]
             [lein-immutant "2.1.0"]
             [lein-auto "0.1.2"]
-            [lein-kibit "0.1.2"]]
+            [lein-kibit "0.1.2"]
+            [lein-environ "1.0.0"]]
   :cucumber-feature-paths ["test/clj/features"]
 
 
@@ -153,4 +154,5 @@
 
                    }
    :profiles/dev  {}
-   :profiles/test {}})
+   :profiles/test {}}
+  :env {:squiggly {:checkers [:eastwood :kibit]}})
