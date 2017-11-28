@@ -41,7 +41,8 @@
                  [cljs-react-material-ui "0.2.48"]
                  [cljsjs/semantic-ui-react "0.73.0-0"]
                  [vincit/venia "0.2.3"]
-                 ]
+                 [clojure-future-spec "1.9.0-beta4"]
+                 [org.clojure/test.check "0.9.0"]]
 
   :min-lein-version "2.0.0"
 

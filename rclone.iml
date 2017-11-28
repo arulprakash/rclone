@@ -47,7 +47,7 @@
     <orderEntry type="library" name="Leiningen: cljsjs/react:15.6.1-1" level="project" />
     <orderEntry type="library" name="Leiningen: cljsjs/semantic-ui-react:0.73.0-0" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
-    <orderEntry type="library" name="Leiningen: clojure-future-spec:1.9.0-alpha17" level="project" />
+    <orderEntry type="library" name="Leiningen: clojure-future-spec:1.9.0-beta4" level="project" />
     <orderEntry type="library" name="Leiningen: clojurewerkz/scrypt:1.2.0" level="project" />
     <orderEntry type="library" name="Leiningen: clout:2.1.2" level="project" />
     <orderEntry type="library" name="Leiningen: colorize:0.1.1" level="project" />
