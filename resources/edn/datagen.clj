@@ -7,4 +7,4 @@
   ([s l1 l2]
    (contains? (set (range l1 (inc l2))) (count s))))
 
-(s/def ::l30 (has-length?))
+(s/def ::l30 (has-length? % ))

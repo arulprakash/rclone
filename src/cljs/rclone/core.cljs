@@ -41,6 +41,35 @@
 (def cardcnt (component "Card" "Content"))
 (def cardgrp (component "Card" "Group"))
 
+(def sidebar (component "Sidebar"))
+(def sbpushable (component "Sidebar" "Pushable"))
+(def sbpusher (component "Sidebar" "Pusher"))
+(def menu (component "Menu"))
+(def menuitm (component "Menu" "Item"))
+(def menumenu (component "Menu" "Menu"))
+
+(def modal (component "Modal"))
+(def modalhdr (component "Modal" "Header"))
+(def modalcnt (component "Modal" "Content"))
+(def modalact (component "Modal" "Actions"))
+
+(def form (component "Form"))
+(def formbtn (component "Form" "Button"))
+(def formfld (component "Form" "Field"))
+
+(def icon (component "Icon"))
+
+(defn login-form
+  []
+  [:> form
+   [:> formfld
+    [:label "Username"]
+    [:input]]
+   [:> formfld
+    [:label "Password"]
+    [:input {:type "password"}]]
+   [:> formbtn "Login"]])
+
 (defn nav-link [uri title page collapsed?]
   (let [selected-page (rf/subscribe [:page])]
     [:li.nav-item
@@ -73,6 +102,39 @@
                          [:> cardhdr
                           [:a {:href (:url %)} (:title %)]]
                          [:> cardtxt (:description %)]]]) posts)))])
+(defn login-modal
+  []
+  (let [show-login @(rf/subscribe [:get-db :show-login])]
+    [:> modal {:size "small"
+               :open show-login
+               :on-close #(rf/dispatch [:flip-login])}
+     [:> modalhdr "Login"]
+     [:> modalcnt
+      [login-form]]]))
+
+(defn app-sidebar
+  []
+  (let [signed-in? @(rf/subscribe [:get-db :signed-in])]
+    [:> sidebar {:as menu
+                 :animation "push"
+                 :width "very thin"
+                 :visible true
+                 :direction "top"
+                 :icon "labeled"
+                 :inverted true}
+     [:> menumenu {:position "right"}
+      (if  (not signed-in?)
+        [:> menuitm {:name "signin"
+                     :on-click #(rf/dispatch [:flip-login])}
+         "Sign In"])
+      (when signed-in?
+        [:> menuitm {:name "subreddits"}
+         "My Subreddits"]
+        [:> menuitm {:name "preferences"}
+         "Preferences"]
+        [:> menuitm {:name "logout"}
+         "Logout"])]]))
+
 
 (defn top-grids []
   [:> container
@@ -104,7 +166,9 @@
    (when-let [docs @(rf/subscribe [:docs])]
      [:div.row
       [:div
-       [top-grids]]])])
+       [app-sidebar]
+       [top-grids]
+       [login-modal]]])])
 
 (def pages
   {:home  #'home-page

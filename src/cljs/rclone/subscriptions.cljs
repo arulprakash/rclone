@@ -15,3 +15,8 @@
  :top-posts
  (fn [db _]
    (:top_posts db)))
+
+(reg-sub
+ :get-db
+ (fn [db [_ v]]
+   (get db v)))

@@ -2282,3 +2282,954 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/hand
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.146 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 4.198 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:79  column:7  ----[0m
+
+  [1mUse of undeclared Var rclone.core/sidebar[0m
+
+  [36m75[0m  [36m                         [:> cardtxt (:description %)]]]) posts)))])[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn app-sidebar[0m
+  [36m78[0m  [36m  [][0m
+  [33m79[0m  [1m  [:> sidebar {:as menu[0m
+  [0m  [0m  [33m      ^--- Use of undeclared Var rclone.core/sidebar[0m
+  [36m80[0m  [36m               :animation "push"[0m
+  [36m81[0m  [36m               :width "thin"[0m
+  [36m82[0m  [36m               :visible true[0m
+  [36m83[0m  [36m               :vertical true[0m
+  [36m84[0m  [36m               :icon "labeled"[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:79  column:20  ----[0m
+
+  [1mUse of undeclared Var rclone.core/menu[0m
+
+  [36m75[0m  [36m                         [:> cardtxt (:description %)]]]) posts)))])[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn app-sidebar[0m
+  [36m78[0m  [36m  [][0m
+  [33m79[0m  [1m  [:> sidebar {:as menu[0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var rclone.core/menu[0m
+  [36m80[0m  [36m               :animation "push"[0m
+  [36m81[0m  [36m               :width "thin"[0m
+  [36m82[0m  [36m               :visible true[0m
+  [36m83[0m  [36m               :vertical true[0m
+  [36m84[0m  [36m               :icon "labeled"[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:86  column:8  ----[0m
+
+  [1mUse of undeclared Var rclone.core/menuitm[0m
+
+  [36m82[0m  [36m            :visible true[0m
+  [36m83[0m  [36m            :vertical true[0m
+  [36m84[0m  [36m            :icon "labeled"[0m
+  [36m85[0m  [36m            :inverted true}[0m
+  [33m86[0m  [1m[:> menuitm {:name "home"}[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var rclone.core/menuitm[0m
+  [36m87[0m  [36m [:> icon {:name "home"}]][0m
+  [36m88[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m89[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m90[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m [:> icon {:name "address book"}]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:87  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m83[0m  [36m            :vertical true[0m
+  [36m84[0m  [36m            :icon "labeled"[0m
+  [36m85[0m  [36m            :inverted true}[0m
+  [36m86[0m  [36m[:> menuitm {:name "home"}[0m
+  [33m87[0m  [1m [:> icon {:name "home"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m88[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m89[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m90[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m92[0m  [36m[:> menuitm {:name "History"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:88  column:8  ----[0m
+
+  [1mUse of undeclared Var rclone.core/menuitm[0m
+
+  [36m84[0m  [36m            :icon "labeled"[0m
+  [36m85[0m  [36m            :inverted true}[0m
+  [36m86[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m87[0m  [36m [:> icon {:name "home"}]][0m
+  [33m88[0m  [1m[:> menuitm {:name "Profile"}[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var rclone.core/menuitm[0m
+  [36m89[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m90[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m92[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m93[0m  [36m [:> icon {:name "history"}]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:89  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m85[0m  [36m            :inverted true}[0m
+  [36m86[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m87[0m  [36m [:> icon {:name "home"}]][0m
+  [36m88[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [33m89[0m  [1m [:> icon {:name "id card"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m90[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m92[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m93[0m  [36m [:> icon {:name "history"}]][0m
+  [36m94[0m  [36m[:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:90  column:8  ----[0m
+
+  [1mUse of undeclared Var rclone.core/menuitm[0m
+
+  [36m86[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m87[0m  [36m [:> icon {:name "home"}]][0m
+  [36m88[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m89[0m  [36m [:> icon {:name "id card"}]][0m
+  [33m90[0m  [1m[:> menuitm {:name "Online Contacts"}[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var rclone.core/menuitm[0m
+  [36m91[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m92[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m93[0m  [36m [:> icon {:name "history"}]][0m
+  [36m94[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m95[0m  [36m [:> icon {:name "sign out"[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:91  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m87[0m  [36m [:> icon {:name "home"}]][0m
+  [36m88[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m89[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m90[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [33m91[0m  [1m [:> icon {:name "address book"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m92[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m93[0m  [36m [:> icon {:name "history"}]][0m
+  [36m94[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m95[0m  [36m [:> icon {:name "sign out"[0m
+  [36m96[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:92  column:8  ----[0m
+
+  [1mUse of undeclared Var rclone.core/menuitm[0m
+
+  [36m88[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m89[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m90[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m [:> icon {:name "address book"}]][0m
+  [33m92[0m  [1m[:> menuitm {:name "History"}[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var rclone.core/menuitm[0m
+  [36m93[0m  [36m [:> icon {:name "history"}]][0m
+  [36m94[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m95[0m  [36m [:> icon {:name "sign out"[0m
+  [36m96[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:93  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m89[0m  [36m    [:> icon {:name "id card"}]][0m
+  [36m90[0m  [36m   [:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m92[0m  [36m   [:> menuitm {:name "History"}[0m
+  [33m93[0m  [1m    [:> icon {:name "history"}]][0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m94[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [36m95[0m  [36m    [:> icon {:name "sign out"[0m
+  [36m96[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m97[0m  [36m[0m
+  [36m98[0m  [36m(defn user-profile[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:94  column:8  ----[0m
+
+  [1mUse of undeclared Var rclone.core/menuitm[0m
+
+  [36m90[0m  [36m   [:> menuitm {:name "Online Contacts"}[0m
+  [36m91[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m92[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m93[0m  [36m    [:> icon {:name "history"}]][0m
+  [33m94[0m  [1m   [:> menuitm {:name "logout"}[0m
+  [0m  [0m  [33m       ^--- Use of undeclared Var rclone.core/menuitm[0m
+  [36m95[0m  [36m    [:> icon {:name "sign out"[0m
+  [36m96[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m97[0m  [36m[0m
+  [36m98[0m  [36m(defn user-profile[0m
+  [36m99[0m  [36m  [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:95  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 91[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 92[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m 93[0m  [36m    [:> icon {:name "history"}]][0m
+  [36m 94[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [33m 95[0m  [1m    [:> icon {:name "sign out"[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 96[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m 97[0m  [36m[0m
+  [36m 98[0m  [36m(defn user-profile[0m
+  [36m 99[0m  [36m  [][0m
+  [36m100[0m  [36m  [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.797 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:94  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m90[0m  [36m            :vertical true[0m
+  [36m91[0m  [36m            :icon "labeled"[0m
+  [36m92[0m  [36m            :inverted true}[0m
+  [36m93[0m  [36m[:> menuitm {:name "home"}[0m
+  [33m94[0m  [1m [:> icon {:name "home"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m99[0m  [36m[:> menuitm {:name "History"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:96  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 92[0m  [36m            :inverted true}[0m
+  [36m 93[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [33m 96[0m  [1m [:> icon {:name "id card"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:98  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [33m 98[0m  [1m [:> icon {:name "address book"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"[0m
+  [36m103[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:100  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 96[0m  [36m    [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m   [:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [33m100[0m  [1m    [:> icon {:name "history"}]][0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m    [:> icon {:name "sign out"[0m
+  [36m103[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn user-profile[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:102  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m    [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [33m102[0m  [1m    [:> icon {:name "sign out"[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m103[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn user-profile[0m
+  [36m106[0m  [36m  [][0m
+  [36m107[0m  [36m  [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.69 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:94  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m90[0m  [36m            :vertical true[0m
+  [36m91[0m  [36m            :icon "labeled"[0m
+  [36m92[0m  [36m            :inverted true}[0m
+  [36m93[0m  [36m[:> menuitm {:name "home"}[0m
+  [33m94[0m  [1m [:> icon {:name "home"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m99[0m  [36m[:> menuitm {:name "History"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:96  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 92[0m  [36m            :inverted true}[0m
+  [36m 93[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [33m 96[0m  [1m [:> icon {:name "id card"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:98  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [33m 98[0m  [1m [:> icon {:name "address book"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"[0m
+  [36m103[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:100  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [33m100[0m  [1m [:> icon {:name "history"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"[0m
+  [36m103[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:102  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m    [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [33m102[0m  [1m    [:> icon {:name "sign out"[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m103[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m[0m
+  [36m106[0m  [36m(defn top-grids [][0m
+  [36m107[0m  [36m  [:> container[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.911 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:94  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m90[0m  [36m            :vertical false[0m
+  [36m91[0m  [36m            :icon "labeled"[0m
+  [36m92[0m  [36m            :inverted true}[0m
+  [36m93[0m  [36m[:> menuitm {:name "home"}[0m
+  [33m94[0m  [1m [:> icon {:name "home"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m99[0m  [36m[:> menuitm {:name "History"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:96  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 92[0m  [36m            :inverted true}[0m
+  [36m 93[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [33m 96[0m  [1m [:> icon {:name "id card"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:98  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [33m 98[0m  [1m [:> icon {:name "address book"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"[0m
+  [36m103[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:100  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [33m100[0m  [1m [:> icon {:name "history"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"[0m
+  [36m103[0m  [36m           :on-click #(rf/dispatch [:sign-out])}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:102  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m    [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [33m102[0m  [1m    [:> icon {:name "sign out"[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m103[0m  [36m              :on-click #(rf/dispatch [:sign-out])}]]])[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m[0m
+  [36m106[0m  [36m(defn top-grids [][0m
+  [36m107[0m  [36m  [:> container[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.616 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:94  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m90[0m  [36m            :vertical false[0m
+  [36m91[0m  [36m            :icon "labeled"[0m
+  [36m92[0m  [36m            :inverted true}[0m
+  [36m93[0m  [36m[:> menuitm {:name "home"}[0m
+  [33m94[0m  [1m [:> icon {:name "home"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m99[0m  [36m[:> menuitm {:name "History"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:96  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 92[0m  [36m            :inverted true}[0m
+  [36m 93[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [33m 96[0m  [1m [:> icon {:name "id card"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:98  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [33m 98[0m  [1m [:> icon {:name "address book"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:100  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 96[0m  [36m    [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m   [:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [33m100[0m  [1m    [:> icon {:name "history"}]][0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m    [:> icon {:name "sign out"}]]])[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn top-grids [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:102  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m    [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [33m102[0m  [1m    [:> icon {:name "sign out"}]]])[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn top-grids [][0m
+  [36m106[0m  [36m  [:> container[0m
+  [36m107[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.668 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:94  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m90[0m  [36m            :vertical false[0m
+  [36m91[0m  [36m            :icon "labeled"[0m
+  [36m92[0m  [36m            :inverted true}[0m
+  [36m93[0m  [36m[:> menuitm {:name "home"}[0m
+  [33m94[0m  [1m [:> icon {:name "home"}]][0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m99[0m  [36m[:> menuitm {:name "History"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:96  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 92[0m  [36m            :inverted true}[0m
+  [36m 93[0m  [36m[:> menuitm {:name "home"}[0m
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [33m 96[0m  [1m [:> icon {:name "id card"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:98  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 94[0m  [36m [:> icon {:name "home"}]][0m
+  [36m 95[0m  [36m[:> menuitm {:name "Profile"}[0m
+  [36m 96[0m  [36m [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m[:> menuitm {:name "Online Contacts"}[0m
+  [33m 98[0m  [1m [:> icon {:name "address book"}]][0m
+  [0m   [0m  [33m     ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m 99[0m  [36m[:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m[:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m [:> icon {:name "sign out"}]]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:100  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 96[0m  [36m    [:> icon {:name "id card"}]][0m
+  [36m 97[0m  [36m   [:> menuitm {:name "Online Contacts"}[0m
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [33m100[0m  [1m    [:> icon {:name "history"}]][0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [36m102[0m  [36m    [:> icon {:name "sign out"}]]])[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn top-grids [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:102  column:9  ----[0m
+
+  [1mUse of undeclared Var rclone.core/icon[0m
+
+  [36m 98[0m  [36m    [:> icon {:name "address book"}]][0m
+  [36m 99[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m100[0m  [36m    [:> icon {:name "history"}]][0m
+  [36m101[0m  [36m   [:> menuitm {:name "logout"}[0m
+  [33m102[0m  [1m    [:> icon {:name "sign out"}]]])[0m
+  [0m   [0m  [33m        ^--- Use of undeclared Var rclone.core/icon[0m
+  [36m103[0m  [36m[0m
+  [36m104[0m  [36m[0m
+  [36m105[0m  [36m(defn top-grids [][0m
+  [36m106[0m  [36m  [:> container[0m
+  [36m107[0m  [36m   (let [posts @(rf/subscribe [:top-posts])][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.679 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.453 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.518 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.371 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.606 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.533 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.31 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.69 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.399 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.314 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.391 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.135 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.551 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.29 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.192 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/db.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.205 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.191 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.164 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.374 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.198 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.19 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.212 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.35 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:101  column:9  ----[0m
+
+  [1mWrong number of args (3) passed to cljs.core/doall[0m
+
+  [36m 97[0m  [36m[:> menumenu {:position "right"}[0m
+  [36m 98[0m  [36m (if (not signed-in?)[0m
+  [36m 99[0m  [36m   [:> menuitm {:name "home" }[0m
+  [36m100[0m  [36m    "Sign In"][0m
+  [33m101[0m  [1m   (doall [:> menuitm {:name "Online Contacts"}[0m
+  [0m   [0m  [33m   ^--- Wrong number of args (3) passed to cljs.core/doall[0m
+  [36m102[0m  [36m           "My Subreddits"][0m
+  [36m103[0m  [36m          [:> menuitm {:name "History"}[0m
+  [36m104[0m  [36m           "Preferences"][0m
+  [36m105[0m  [36m          [:> menuitm {:name "logout"}[0m
+  [36m106[0m  [36m           "Logout"]))]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.438 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.216 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.125 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.304 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.131 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.219 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.719 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.878 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.793 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.641 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.625 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.581 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.616 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.475 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:102  column:9  ----[0m
+
+  [1mWrong number of args (3) passed to cljs.core/doall[0m
+
+  [36m 98[0m  [36m(if  signed-in?[0m
+  [36m 99[0m  [36m  [:> menuitm {:name "home" }[0m
+  [36m100[0m  [36m   "Sign In"][0m
+  [36m101[0m  [36m  ;;(when signed-in?)[0m
+  [33m102[0m  [1m  (doall[0m
+  [0m   [0m  [33m  ^--- Wrong number of args (3) passed to cljs.core/doall[0m
+  [36m103[0m  [36m   [:> menuitm {:name "Online Contacts"}[0m
+  [36m104[0m  [36m    "My Subreddits"][0m
+  [36m105[0m  [36m   [:> menuitm {:name "History"}[0m
+  [36m106[0m  [36m    "Preferences"][0m
+  [36m107[0m  [36m   [:> menuitm {:name "logout"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.713 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.373 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.355 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.066 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/core.cljs   line:104 ----[0m
+
+  [1m/Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 104, col 33] The map literal starting with :name on line 103 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m102[0m  [36m(if  (not signed-in?)[0m
+  [36m103[0m  [36m  [:> menuitm {:name "signin"[0m
+  [33m104[0m  [1m               :on-click }[0m
+  [0m   [0m  [33m               /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 104, col 33] The map literal starting with :name on line 103 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+  [36m105[0m  [36m   "Sign In"])[0m
+  [36m106[0m  [36m(when signed-in?[0m
+  [36m107[0m  [36m  [:> menuitm {:name "subreddits"}[0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.248 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/core.cljs   line:105 ----[0m
+
+  [1m/Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 105, col 33] The map literal starting with :name on line 104 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m103[0m  [36m(if  (not signed-in?)[0m
+  [36m104[0m  [36m  [:> menuitm {:name "signin"[0m
+  [33m105[0m  [1m               :on-click }[0m
+  [0m   [0m  [33m               /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 105, col 33] The map literal starting with :name on line 104 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+  [36m106[0m  [36m   "Sign In"])[0m
+  [36m107[0m  [36m(when signed-in?[0m
+  [36m108[0m  [36m  [:> menuitm {:name "subreddits"}[0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.775 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/core.cljs   line:105 ----[0m
+
+  [1m/Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 105, col 33] The map literal starting with :name on line 104 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m103[0m  [36m(if  (not signed-in?)[0m
+  [36m104[0m  [36m  [:> menuitm {:name "signin"[0m
+  [33m105[0m  [1m               :on-click }[0m
+  [0m   [0m  [33m               /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 105, col 33] The map literal starting with :name on line 104 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+  [36m106[0m  [36m   "Sign In"])[0m
+  [36m107[0m  [36m(when signed-in?[0m
+  [36m108[0m  [36m  [:> menuitm {:name "subreddits"}[0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.727 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/core.cljs   line:109 ----[0m
+
+  [1m/Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 109, col 33] The map literal starting with :name on line 108 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m107[0m  [36m(if  (not signed-in?)[0m
+  [36m108[0m  [36m  [:> menuitm {:name "signin"[0m
+  [33m109[0m  [1m               :on-click }[0m
+  [0m   [0m  [33m               /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 109, col 33] The map literal starting with :name on line 108 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+  [36m110[0m  [36m   "Sign In"])[0m
+  [36m111[0m  [36m(when signed-in?[0m
+  [36m112[0m  [36m  [:> menuitm {:name "subreddits"}[0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.821 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/core.cljs   line:109 ----[0m
+
+  [1m/Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 109, col 33] The map literal starting with :name on line 108 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m107[0m  [36m(if  (not signed-in?)[0m
+  [36m108[0m  [36m  [:> menuitm {:name "signin"[0m
+  [33m109[0m  [1m               :on-click }[0m
+  [0m   [0m  [33m               /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/core.cljs [line 109, col 33] The map literal starting with :name on line 108 column 21 contains 3 form(s). Map literals must contain an even number of forms.[0m
+  [36m110[0m  [36m   "Sign In"])[0m
+  [36m111[0m  [36m(when signed-in?[0m
+  [36m112[0m  [36m  [:> menuitm {:name "subreddits"}[0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:98  column:8  ----[0m
+
+  [1mUse of undeclared Var rclone.core/mdlact[0m
+
+  [36m 94[0m  [36m             :open @(rf/subscribe [:get-db :show-login])[0m
+  [36m 95[0m  [36m             :on-close #(rf/dispatch [:flip-login])}[0m
+  [36m 96[0m  [36m   [:> modalhdr "Login"][0m
+  [36m 97[0m  [36m   [:> modalcnt "blah"][0m
+  [33m 98[0m  [1m   [:> mdlact[0m
+  [0m   [0m  [33m       ^--- Use of undeclared Var rclone.core/mdlact[0m
+  [36m 99[0m  [36m    [:> button {:negative true} "Cancel"][0m
+  [36m100[0m  [36m    [:> button {:positive true} "Login"]]])[0m
+  [36m101[0m  [36m[0m
+  [36m102[0m  [36m(defn app-sidebar[0m
+  [36m103[0m  [36m  [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.945 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.087 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.785 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.714 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.86 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:59  column:1  ----[0m
+
+  [1mform at line 56 is being replaced[0m
+
+  [36m56[0m  [36m(def form (component "Form"))[0m
+  [36m57[0m  [36m(def formbtn (component "Form" "Button"))[0m
+  [36m58[0m  [36m(def formfld (component "Form" "Field"))[0m
+  [33m59[0m  [1m(def form (component "Form"))[0m
+  [0m  [0m  [33m^--- form at line 56 is being replaced[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(def icon (component "Icon"))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn login-form[0m
+  [36m64[0m  [36m  [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.64 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/rclone/core.cljs   line:59  column:1  ----[0m
+
+  [1mform at line 56 is being replaced[0m
+
+  [36m56[0m  [36m(def form (component "Form"))[0m
+  [36m57[0m  [36m(def formbtn (component "Form" "Button"))[0m
+  [36m58[0m  [36m(def formfld (component "Form" "Field"))[0m
+  [33m59[0m  [1m(def form (component "Form"))[0m
+  [0m  [0m  [33m^--- form at line 56 is being replaced[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(def icon (component "Icon"))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn login-form[0m
+  [36m64[0m  [36m  [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.947 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.454 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.823 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
