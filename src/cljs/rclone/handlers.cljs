@@ -15,11 +15,6 @@
                (assoc-in context [:coeffects :event] [(first params) query])))))
 
 (reg-event-db
- :flip-login
- (fn [db [_ _]]
-   (update db :show-login not)))
-
-(reg-event-db
  :initialize-db
  (fn [_ _]
    db/default-db))

@@ -9,157 +9,61 @@
               [rclone.ajax :refer [load-interceptors!]]
               [rclone.handlers]
               [rclone.subscriptions]
-              [cljsjs.semantic-ui-react]
+              [rclone.semanticui :as sui]
+              [rclone.components.login :as login]
               [goog.object]
               [reagent.dom :as dom]
               [venia.core :as v])
   (:import goog.History))
 
-(def semantic-ui js/semanticUIReact)
-
-(defn component
-  [k & ks]
-  (if (seq ks)
-    (apply goog.object/getValueByKeys semantic-ui k ks)
-    (goog.object/get semantic-ui k)))
-
-(def container (component "Container"))
-(def image (component "Image"))
-(def segment (component "Segment"))
-(def button (component "Button"))
-(def input (component "Input"))
-(def label (component "Label"))
-(def slist (component "List"))
-(def header (component "Header"))
-(def grid (component "Grid"))
-(def gridc (component "Grid" "Column"))
-(def gridr (component "Grid" "Row"))
-
-(def card (component "Card"))
-(def cardhdr (component "Card" "Header"))
-(def cardtxt (component "Card" "Description"))
-(def cardcnt (component "Card" "Content"))
-(def cardgrp (component "Card" "Group"))
-
-(def sidebar (component "Sidebar"))
-(def sbpushable (component "Sidebar" "Pushable"))
-(def sbpusher (component "Sidebar" "Pusher"))
-(def menu (component "Menu"))
-(def menuitm (component "Menu" "Item"))
-(def menumenu (component "Menu" "Menu"))
-
-(def modal (component "Modal"))
-(def modalhdr (component "Modal" "Header"))
-(def modalcnt (component "Modal" "Content"))
-(def modalact (component "Modal" "Actions"))
-
-(def form (component "Form"))
-(def formbtn (component "Form" "Button"))
-(def formfld (component "Form" "Field"))
-
-(def icon (component "Icon"))
-
-(defn login-form
-  []
-  [:> form
-   [:> formfld
-    [:label "Username"]
-    [:input]]
-   [:> formfld
-    [:label "Password"]
-    [:input {:type "password"}]]
-   [:> formbtn "Login"]])
-
-(defn nav-link [uri title page collapsed?]
-  (let [selected-page (rf/subscribe [:page])]
-    [:li.nav-item
-     {:class (when (= page @selected-page) "active")}
-     [:a.nav-link
-      {:href     uri
-       :on-click #(reset! collapsed? true)} title]]))
-
-(defn navbar []
-  (r/with-let [collapsed? (r/atom true)]
-    [:nav.navbar.navbar-dark.bg-primary
-     [:button.navbar-toggler.hidden-sm-up
-      {:on-click #(swap! collapsed? not)} "☰"]
-     [:div.collapse.navbar-toggleable-xs
-      (when-not @collapsed? {:class "in"})
-      [:a.navbar-brand {:href "#/"} "rclone"]
-      [:ul.nav.navbar-nav
-       [nav-link "#/" "Home" :home collapsed?]
-       [nav-link "#/about" "About" :about collapsed?]]]]))
-
-(defn about-page []
-  [:p "Testing Semantic UI"])
-
-(defn top-posts []
-  [:> container 
-   (let [posts @(rf/subscribe [:top-posts])]
-     (when (not-empty posts) 
-       (map #(identity [:> card {:key (:id %)}
-                        [:> cardcnt
-                         [:> cardhdr
-                          [:a {:href (:url %)} (:title %)]]
-                         [:> cardtxt (:description %)]]]) posts)))])
-(defn login-modal
-  []
-  (let [show-login @(rf/subscribe [:get-db :show-login])]
-    [:> modal {:size "small"
-               :open show-login
-               :on-close #(rf/dispatch [:flip-login])}
-     [:> modalhdr "Login"]
-     [:> modalcnt
-      [login-form]]]))
-
 (defn app-sidebar
   []
   (let [signed-in? @(rf/subscribe [:get-db :signed-in])]
-    [:> sidebar {:as menu
-                 :animation "push"
-                 :width "very thin"
-                 :visible true
-                 :direction "top"
-                 :icon "labeled"
-                 :inverted true}
-     [:> menumenu {:position "right"}
+    [:> sui/sidebar {:as sui/menu
+                     :animation "push"
+                     :width "very thin"
+                     :visible true
+                     :direction "top"
+                     :icon "labeled"
+                     :inverted true}
+     [:> sui/menumenu {:position "right"}
       (if  (not signed-in?)
-        [:> menuitm {:name "signin"
-                     :on-click #(rf/dispatch [:flip-login])}
+        [:> sui/menuitm {:name "signin"
+                         :on-click #(rf/dispatch [:flip-login])}
          "Sign In"])
       (when signed-in?
-        [:> menuitm {:name "subreddits"}
+        [:> sui/menuitm {:name "subreddits"}
          "My Subreddits"]
-        [:> menuitm {:name "preferences"}
+        [:> sui/menuitm {:name "preferences"}
          "Preferences"]
-        [:> menuitm {:name "logout"}
+        [:> sui/menuitm {:name "logout"}
          "Logout"])]]))
 
 
 (defn top-grids []
-  [:> container
+  [:> sui/container
    (let [posts @(rf/subscribe [:top-posts])]
      (when (not-empty posts)
-       [:> grid {:rows (count posts)
-                 :columns 1}
-        (map #(identity [:> gridr {:key (:id %)
-                                   :columns 2}
-                         [:> gridc {:width 1}                          
-                          [:> gridr
-                           [:> button {:icon "chevron up"
-                                       :size "mini"
-                                       :on-click
-                                       (fn []
-                                         (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]
-                          [:> gridr
-                           [:> button {:icon "chevron down"
-                                       :size "mini"
-                                       :on-click (fn [] (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]]
-                         [:> gridc {:width 7}                        
-                          [:> gridr {:key :tle}
-                           [:> gridc [:a {:href (:url %)} (:title %)]]]
-                          [:> gridr {:key :txt}
-                           [:> gridc (:description %)]]]]) posts)]))])
+       [:> sui/grid {:rows (count posts)
+                     :columns 1}
+        (map #(identity [:> sui/gridr {:key (:id %)
+                                       :columns 2}
+                         [:> sui/gridc {:width 1}                          
+                          [:> sui/gridr
+                           [:> sui/button {:icon "chevron up"
+                                           :size "mini"
+                                           :on-click
+                                           (fn []
+                                             (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]
+                          [:> sui/gridr
+                           [:> sui/button {:icon "chevron down"
+                                           :size "mini"
+                                           :on-click (fn [] (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]]
+                         [:> sui/gridc {:width 7}                        
+                          [:> sui/gridr {:key :tle}
+                           [:> sui/gridc [:a {:href (:url %)} (:title %)]]]
+                          [:> sui/gridr {:key :txt}
+                           [:> sui/gridc (:description %)]]]]) posts)]))])
 
 (defn home-page []
   [:div.container
@@ -168,11 +72,11 @@
       [:div
        [app-sidebar]
        [top-grids]
-       [login-modal]]])])
+       [login/login-modal]
+       ]])])
 
 (def pages
-  {:home  #'home-page
-   :about #'about-page})
+  {:home  #'home-page})
 
 (defn page []
   [:div 
