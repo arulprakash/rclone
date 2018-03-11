@@ -13,7 +13,7 @@ WHERE id = :id
 -- :name get-user :? :1
 -- :doc retrieve a user given the id.
 SELECT * FROM users
-WHERE id = :id
+WHERE id = :id AND pass = :pass
 
 -- :name delete-user! :! :1
 -- :doc delete a user given the id
@@ -49,8 +49,9 @@ WHERE id = :id
 -- :name create-post! :! :1
 -- :doc creates a new post
 INSERT INTO posts
-(id, title, url, description, created, posted_by, posted_in)
-VALUES (:id, :title, :url, :description, :created, :posted_by, :posted_in)
+(title, url, description, created, posted_by, posted_in)
+VALUES (:title, :url, :description, :created, :posted_by, :posted_in)
+RETURNING id
 
 -- :name upvote-post! :! :1
 -- :doc upvote an existing post

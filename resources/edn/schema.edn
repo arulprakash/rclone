@@ -10,12 +10,15 @@
  {:User
   {:fields
    {:id            {:type String}
+    :pass {:type String}
     :first_name    {:type String}
     :last_name     {:type String}
     :is_active     {:type Boolean}
     :created       {:type String}
     :changed       {:type String}
     :status        {:type String}
+    :email {:type String}
+    :admin {:type Boolean}
     :comments      {:type    (list :thread)
                     :resolve :get-user-comments}
     :posts         {:type    (list :thread)
@@ -74,7 +77,8 @@
  :queries
  {:user
   {:type    (non-null :User)
-   :args    {:id {:type String}}
+   :args    {:id {:type (non-null String)}
+             :pass {:type (non-null String)}}
    :resolve :get-user }
   
   :top_posts
@@ -112,6 +116,12 @@
              :is_active  {:type (non-null Boolean)}
              :changed    {:type (non-null String)}}
    :resolve :delete-user}
+  :post
+  {:type :Post
+   :args {:url {:type (non-null String)}
+          :title {:type (non-null String)}
+          :description {:type String}}
+   :resolve :create-post}
   :upvote
   {:type :Post
    :args {:id {:type (non-null String)}}

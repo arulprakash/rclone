@@ -13,12 +13,18 @@
               [rclone.components.login :as login]
               [goog.object]
               [reagent.dom :as dom]
-              [venia.core :as v])
+              [venia.core :as v]
+              [rclone.components.post :as post])
   (:import goog.History))
+(def uniqkey (atom 0))
+(defn gen-key []
+  (let [res (swap! uniqkey inc)]
+                                        ;(u/log res)
+    res))
 
 (defn app-sidebar
   []
-  (let [signed-in? @(rf/subscribe [:get-db :signed-in])]
+  (let [signed-in? @(rf/subscribe [:signed-in?])]
     [:> sui/sidebar {:as sui/menu
                      :animation "push"
                      :width "very thin"
@@ -27,17 +33,20 @@
                      :icon "labeled"
                      :inverted true}
      [:> sui/menumenu {:position "right"}
-      (if  (not signed-in?)
-        [:> sui/menuitm {:name "signin"
+      (if (not signed-in?)
+        [:> sui/menuitm {:key "signin"
+                         :name "signin"
                          :on-click #(rf/dispatch [:flip-login])}
          "Sign In"])
-      (when signed-in?
-        [:> sui/menuitm {:name "subreddits"}
-         "My Subreddits"]
-        [:> sui/menuitm {:name "preferences"}
-         "Preferences"]
-        [:> sui/menuitm {:name "logout"}
-         "Logout"])]]))
+      (map #(if signed-in? %) [[:> sui/menuitm {:key (gen-key)
+                                                :on-click #(rf/dispatch [:set-active-page :post])}
+                                "Post"]
+                               [:> sui/menuitm {:key (gen-key)}
+                                "My Subreddits"]
+                               [:> sui/menuitm {:key (gen-key)}
+                                "Preferences"]
+                               [:> sui/menuitm {:key (gen-key)}
+                                "Logout"]])]]))
 
 
 (defn top-grids []
@@ -70,16 +79,21 @@
    (when-let [docs @(rf/subscribe [:docs])]
      [:div.row
       [:div
-       [app-sidebar]
        [top-grids]
        [login/login-modal]
        ]])])
 
+(defn post-page
+  []
+  [post/post-link])
+
 (def pages
-  {:home  #'home-page})
+  {:home  #'home-page
+   :post #'post-page})
 
 (defn page []
-  [:div 
+  [:div
+   [app-sidebar]
    [(pages @(rf/subscribe [:page]))]])
 
 ;; -------------------------

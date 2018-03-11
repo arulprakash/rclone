@@ -58,10 +58,10 @@
       (let [vars (variable-map request)
             query (extract-query request) 
             result (execute comp-schema query vars context) 
-            temp1            (spit "request.edn" (str "\nRequest    : " request
-                                                      "\nVariables  : " vars
-                                                      "\nQuery      : " query
-                                                      "\nResult     : " result))
+            log (spit "request.edn" (str "\nRequest    : " request
+                                         "\nVariables  : " vars
+                                         "\nQuery      : " query
+                                         "\nResult     : " result))
             status (if (-> result :errors seq)
                      400
                      200)]

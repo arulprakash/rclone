@@ -20,3 +20,10 @@
  :get-db
  (fn [db [_ v]]
    (get db v)))
+
+(reg-sub
+ :signed-in?
+ (fn [db _]
+   (if (empty? (:user db))
+     false
+     true)))

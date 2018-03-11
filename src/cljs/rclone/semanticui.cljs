@@ -41,5 +41,5 @@
 (def form (component "Form"))
 (def formbtn (component "Form" "Button"))
 (def formfld (component "Form" "Field"))
-
+(def forminp (component "Form" "Input"))
 (def icon (component "Icon"))

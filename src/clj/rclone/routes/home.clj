@@ -15,8 +15,8 @@
 
 (defn get-user
   [context arguments value]
-  (let [{:keys [id]} arguments]
-    (db/get-user {:id id})))
+  (let [{:keys [id pass]} arguments]
+    (db/get-user {:id id :pass pass})))
 
 (defn get-user-comments
   [context arguments value]
@@ -78,16 +78,15 @@
 
 (defn create-post
   [context arguments value]
-  (let [{:keys [id title url description created posted_by posted_in]} arguments
+  (let [{:keys [title url description created]} arguments
         admin false
         created (local/local-now)]
-    (db/create-user! {:id         id
-                      :title title
+    (db/create-post! {:title title
                       :url url
                       :description description
                       :created created
-                      :posted_by posted_by
-                      :posted_in posted_in})))
+                      :posted_by 100
+                      :posted_in 1})))
 
 (defn get-top-hosts
   [context arguments value]
@@ -121,6 +120,7 @@
                               :get-user-subs     get-user-subs
                               :get-comments      get-comments
                               :delete-user       delete-user
+                              :create-post create-post
                               :top-posts         execute-crud
                               :upvote-post upvote-posts
                               :downvote-post downvote-posts})
