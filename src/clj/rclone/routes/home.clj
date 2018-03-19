@@ -13,11 +13,6 @@
 (defn home-page []
   (layout/render "home.html"))
 
-(defn get-user
-  [context arguments value]
-  (let [{:keys [id pass]} arguments]
-    (db/get-user {:id id :pass pass})))
-
 (defn get-user-comments
   [context arguments value]
   (let [{:keys [id]} arguments]
@@ -81,12 +76,12 @@
   (let [{:keys [title url description created]} arguments
         admin false
         created (local/local-now)]
-    (db/create-post! {:title title
-                      :url url
-                      :description description
-                      :created created
-                      :posted_by 100
-                      :posted_in 1})))
+    (into {} (db/create-post! {:title title
+                               :url url
+                               :description description
+                               :created created
+                               :posted_by 100
+                               :posted_in 1}))))
 
 (defn get-top-hosts
   [context arguments value]
@@ -103,27 +98,41 @@
   (let [{:keys [id]} arguments]
     (db/downvote-post! {:id id})))
 
+(defn create-comment
+  [context arguments value]
+  (let [{:keys [description votes created posted_to replied_to commented_by]} arguments
+        created (local/local-now)]
+    (into {} (db/create-comment! {:description description
+                                  :votes 1
+                                  :created created
+                                  :posted_to posted_to
+                                  :replied_to replied_to
+                                  :commented_by commented_by}))))
+
 (defn execute-crud
   [context arguments value]
   (let [{:keys [id]} arguments]
     (db/get-top-posts)))
+
+(defn get-user
+  [context arguments value]
+  (let [{:keys [id pass]} arguments
+        _ (spit "request.edn" (str "ID " id "Pass " pass) :append true)]
+    (db/get-user {:id id :pass pass})))
+
+(defn keyword-factory
+  [keyword]
+  (fn [context arguments value]
+    (let [f (resolve (symbol (name keyword)))]
+      (f context arguments value))))
+
 
 (defn compile-schema
   []
   (-> (io/resource "edn/schema.edn")
       slurp
       edn/read-string
-      (util/attach-resolvers {:get-user          get-user
-                              :create-user       create-user
-                              :get-user-comments get-user-comments
-                              :get-user-posts    get-user-posts
-                              :get-user-subs     get-user-subs
-                              :get-comments      get-comments
-                              :delete-user       delete-user
-                              :create-post create-post
-                              :top-posts         execute-crud
-                              :upvote-post upvote-posts
-                              :downvote-post downvote-posts})
+      (util/attach-resolvers {:factory keyword-factory})
       schema/compile))
 
 (def compiled-schema (compile-schema))

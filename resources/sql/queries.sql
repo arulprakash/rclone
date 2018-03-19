@@ -46,12 +46,11 @@ WHERE id = :id
 
 --------------------------POSTS-------------------------
 
--- :name create-post! :! :1
+-- :name create-post! :<!
 -- :doc creates a new post
 INSERT INTO posts
-(title, url, description, created, posted_by, posted_in)
 VALUES (:title, :url, :description, :created, :posted_by, :posted_in)
-RETURNING id
+RETURNING id;
 
 -- :name upvote-post! :! :1
 -- :doc upvote an existing post
@@ -82,11 +81,12 @@ DELETE FROM posts
 WHERE id = :id
 --------------------------COMMENTS-------------------------
 
--- :name create-comment! :! :1
+-- :name create-comment! :>!
 -- :doc creates a new post
 INSERT INTO comments
-(id, description, votes, created, posted_to, replied_to)
-VALUES (:id, :description, :votes, :created, :posted_to, :replied_to)
+(description, votes, created, posted_to, replied_to, commented_by)
+VALUES (:description, :votes, :created, :posted_to, :replied_to, :commented_by)
+RETURNING id
 
 -- :name update-comment! :! :1
 -- :doc update an existing group's description or rules

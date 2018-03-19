@@ -1,20 +1,16 @@
-(ns rclone.components.post
-  (:require [re-frame.core :refer [reg-sub]]
-            [reagent.core :as r]
-            [re-frame.core :as rf]
-            [rclone.db :as db]
-            [rclone.semanticui :as sui]
-            [re-frame.core :refer [dispatch reg-event-db reg-event-fx]]
-            [day8.re-frame.http-fx]
-            [ajax.core :refer [GET POST json-response-format json-request-format url-request-format]]))
+ns rclone.components.comment
+:require [re-frame.core :refer [reg-sub]]
+[reagent.core :as r]
+[re-frame.core :as rf]
+
+
 ;;Local state
 
-(def post-db
+(def comment-db
   (r/atom
-   {:url ""
-    :title ""
-    :image ""
-    :text ""}))
+   {:description ""
+    :posted-to ""
+    :reply-to ""}))
 
 ;;Subsrciptions
 
