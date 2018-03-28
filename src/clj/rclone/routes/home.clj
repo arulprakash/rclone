@@ -124,7 +124,7 @@
 (defn ^:private keyword-factory
   [keyword]
   (fn [context arguments value]
-    (let [f (resolve (symbol (name keyword)))]
+    (let [f @(resolve (symbol (name keyword)))]
       #(f context arguments value))))
 
 (defn map-zipper [m]

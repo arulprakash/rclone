@@ -20,11 +20,11 @@
     :email         {:type String}
     :admin         {:type Boolean}
     :comments      {:type    (list :thread)
-                    :resolve  :get-user-comments}
+                    :resolve   :get-user-comments}
     :posts         {:type    (list :thread)
-                    :resolve  :get-user-posts}
+                    :resolve   :get-user-posts}
     :subscriptions {:type    (list :String)
-                    :resolve  :get-user-subs}}}
+                    :resolve   :get-user-subs}}}
 
   :Group
   {:fields
@@ -79,16 +79,16 @@
   {:type    (non-null :User)
    :args    {:id   {:type (non-null String)}
              :pass {:type (non-null String)}}
-   :resolve :get-user}
+   :resolve  :get-user}
 
   :top_posts
   {:type    (list :Post)
-   :resolve :get-top-posts}
+   :resolve  :get-top-posts}
 
   :comments
   {:type    (list :Comment)
    :args    {:id {:type String}}
-   :resolve :get-comments}}
+   :resolve  :get-comments}}
 
  :mutations
  {:createuser
@@ -101,11 +101,11 @@
              :admin      {:type (non-null Boolean)}
              :is_active  {:type (non-null Boolean)}
              :created    {:type (non-null String)}}
-   :resolve :create-user}
+   :resolve  :create-user}
   :removeuser
   {:type    :User
    :args    {:id {:type (non-null String)}}
-   :resolve :delete-user}
+   :resolve  :delete-user}
   
   :updateuser
   {:type    :User
@@ -116,26 +116,26 @@
              :admin      {:type (non-null Boolean)}
              :is_active  {:type (non-null Boolean)}
              :changed    {:type (non-null String)}}
-   :resolve :update-user}
+   :resolve  :update-user}
   :post
   {:type    :Post
    :args    {:url         {:type (non-null String)}
              :title       {:type (non-null String)}
              :description {:type String}}
-   :resolve :create-post}
+   :resolve  :create-post}
   :upvote
   {:type    :Post
    :args    {:id {:type (non-null String)}}
-   :resolve :upvote-post}
+   :resolve  :upvote-post}
   :downvote
   {:type    :Post
    :args    {:id {:type (non-null String)}}
-   :resolve :downvote-post}
+   :resolve  :downvote-post}
   :comment
   {:type    :Comment
    :args    {:description  {:type (non-null String)}
              :posted_to    {:type (non-null Int)}
              :replied_to   {:type (non-null Int)}
              :commented_by {:type (non-null String)}}
-   :resolve :create-comment}
+   :resolve  :create-comment}
   }}
