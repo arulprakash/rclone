@@ -8,7 +8,9 @@
             [com.walmartlabs.lacinia.util :as util]
             [com.walmartlabs.lacinia :refer [execute]]
             [clojure.edn :as edn]
-            [clj-time.local :as local]))
+            [clj-time.local :as local]
+            [clojure.zip :as zip]))
+(def resolvers (transient []))
 
 (defn home-page []
   (layout/render "home.html"))
@@ -83,17 +85,17 @@
                                :posted_by 100
                                :posted_in 1}))))
 
-(defn get-top-hosts
+(defn get-top-posts
   [context arguments value]
   (let [{:keys [id]} arguments]
     (db/get-top-posts)))
 
-(defn upvote-posts
+(defn upvote-post
   [context arguments value]
   (let [{:keys [id]} arguments]
     (db/upvote-post! {:id id})))
 
-(defn downvote-posts
+(defn downvote-post
   [context arguments value]
   (let [{:keys [id]} arguments]
     (db/downvote-post! {:id id})))
@@ -116,24 +118,54 @@
 
 (defn get-user
   [context arguments value]
-  (let [{:keys [id pass]} arguments
-        _ (spit "request.edn" (str "ID " id "Pass " pass) :append true)]
+  (let [{:keys [id pass]} arguments]
     (db/get-user {:id id :pass pass})))
 
-(defn keyword-factory
+(defn ^:private keyword-factory
   [keyword]
   (fn [context arguments value]
     (let [f (resolve (symbol (name keyword)))]
-      (f context arguments value))))
+      #(f context arguments value))))
 
+(defn map-zipper [m]
+  (zip/zipper 
+   (fn [x] (or (map? x) (map? (nth x 1))))
+   (fn [x] (seq (if (map? x) x (nth x 1))))
+   (fn [x children] 
+     (if (map? x) 
+       (into {} children) 
+       (assoc x 1 (into {} children))))
+   m))
+
+(defn get-keys-tree
+  "Supply map zipper of tree and key to search"
+  [tz]
+  (if (not (zip/end? tz))
+    (let [node (first tz)]
+      (when (= (first node) :resolve)
+        (conj! resolvers (second node)))
+      (recur (zip/next tz)))
+    (persistent! resolvers)))
+
+(defn get-resolvers
+  []
+  (as-> (io/resource "edn/schema.edn") c
+    (slurp c)
+    (edn/read-string c)
+    (map-zipper c)
+    (get-keys-tree c)
+    (map #(assoc {} % @(resolve (symbol (name %)))) c)
+    (into {} c)))
 
 (defn compile-schema
   []
-  (-> (io/resource "edn/schema.edn")
-      slurp
-      edn/read-string
-      (util/attach-resolvers {:factory keyword-factory})
-      schema/compile))
+  (let [resolvers (get-resolvers)]
+    (as-> (io/resource "edn/schema.edn") c
+      (slurp c)
+      (edn/read-string c)
+      (util/attach-resolvers c resolvers)
+      (schema/compile c)
+      )))
 
 (def compiled-schema (compile-schema))
 

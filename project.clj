@@ -36,7 +36,7 @@
                  [ring/ring-defaults "0.3.1"]
                  [secretary "1.2.3"]
                  [selmer "1.11.1"]
-                 [com.walmartlabs/lacinia "0.19.0"]
+                 [com.walmartlabs/lacinia "0.25.0"]
                  [org.clojure/data.json "0.2.6"]
                  [cljs-react-material-ui "0.2.48"]
                  [cljsjs/semantic-ui-react "0.73.0-0"]

@@ -3,7 +3,7 @@
                         [clojure.java.io :as io]
                         [clojure.data.json :as json]
                         [com.walmartlabs.lacinia :refer [execute]]
-                        [rclone.routes.home :refer [compile-schema]]))
+                        [rclone.routes.home :refer [compiled-schema]]))
 
 (defn variable-map
   "Reads the `variables` query parameter, which contains a JSON string
@@ -61,7 +61,8 @@
             log (spit "request.edn" (str "\nRequest    : " request
                                          "\nVariables  : " vars
                                          "\nQuery      : " query
-                                         "\nResult     : " result))
+                                         "\nResult     : " result)
+                      :append true)
             status (if (-> result :errors seq)
                      400
                      200)]
@@ -74,5 +75,5 @@
   "Refer to compiled-schema if at all this code makes it to production"
   (let [uri (:uri request)]
     (when  (= uri "/graphql") 
-      ((graphql-handler (compile-schema)) request))))
+      ((graphql-handler compiled-schema) request))))
 
