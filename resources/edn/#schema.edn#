@@ -76,7 +76,7 @@
 
  :queries
  {:user
-  {:type     :User
+  {:type    (non-null :User)
    :args    {:id   {:type (non-null String)}
              :pass {:type (non-null String)}}
    :resolve :get-user}

@@ -116,6 +116,12 @@
   (let [{:keys [id]} arguments]
     (db/get-top-posts)))
 
+(defn wrap-db-response
+  [db-response]
+  (if (nil? db-response)
+    (response/not-found)
+    db-response))
+
 (defn get-user
   [context arguments value]
   (let [{:keys [id pass]} arguments]
@@ -154,7 +160,7 @@
     (edn/read-string c)
     (map-zipper c)
     (get-keys-tree c)
-    (map #(assoc {} % @(resolve (symbol (name %)))) c)
+    (map #(assoc {} % (wrap-db-response @(resolve (symbol (name %))))) c)
     (into {} c)))
 
 (defn compile-schema
