@@ -19,11 +19,11 @@
     :status        {:type String}
     :email         {:type String}
     :admin         {:type Boolean}
-    :comments      {:type    (list :thread)
+    :comments      {:type    (list :Comment)
                     :resolve :get-user-comments}
-    :posts         {:type    (list :thread)
+    :posts         {:type    (list :Post)
                     :resolve :get-user-posts}
-    :subscriptions {:type    (list :String)
+    :subscriptions {:type    (list :Subscription)
                     :resolve :get-user-subs}}}
 
   :Group

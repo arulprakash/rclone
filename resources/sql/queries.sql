@@ -49,8 +49,16 @@ WHERE id = :id
 -- :name create-post! :<!
 -- :doc creates a new post
 INSERT INTO posts
+(title, url, description, created, posted_by, posted_in)
 VALUES (:title, :url, :description, :created, :posted_by, :posted_in)
 RETURNING id;
+
+-- :name create-temp! :<!
+-- :doc creates a new post
+INSERT INTO posts :i*:cols
+VALUES (:v*:ids)
+RETURNING id;
+
 
 -- :name upvote-post! :! :1
 -- :doc upvote an existing post
@@ -75,7 +83,7 @@ SELECT * FROM posts
 ORDER BY votes
 LIMIT 50
 
--- :name delete-group! :! :1
+-- :name delete-post! :! :1
 -- :doc delete a user given the id
 DELETE FROM posts
 WHERE id = :id

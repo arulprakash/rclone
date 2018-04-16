@@ -52,7 +52,7 @@
 (reg-event-fx
  :query-server
  [generate-query]
- (fn [{:keys [db]} [_ query db-key]]
+ (fn [{:keys [db]} [_ query]]
    {:http-xhrio {:method          :get
                  :uri             "/graphql"
                  :temp            (js/console.log (str "In Query Server " query))

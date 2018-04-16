@@ -50,13 +50,6 @@
                (catch Exception e ""))
     :else ""))
 
-(defn wrap-resolved-value
-  [resolved-value]
-  (cond
-    (nil? resolved-value) (response/not-found)
-    (not (map? resolved-value)) (into {} resolved-value)
-    :else resolved-value))
-
 (defn ^:private graphql-handler
   "Accepts a GraphQL query via GET or POST, and executes the query.
   Returns the result as text/json."
