@@ -1,80 +1,64 @@
 (defproject rclone "0.1.0-SNAPSHOT"
-
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
-
-  :dependencies [[buddy "1.3.0"]
-                 [cider/cider-nrepl "0.15.0-SNAPSHOT"]
-                 [clj-time "0.14.0"]
-                 [cljs-ajax "0.7.2"]
-                 [compojure "1.6.0"]
-                 [conman "0.6.8"]
+  :dependencies [[buddy "2.0.0"]
+                 [clj-time "0.14.4"]
+                 [cljs-ajax "0.7.4"]
+                 [com.cognitect/transit-java "0.8.332"]
+                 [com.walmartlabs/lacinia "0.28.0"]
+                 [compojure "1.6.1"]
+                 [conman "0.8.2"]
                  [cprop "0.1.11"]
-                 [funcool/struct "1.1.0"]
-                 [luminus-immutant "0.2.3"]
-                 [luminus-migrations "0.4.2"]
-                 [luminus-nrepl "0.1.4"]
+                 [funcool/struct "1.3.0"]
+                 [luminus-immutant "0.2.4"]
+                 [luminus-migrations "0.5.2"]
                  [luminus/ring-ttl-session "0.3.2"]
-                 [markdown-clj "1.0.1"]
-                 [metosin/muuntaja "0.3.2"]
+                 [markdown-clj "1.0.2"]
+                 [metosin/compojure-api "1.1.12"]
+                 [metosin/muuntaja "0.5.0"]
                  [metosin/ring-http-response "0.9.0"]
-                 [mount "0.1.11"]
-                 [org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.908" :scope "provided"]
-                 [org.clojure/tools.cli "0.3.5"]
-                 [org.clojure/tools.logging "0.4.0"]
-                 [org.postgresql/postgresql "42.1.3"]
-                 [org.webjars.bower/tether "1.4.0"] 
-                 [org.webjars/font-awesome "4.7.0"]
-                 [org.webjars/webjars-locator-jboss-vfs "0.1.0"]
-                 [re-frame "0.10.1"]
-                 [day8.re-frame/http-fx "0.1.4"]
-                 [reagent "0.7.0"]
-                 [reagent-utils "0.2.1"]
+                 [mount "0.1.12"]
+                 [nrepl "0.4.4"]
+                 [org.clojure/clojure "1.9.0"]
+                 [org.clojure/clojurescript "1.10.339" :scope "provided"]
+                 [org.clojure/tools.cli "0.3.7"]
+                 [org.clojure/tools.logging "0.4.1"]
+                 [org.postgresql/postgresql "42.2.4"]
+                 [org.webjars.bower/tether "1.4.4"]
+                 [org.webjars/bootstrap "4.1.3"]
+                 [org.webjars/font-awesome "5.2.0"]
+                 [org.webjars/webjars-locator "0.34"]
+                 [re-frame "0.10.5"]
+                 [reagent "0.8.1"]
                  [ring-webjars "0.2.0"]
-                 [ring/ring-core "1.6.2"]
-                 [ring/ring-defaults "0.3.1"]
+                 [ring/ring-core "1.6.3"]
+                 [ring/ring-defaults "0.3.2"]
                  [secretary "1.2.3"]
-                 [selmer "1.11.1"]
-                 [com.walmartlabs/lacinia "0.25.0"]
+                 [selmer "1.11.8"]
+                 ;;Added by me
+                 [day8.re-frame/http-fx "0.1.6"]
                  [org.clojure/data.json "0.2.6"]
                  [cljs-react-material-ui "0.2.48"]
                  [cljsjs/semantic-ui-react "0.73.0-0"]
-                 [vincit/venia "0.2.3"]
-                 [clojure-future-spec "1.9.0-beta4"]
-                 [org.clojure/test.check "0.9.0"]]
+                 [vincit/venia "0.2.3"]]
 
   :min-lein-version "2.0.0"
-
-  :jvm-opts ["-server" "-Dconf=.lein-env"]
   :source-paths ["src/clj" "src/cljc" "src/cljs" "env/dev/cljs"]
   :test-paths ["test/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
   :target-path "target/%s/"
   :main ^:skip-aot rclone.core
   :migratus {:store :database :db ~(get (System/getenv) "DATABASE_URL")}
-
-  :plugins [[lein-cprop "1.0.3"]
-            [migratus-lein "0.4.9"]
-            [org.clojars.punkisdead/lein-cucumber "1.0.5"]
-            [lein-cljsbuild "1.1.5"]
-            [lein-immutant "2.1.0"]
-            [lein-auto "0.1.2"]
-            [lein-kibit "0.1.2"]
-            [lein-environ "1.0.0"]]
+  :plugins [[org.clojars.punkisdead/lein-cucumber "1.0.5"]
+            [lein-cljsbuild "1.1.7"]
+            [lein-immutant "2.1.0"]]
   :cucumber-feature-paths ["test/clj/features"]
-
-
-  :clean-targets ^{:protect false}
-  [:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
+  :clean-targets ^{:protect false} [:target-path [:cljsbuild :builds :app :compiler :output-dir] [:cljsbuild :builds :app :compiler :output-to]]
   :figwheel
   {:http-server-root "public"
    :nrepl-port       7002
    :css-dirs         ["resources/public/css"]
-   :nrepl-middleware
-   [cemerick.piggieback/wrap-cljs-repl]}
-
-
+   :nrepl-middleware [cider/wrap-cljs-repl cider.piggieback/wrap-cljs-repl]}
   :profiles
   {:uberjar       {:omit-source    true
                    :prep-tasks     ["compile" ["cljsbuild" "once" "min"]]
@@ -88,10 +72,7 @@
                        :pretty-print  false
                        :closure-warnings
                        {:externs-validation :off :non-standard-jsdoc :off}
-                       :externs       ["react/externs/react.js"]}}}}
-
-
-                   :aot            :all
+                       :externs       ["react/externs/react.js"]}}}} :aot            :all
                    :uberjar-name   "rclone.jar"
                    :source-paths   ["env/prod/clj"]
                    :resource-paths ["env/prod/resources"]}
@@ -99,24 +80,25 @@
    :dev           [:project/dev :profiles/dev]
    :test          [:project/dev :project/test :profiles/test]
 
-   :project/dev   {:dependencies   [[prone "1.1.4"]
-                                    [ring/ring-mock "0.3.0"]
-                                    [ring/ring-devel "1.6.1"]
-                                    [pjstadig/humane-test-output "0.8.2"]
-                                    [binaryage/devtools "0.9.4"]
+   :project/dev   {:jvm-opts ["-Dconf=dev-config.edn"]
+                   :dependencies   [[binaryage/devtools "0.9.10"]
+                                    [cider/piggieback "0.3.8"]
                                     [clj-webdriver/clj-webdriver "0.7.2"]
-                                    [com.cemerick/piggieback "0.2.2"]
-                                    [doo "0.1.7"]
-                                    [figwheel-sidecar "0.5.14"]
+                                    [day8.re-frame/tracing "0.5.1"]
+                                    [day8.re-frame/re-frame-10x "0.3.3-react16"]
+                                    [doo "0.1.10"]
+                                    [expound "0.7.1"]
+                                    [figwheel-sidecar "0.5.16"]
                                     [org.apache.httpcomponents/httpcore "4.4"]
                                     [org.clojure/core.cache "0.6.3"]
-                                    [midje "1.8.3"]
-                                    [re-frisk "0.5.0"]
-                                    [org.seleniumhq.selenium/selenium-server "2.48.2" :exclusions [org.bouncycastle/bcprov-jdk15on org.bouncycastle/bcpkix-jdk15on]]]
-                   :plugins        [[com.jakemccrary/lein-test-refresh "0.19.0"]
-                                    [lein-doo "0.1.7"]
-                                    [lein-figwheel "0.5.14"]
-                                    [org.clojure/clojurescript "1.9.562"]]
+                                    [org.seleniumhq.selenium/selenium-server "2.48.2" :exclusions [org.bouncycastle/bcprov-jdk15on org.bouncycastle/bcpkix-jdk15on]]
+                                    [pjstadig/humane-test-output "0.8.3"]
+                                    [prone "1.6.0"]
+                                    [ring/ring-devel "1.6.3"]
+                                    [ring/ring-mock "0.3.2"]]
+                   :plugins        [[com.jakemccrary/lein-test-refresh "0.23.0"]
+                                    [lein-doo "0.1.10"]
+                                    [lein-figwheel "0.5.16"]]
                    :cljsbuild
                    {:builds
                     {:app
@@ -128,21 +110,18 @@
                        :output-to     "target/cljsbuild/public/js/app.js"
                        :output-dir    "target/cljsbuild/public/js/out"
                        :source-map    true
-                       :preloads [re-frisk.preload]
+                       :preloads [day8.re-frame-10x.preload]
                        :optimizations :none
-                       :pretty-print  true}}}}
-
-
-
+                       :pretty-print  true
+                       :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}}}}}
                    :doo            {:build "test"}
                    :source-paths   ["env/dev/clj"]
                    :resource-paths ["env/dev/resources"]
-                   :repl-options   {:init-ns user
-                                    :timeout 180000}
-                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]
+                   :repl-options   {:init-ns user}
                    :injections     [(require 'pjstadig.humane-test-output)
                                     (pjstadig.humane-test-output/activate!)]}
-   :project/test  {:resource-paths ["env/test/resources"]
+   :project/test  {:jvm-opts ["-Dconf=test-config.edn"]
+                   :resource-paths ["env/test/resources"]
                    :cljsbuild
                    {:builds
                     {:test
@@ -151,9 +130,6 @@
                       {:output-to     "target/test.js"
                        :main          "rclone.doo-runner"
                        :optimizations :whitespace
-                       :pretty-print  true}}}}
-
-                   }
+                       :pretty-print  true}}}}}
    :profiles/dev  {}
-   :profiles/test {}}
-  :env {:squiggly {:checkers [:eastwood :kibit]}})
+   :profiles/test {}})

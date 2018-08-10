@@ -1,5 +1,4 @@
-{
- :interfaces
+{:interfaces
  {:thread
   {:fields
    {:id          {:type String}
@@ -51,8 +50,7 @@
                 :url         {:type String}
                 :posted_by   {:type String}
                 :posted_in   {:type String}
-                :votes       {:type String}
-                }}
+                :votes       {:type String}}}
 
   :Comment
   {:implements [:thread]
@@ -88,7 +86,12 @@
   :comments
   {:type    (list :Comment)
    :args    {:id {:type String}}
-   :resolve :get-comments}}
+   :resolve :get-comments}
+
+  :subscriptions
+  {:type (list :Subscription)
+   :args {:id {:type String}}
+   :resolve :get-user-subs}}
 
  :mutations
  {:createuser
@@ -137,5 +140,4 @@
              :posted_to    {:type (non-null Int)}
              :replied_to   {:type (non-null Int)}
              :commented_by {:type (non-null String)}}
-   :resolve :create-comment}
-  }}
+   :resolve :create-comment}}}

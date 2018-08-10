@@ -7,6 +7,7 @@
               [markdown.core :refer [md->html]]
               [ajax.core :refer [GET POST]]
               [rclone.ajax :refer [load-interceptors!]]
+              [day8.re-frame.tracing :refer-macros [fn-traced defn-traced]]
               [rclone.handlers]
               [rclone.subscriptions]
               [rclone.semanticui :as sui]
@@ -19,7 +20,6 @@
 (def uniqkey (atom 0))
 (defn gen-key []
   (let [res (swap! uniqkey inc)]
-                                        ;(u/log res)
     res))
 
 (defn app-sidebar

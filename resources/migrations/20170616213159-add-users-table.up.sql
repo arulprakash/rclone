@@ -10,7 +10,7 @@ CREATE TABLE users
  pass VARCHAR(300));
 
 CREATE TABLE groups
-(id BIGSERIAL PRIMARY KEY,
+(id VARCHAR(50) PRIMARY KEY,
  description TEXT,
  rules TEXT,
  created TIME,
@@ -26,7 +26,7 @@ CREATE TABLE posts
  created TIME,
  changed TIME,
  posted_by VARCHAR(50) references users(id),
- posted_in BIGINT references groups(id));
+ posted_in VARCHAR(50) references groups(id));
 
 CREATE TABLE comments
 (id BIGSERIAL PRIMARY KEY,
@@ -40,7 +40,7 @@ CREATE TABLE comments
 
 CREATE TABLE subscriptions
 (id BIGSERIAL PRIMARY KEY,
- subscribed_to BIGINT REFERENCES groups(id),
+ subscribed_to VARCHAR(50) REFERENCES groups(id),
  subscriber VARCHAR(50) REFERENCES users(id),
  created TIME);
 

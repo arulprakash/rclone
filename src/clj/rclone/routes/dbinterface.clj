@@ -23,7 +23,9 @@
 (defn get-user-subs
   [context arguments value]
   (let [{:keys [id]} arguments]
-    (db/get-user-subs {:id id})))
+    (->>
+     (db/get-user-subs {:id id})
+     (into [] (mapcat #(db/get-groups {:id (:subscribed_to %)}))))))
 
 (defn get-comments
   [context arguments value]
@@ -88,7 +90,7 @@
 (defn get-top-posts
   [context arguments value]
   (let [{:keys [id]} arguments]
-    (db/get-top-posts)))
+    (into [] (db/get-top-posts))))
 
 (defn upvote-post
   [context arguments value]

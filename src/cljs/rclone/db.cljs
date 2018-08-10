@@ -4,9 +4,9 @@
   {:page :home
    :show-login? false
    :top_posts {}
-   :Posts []
+   :posts []
    :user {}
-   :Groups []
-   :Subscriptions []
-   :Privileges []
+   :groups []
+   :subscriptions []
+   :privileges []
    :error {}})

@@ -1,0 +1,127 @@
+Arul Prakash is a SAP Certified Consultant who has expertise and experience in various SAP modules in multiple implementation and Support projects. His responsibilities include the analysis of Busienss processes, designing System test, System Integration Test Plans, design specification documents and ensuring quality of the SAP system. He was also responsible for creating end user documentation, training them and co-ordinating end users and the implementation team.
+
+ 
+
+Primary Skills
+
+SAP FI - GL, AP, AR, AA
+
+IS Banking - Loans Management, Collaterals Management
+
+ 
+
+Secondary Skills
+
+CO (Controlling) - Cost Centers, Internal Orders, CO-PA (Profitability Analysis)
+
+SAP FSCM (Financial Supply Chain Management) - Collections, Credit and Disputes Management
+
+Opentext VIM (Vendor Invoice Management) - Integration with SAP FI and Ariba
+
+ABAP - Can understand ABAP code
+
+Automation scripting in HP UFT Unified Functional Testing
+
+Web Services testing in SoapUI
+
+ 
+
+Certifications
+
+SAP Certified Associate in SAP Financial Accounting SAP ECC 6.0 EHP6
+
+
+
+Projects
+
+
+
+SAP FICO Support, Insurance Client in USA — June 2017 to May 2018
+
+Project Abstract
+
+Client is an American insurer group of automobiles, homes and small businesses and also provides other insurance and financial services products. Farmers Insurance has more than 48,000 exclusive and independent agents and approximately 21,000 employeesFarmers Insurance has a vast technology landscape which involves ERP packages from multiple vendors including SAP. Objective is to implement changes and provide support for new requirements in Finance and Controlling modules
+
+Roles and Responsibilities
+
+Responsible for analyzing the incidents, take ownership and resolving them
+Monitor production jobs and provide insights into any issues or failures
+Resolve issues related to interface postings of IDOCs
+Communicate reports of various interface postings to stakeholders indicating the success and failure of IDOCs
+Analyse change requests, design functional specifications and implement them
+Provide support to testing team and implement automated solutions to recurring activities using HP UFT
+ 
+
+SAP IS Banking Implementation, Major Banking Group in The Netherlands — June 2015 to April 2017
+
+Project Abstract
+
+Client is among the top three loans providers in the Dutch market. The group currently uses Salesforce and other systems to manage loans management processes. The implementation of IS Banking will complement the already existing systems by being the backend processing of all the activities related to the management of loans and collaterals.
+
+Roles and Responsibilities
+
+Analyze User stories and review it during Agile Poker meetings. Augment them wherever necessary.
+Design Functional Specification for the solutions and implement the changes in system
+Conduct System Integration Testing for the changes and provide assurance to the quality of system
+Responsible for production support in SAP Loans Management and Collaterals Management
+Responsible for the integration of IS Banking module with FI-CAx and Bank Analyzer
+ 
+
+SAP FICO Implementation, Public Financial Institution in Saudi Arabia — October 2014 to May 2015
+
+Project Abstract
+
+Implementation of SAP (FICO, MM and HCM) for the institute, which is the controller of banks in Saudi Arabia. Currently SAMA is following cash based accounting and is performing their daily operations in a Mainframe ecosystem. The project will enable the institute to migrate to accrual accounting by means of SAP. While the existing mainframe infrastructure continue to be in the usage, SAP will be leading accounting system after the implementation. The integration between SAP and the existing ecosystem is achieved by means of several interfaces.
+
+Roles and Responsibilities
+
+Creation of G/L account master groups, Cash Journals, House banks and Maintaining Field Status Variant and Posting Keys
+Defining Fiscal year variant, Posting periods, Tolerance groups, Document types and number ranges
+Creation of Customer/Vendor Accounts Groups, Number Ranges, and Customer/ Vendor Masters Creation
+Configuring Automatic Payment Program and Dunning for Vendors/Customers
+Configuring Zakat tax according to Saudi Arabian law for foreign vendors
+Configuring Chart of Depreciation, Depreciation Areas and Depreciation Keys
+Creation of Asset Classes, Asset Number Ranges, Account Determination, and related settings
+Managing acquisition of new asset with Asset Under Construction (AUC) and settlement of the same to final asset
+Coordinating User Acceptance Testing and guide users on how to use SAP and accrued based accounting
+ 
+
+Opentext VIM Implementation and FICO Support, Leading Bank in UK — March 2013 to September 2014
+
+Project Abstract
+
+Client is one of the top four clearing banks in The United Kingdom. To ease the access of employee procurement process, a new Buying Portal is implemented which will use SAP’s Enterprise Portal which will provide a unified procuring scenario with access to existing SAP SRM and other workflows. This will also introduce major changes in SAP SRM workflow to improve the approval process. To optimize supplier communication and to facilitate automatic processing of invoices, Ariba Network and Opentext VIM are implemented. Ariba will enable suppliers to process POs and Vendor Invoice Management will be responsible automatically process invoices and archiving them.
+
+ Roles and Responsibilities
+
+Configuring Archive Link, Roles and defining Rollout criteria
+Maintaining VIM Channels, Field Mapping and EDI configuration
+Configure Document Types, Profiles, Document Process Types and Indexing Line Matching
+Configuring PO Parking Process and PO Blocking Process
+Configuring Non-PO Parking Process
+Configure Invoice Approval Process, IIC (Integrated Invoice Cockpit)
+Configure IDOC Types for inbound IDOCs from SAP Ariba
+Configure FI-Accounts Payable for integration with VIM
+Support testers in test scenarios and test cases
+Provide post-production support and resolve hyper care incidents
+ 
+
+SAP FICO Implementation, Claims Management Company in USA — October 2012 to February 2013
+
+Project Abstract
+
+Cunningham Lindsey is an insurance claims services provider. Cunningham claims to be the UK’s largest loss adjusting and claims management services provider with revenues in 2007 of £112m, having grown in size by about 50% in the past five years.
+
+The project is aimed at replacing the legacy systems (an environment of multiple software solutions from multiple vendors) with SAP.  The implementation also involves integration with multiple non-SAP systems through PI; FSCM implementation enables the customer to assess, analyze and take actions on each of the customer based on the credit ratings and also enables to effectively manage collections through customized worklists.
+
+Roles and Responsibilities
+
+Configured Business Partner for customers and migrated customers from legacy system to SAP BP
+Responsible for creating interface to receive credit ratings from Dun and Bradstreet
+Assisted functional consultants in configuring Credit, Collections and Dispute Management
+Responsible for the creation and maintaining the Requirements Traceability Matrix which maps the requirements of customer with the processes specified in Business Blueprint Documents designed by SAP.
+Planning scenarios and the designing of test cases for business processes which include Invoice Processing, Payment Processing, Vendor Creation, Dunning, Clearing, Month-End Closure and Year-End Closure.
+Conducting two rounds of system testing to provide quality assurance of the implemented solution.
+The solution also involved many interfaces to other systems provided by different vendors. Conducting two rounds of System Integration Testing to ensure the integrity of the data flow between SAP and other systems.
+Coordinated and assisted the Cunningham Lindsey’s users in conducting User Acceptance Testing and helped fellow consultants to understand and reproduce the bug raised by users.
+Developed a custom program which calculates SLA for each incident based on which he has published daily reports and statistics to all the project stakeholders.

@@ -43,4 +43,4 @@
 (def formfld (component "Form" "Field"))
 (def forminp (component "Form" "Input"))
 (def icon (component "Icon"))
-(def dropdown (component "Dropdown"))
+(def dropdown (component "DropDown"))
