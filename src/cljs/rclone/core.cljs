@@ -38,15 +38,10 @@
                          :name "signin"
                          :on-click #(rf/dispatch [:flip-login])}
          "Sign In"])
-      (map #(if signed-in? %) [[:> sui/menuitm {:key (gen-key)
-                                                :on-click #(rf/dispatch [:set-active-page :post])}
-                                "Post"]
-                               [:> sui/menuitm {:key (gen-key)}
-                                "My Subreddits"]
-                               [:> sui/menuitm {:key (gen-key)}
-                                "Preferences"]
-                               [:> sui/menuitm {:key (gen-key)}
-                                "Logout"]])]]))
+      (map #(if signed-in? %) [[:> sui/menuitm {:on-click #(rf/dispatch [:set-active-page :post])} "Post"]
+                               [:> sui/menuitm "My Subreddits"]
+                               [:> sui/menuitm "Preferences"]
+                               [:> sui/menuitm "Logout"]])]]))
 
 
 (defn top-grids []
@@ -55,8 +50,8 @@
      (when (not-empty posts)
        [:> sui/grid {:rows (count posts)
                      :columns 1}
-        (map #(identity [:> sui/gridr {:key (:id %)
-                                       :columns 2}
+        (map #(identity ^{:key (gen-key)}
+                        [:> sui/gridr {:columns 2}
                          [:> sui/gridc {:width 1}                          
                           [:> sui/gridr
                            [:> sui/button {:icon "chevron up"
@@ -68,10 +63,10 @@
                            [:> sui/button {:icon "chevron down"
                                            :size "mini"
                                            :on-click (fn [] (rf/dispatch [:mutate-server [:upvote {:id (:id %)} [:votes]]]))}]]]
-                         [:> sui/gridc {:width 7}                        
-                          [:> sui/gridr {:key :tle}
+                         [:> sui/gridc {:width 7}
+                          [:> sui/gridr 
                            [:> sui/gridc [:a {:href (:url %)} (:title %)]]]
-                          [:> sui/gridr {:key :txt}
+                          [:> sui/gridr
                            [:> sui/gridc (:description %)]]]]) posts)]))])
 
 (defn home-page []

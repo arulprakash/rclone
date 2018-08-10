@@ -12,16 +12,16 @@
 
 (def login-db
   (r/atom
-    {:username  ""
-     :password  ""
-     :vpassword ""
-     :email     ""}))
+   {:username  ""
+    :password  ""
+    :vpassword ""
+    :email     ""}))
 
-;;Subsrciptions
+;;Subscriptions
 (reg-sub
-  :show-login?
-  (fn [db _]
-    (:show-login? db)))
+ :show-login?
+ (fn [db _]
+   (:show-login? db)))
 
 (reg-sub
   :sign-up?
@@ -30,26 +30,25 @@
 
 ;;Handlers
 (reg-event-db
-  :flip-login
-  (fn-traced [db [_ _]]
-             (if (not (nil? (get-in db [:user :id])))
-               (update db :show-login? not))))
+ :flip-login
+ (fn [db [_ _]]
+   (update db :show-login? not)))
 
 (reg-event-db
-  :flip-signup
-  (fn-traced [db [_ _]]
-             (update db :sign-up? not)))
+ :flip-signup
+ (fn [db [_ _]]
+   (update db :sign-up? not)))
 
 (reg-event-fx
  :login
- (fn-traced [{:keys [db]} _]
-            {:db         db
-             :dispatch-n [[:query-server
-                           [:user {:id   (:username @login-db)
-                                   :pass (:password @login-db)}
-                            [:id :first_name :last_name :email :admin :is_active]]]
-                          [:flip-login]
-                          [:user-subs]]}))
+ (fn [{:keys [db]} _]
+   {:db         db
+    :dispatch-n [[:query-server
+                  [:user {:id   (:username @login-db)
+                          :pass (:password @login-db)}
+                   [:id :first_name :last_name :email :admin :is_active]]]
+                 [:flip-login]
+                 [:user-subs]]}))
 
 ;;Views
 (defn login-form

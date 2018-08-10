@@ -17,43 +17,43 @@
 
 (reg-event-db
  :initialize-db
- (fn-traced [_ _]
+ (fn [_ _]
    db/default-db))
 
 (reg-event-db
-  :set-active-page
-  (fn-traced [db [_ page]]
-    (assoc db :page page)))
+ :set-active-page
+ (fn [db [_ page]]
+   (assoc db :page page)))
 
 (reg-event-db
  :set-docs
- (fn-traced [db [_ docs]]
+ (fn [db [_ docs]]
    (assoc db :docs docs)))
 
 (reg-event-db
  :assoc-db
- (fn-traced [db [_ vec val]]
+ (fn [db [_ vec val]]
    (assoc-in db vec val)))
 
 (reg-event-db
  :update-db
- (fn-traced [db [_ vec f]]
+ (fn [db [_ vec f]]
    (update-in db vec f)))
 
 (reg-event-db
  :good-http-result
- (fn-traced [db [_ result]]
+ (fn [db [_ result]]
    (merge db  (:data result))))
 
 (reg-event-db
  :bad-http-result
- (fn-traced [db [_ result]]
+ (fn [db [_ result]]
    (merge db  (:error result))))
 
 (reg-event-fx
  :query-server
  [generate-query]
- (fn-traced [{:keys [db]} [_ query]]
+ (fn [{:keys [db]} [_ query]]
    {:http-xhrio {:method          :get
                  :uri             "/graphql"
                  :temp            (js/console.log (str "In Query Server " query))
@@ -66,7 +66,7 @@
 (reg-event-fx
  :mutate-server
  [generate-query]
- (fn-traced [{:keys [db]} [_ mutation]]
+ (fn [{:keys [db]} [_ mutation]]
    {:http-xhrio {:method          :get
                  :uri             "/graphql"
                  :params          {"mutation" mutation}

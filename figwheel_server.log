@@ -1,0 +1,81 @@
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 14.253 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.067 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 8.673 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 6.181 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.586 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.829 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.755 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.731 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.492 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/rclone/core.cljs   line:58  column:15  ----
+
+  Wrong number of args (2) passed to cljs.core/identity
+
+  54  (let [posts @(rf/subscribe [:top-posts])]
+  55    (when (not-empty posts)
+  56      [:> sui/grid {:rows (count posts)
+  57                    :columns 1}
+  58       (map #(identity {:key (gen-key)} [:> sui/gridr {:key (gen-key)
+                 ^--- Wrong number of args (2) passed to cljs.core/identity
+  59                                                       :columns 2}
+  60                                         [:> sui/gridc {:key (gen-key)
+  61                                                        :width 1}                          
+  62                                          [:> sui/gridr {:key (gen-key)}
+  63                                           [:> sui/button {:icon "chevron up"
+
+----  Compiler Warning : Please see src/cljs/rclone/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.876 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.386 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.347 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.353 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.362 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.255 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.292 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\handlers.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 17.212 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.917 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.101 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.013 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
