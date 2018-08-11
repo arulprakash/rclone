@@ -38,9 +38,13 @@
 (def modalhdr (component "Modal" "Header"))
 (def modalcnt (component "Modal" "Content"))
 (def modalact (component "Modal" "Actions"))
+
 (def form (component "Form"))
 (def formbtn (component "Form" "Button"))
 (def formfld (component "Form" "Field"))
 (def forminp (component "Form" "Input"))
+(def formdd (component "Form" "Dropdown"))
+
 (def icon (component "Icon"))
 (def dropdown (component "Dropdown"))
+(def select (component "Select"))

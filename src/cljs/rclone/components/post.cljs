@@ -12,7 +12,7 @@
 
 (def post-db
   (r/atom
-   {:group {:text "text"}
+   {:group ""
     :url   ""
     :title ""
     :image ""
@@ -23,38 +23,44 @@
  :user-subs
  (fn [db _]
    (into []
-         (map #(hash-map :text (:id %)) (:subscriptions db)))))
+         (map #(hash-map :value (:id %) :text (:id %)) (:subscriptions db)))))
 
 ;;Handlers
 (reg-event-fx
  :get-user-subs
- (fn-traced [{:keys [db]} _]
-            {:db       db
-             :dispatch [:query-server
-                        [:subscriptions {:id (get-in db [:user :id])}
-                         [:id]]]}))
+ (fn [{:keys [db]} _]
+   {:db       db
+    :dispatch [:query-server
+               [:subscriptions {:id (get-in db [:user :id])}
+                [:id]]]}))
 
 (reg-event-fx
  :post
- (fn-traced [{:keys [db]} _]
-            {:db       db
-             :dispatch [:mutate-server
-                        [:post {:url         (:url @post-db)
-                                :title       (:title @post-db)
-                                :description (:text @post-db)}
-                         [:id]]]}))
+ (fn [{:keys [db]} _]
+   {:db       db
+    :dispatch [:mutate-server
+               [:post {:url         (:url @post-db)
+                       :title       (:title @post-db)
+                       :description (:text @post-db)}
+                [:id]]]}))
 
 ;;Views
 (defn subs-component
   []
-  (let [user-subs @(rf/subscribe [:user-subs])]
-    [:> sui/dropdown {:placeholder "Post to Group"
-                      ;;:value (hash-map  :text (:group @post-db))
-                      :selection   :true
-                      :select-on-navigation :true
-                      ;;:selected-label :true
-                      ;;:on-label-click #(swap! post-db assoc :group (-> % .-target .-value))
-                      :options     user-subs }]))
+  (r/create-class
+   {:display-name "subs-dropdown"
+    :component-will-mount
+    (fn [this]
+      (rf/dispatch [:get-user-subs]))
+    :reagent-render
+    (fn [this]
+      (let [user-subs @(rf/subscribe [:user-subs])]
+        [:> sui/formdd {;;:placeholder "Post to Group "
+                        ;;:value (hash-map :text (:group @post-db))
+                        :search :true
+                        :selection :true
+                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))
+                        :options     user-subs}]))}))
 
 (defn post-link
   []

@@ -79,3 +79,181 @@ notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\comp
 Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
 Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.013 seconds.
 notifying browser that file changed:  target\cljsbuild\public\js\out\rclone\components\login.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 8.28 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.561 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.789 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.173 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.177 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.345 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.342 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.13 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.016 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.928 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.142 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.038 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.075 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 5.934 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.627 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.188 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.315 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.277 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.083 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.445 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.42 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.975 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.931 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.938 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.04 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.057 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:58  column:13  ----[0m
+
+  [1mUse of undeclared Var rclone.semanticui/select[0m
+
+  [36m54[0m  [36m  (rf/dispatch [:get-user-subs]))[0m
+  [36m55[0m  [36m:reagent-render[0m
+  [36m56[0m  [36m(fn [this][0m
+  [36m57[0m  [36m  (let [user-subs @(rf/subscribe [:user-subs])][0m
+  [33m58[0m  [1m    [:> sui/select {;;:placeholder "Post to Group"[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var rclone.semanticui/select[0m
+  [36m59[0m  [36m                    :text {:text "dasad"}[0m
+  [36m60[0m  [36m                    :value {:text "dasad"}[0m
+  [36m61[0m  [36m                    :selection   :true[0m
+  [36m62[0m  [36m                    :on-change #(swap! post-db assoc :group (-> % .-target .-value))[0m
+  [36m63[0m  [36m                    :options     user-subs }]))}))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.07 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.015 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/semanticui.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.044 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 5.986 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.809 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.239 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.241 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 4.066 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.079 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.888 seconds.[0m
+[36m----  Could not Read  src/cljs/rclone/components/post.cljs   line:61 ----[0m
+
+  [1m/Users/arul/Projects/Clojure/rclone/src/cljs/rclone/components/post.cljs [line 61, col 49] The map literal starting with :value on line 58 column 24 contains 5 form(s). Map literals must contain an even number of forms.[0m
+
+  [36m59[0m  [36m                        :value [0m
+  [36m60[0m  [36m                        :on-search-change #(swap! post-db assoc :group (-> % .-target .-value))[0m
+  [33m61[0m  [1m                        :options     user-subs }]))}))[0m
+  [0m  [0m  [33m                        /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/components/post.cljs [line 61, col 49] The map literal starting with :value on line 58 column 24 contains 5 form(s). Map literals must contain an even number of forms.[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn post-link[0m
+  [36m64[0m  [36m  [][0m
+
+[36m----  Reader Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.727 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.157 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.986 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.938 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.899 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.942 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.212 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/semanticui.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.108 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.003 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.664 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js

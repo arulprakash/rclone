@@ -74,7 +74,7 @@ WHERE posted_by = :id
 -- :doc retrieve all the posts posted by the user
 SELECT * FROM posts
 ORDER BY votes
-LIMIT 20
+LIMIT 5
 
 -- :name delete-post! :! :1
 -- :doc delete a user given the id
