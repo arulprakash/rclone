@@ -257,3 +257,830 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/comp
 Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
 [32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.664 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 2.031 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:64  column:1  ----[0m
+
+  [1mUnsupported binding key: :div[0m
+
+  [36m62[0m  [36m                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))[0m
+  [36m63[0m  [36m                        :options     user-subs}]))}))[0m
+  [33m64[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Unsupported binding key: :div[0m
+  [36m65[0m  [36m  [:div[0m
+  [36m66[0m  [36m   [:> sui/menu[0m
+  [36m67[0m  [36m    [:> sui/menuitm][0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 1.3 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:64  column:1  ----[0m
+
+  [1mUnsupported binding key: :div[0m
+
+  [36m62[0m  [36m                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))[0m
+  [36m63[0m  [36m                        :options     user-subs}]))}))[0m
+  [33m64[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Unsupported binding key: :div[0m
+  [36m65[0m  [36m  [:div[0m
+  [36m66[0m  [36m   [:> sui/menu {:attached :top[0m
+  [36m67[0m  [36m                 :tabular :true}[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.914 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:64  column:1  ----[0m
+
+  [1mUnsupported binding key: :div[0m
+
+  [36m62[0m  [36m                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))[0m
+  [36m63[0m  [36m                        :options     user-subs}]))}))[0m
+  [33m64[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Unsupported binding key: :div[0m
+  [36m65[0m  [36m  [:div[0m
+  [36m66[0m  [36m   [:> sui/menu {:attached :top[0m
+  [36m67[0m  [36m                 :tabular :true}[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.762 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:64  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m62[0m  [36m                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))[0m
+  [36m63[0m  [36m                        :options     user-subs}]))}))[0m
+  [33m64[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m65[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+  [36m66[0m  [36m    [:div[0m
+  [36m67[0m  [36m     [:> sui/menu {:attached :top[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.924 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:64  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m62[0m  [36m                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))[0m
+  [36m63[0m  [36m                        :options     user-subs}]))}))[0m
+  [33m64[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m65[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+  [36m66[0m  [36m    [:div[0m
+  [36m67[0m  [36m     [:> sui/menu {:attached :top[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.734 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:65  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m63[0m  [36m                        :on-search-change (fn [e data] (swap! post-db assoc :group (-> data .-value)))[0m
+  [36m64[0m  [36m                        :options     user-subs}]))}))[0m
+  [33m65[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m66[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+  [36m67[0m  [36m    [:div[0m
+  [36m68[0m  [36m     [:> sui/menu {:attached :top[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.736 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:68  column:28  ----[0m
+
+  [1mToo few arguments to if at line 68 /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/components/post.cljs[0m
+
+  [36m66[0m  [36m[tab][0m
+  [36m67[0m  [36m[:> sui/menuitm {:name tab[0m
+  [33m68[0m  [1m                 :active (if (= active-tab tab))[0m
+  [0m  [0m  [33m                         ^--- Too few arguments to if at line 68 /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/components/post.cljs[0m
+  [36m69[0m  [36m                 :on-click #(swap! post-db assoc[0m
+  [36m70[0m  [36m                                   :active-tab (-> % .-target .-name))}])[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.833 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:68  column:28  ----[0m
+
+  [1mToo few arguments to if at line 68 /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/components/post.cljs[0m
+
+  [36m66[0m  [36m[tab][0m
+  [36m67[0m  [36m[:> sui/menuitm {:name tab[0m
+  [33m68[0m  [1m                 :active (if (= active-tab tab))[0m
+  [0m  [0m  [33m                         ^--- Too few arguments to if at line 68 /Users/arul/Projects/Clojure/rclone/src/cljs/rclone/components/post.cljs[0m
+  [36m69[0m  [36m                 :on-click #(swap! post-db assoc[0m
+  [36m70[0m  [36m                                   :active-tab (-> % .-target .-name))}])[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:68  column:35  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/active-tab[0m
+
+  [36m64[0m  [36m                        :options     user-subs}]))}))[0m
+  [36m65[0m  [36m(defn post-tab[0m
+  [36m66[0m  [36m  [tab][0m
+  [36m67[0m  [36m  [:> sui/menuitm {:name tab[0m
+  [33m68[0m  [1m                   :active (if (= active-tab tab) true)[0m
+  [0m  [0m  [33m                                  ^--- Use of undeclared Var rclone.components.post/active-tab[0m
+  [36m69[0m  [36m                   :on-click #(swap! post-db assoc[0m
+  [36m70[0m  [36m                                     :active-tab (-> % .-target .-name))}])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn post-container[0m
+  [36m73[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.76 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:72  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m70[0m  [36m                                     :active-tab (-> % .-target .-name))}])[0m
+  [36m71[0m  [36m[0m
+  [33m72[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m73[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+  [36m74[0m  [36m    [:div[0m
+  [36m75[0m  [36m     [:> sui/menu {:attached :top[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:68  column:35  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/active-tab[0m
+
+  [36m64[0m  [36m                        :options     user-subs}]))}))[0m
+  [36m65[0m  [36m(defn post-tab[0m
+  [36m66[0m  [36m  [tab][0m
+  [36m67[0m  [36m  [:> sui/menuitm {:name tab[0m
+  [33m68[0m  [1m                   :active (if (= active-tab tab) :true)[0m
+  [0m  [0m  [33m                                  ^--- Use of undeclared Var rclone.components.post/active-tab[0m
+  [36m69[0m  [36m                   :on-click #(swap! post-db assoc[0m
+  [36m70[0m  [36m                                     :active-tab (-> % .-target .-name))}])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn post-container[0m
+  [36m73[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.852 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:72  column:1  ----[0m
+
+  [1mParameter declaration "let" should be a vector[0m
+
+  [36m70[0m  [36m                                     :active-tab (-> % .-target .-name))}])[0m
+  [36m71[0m  [36m[0m
+  [33m72[0m  [1m(defn post-container[0m
+  [0m  [0m  [33m^--- Parameter declaration "let" should be a vector[0m
+  [36m73[0m  [36m  (let [active-tab (:active-tab @post-db)][0m
+  [36m74[0m  [36m    [:div[0m
+  [36m75[0m  [36m     [:> sui/menu {:attached :top[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:68  column:35  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/active-tab[0m
+
+  [36m64[0m  [36m                        :options     user-subs}]))}))[0m
+  [36m65[0m  [36m(defn post-tab[0m
+  [36m66[0m  [36m  [tab][0m
+  [36m67[0m  [36m  [:> sui/menuitm {:name tab[0m
+  [33m68[0m  [1m                   :active (if (= active-tab tab) :true)[0m
+  [0m  [0m  [33m                                  ^--- Use of undeclared Var rclone.components.post/active-tab[0m
+  [36m69[0m  [36m                   :on-click #(swap! post-db assoc[0m
+  [36m70[0m  [36m                                     :active-tab (-> % .-target .-name))}])[0m
+  [36m71[0m  [36m[0m
+  [36m72[0m  [36m(defn post-container[0m
+  [36m73[0m  [36m  [][0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.537 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.269 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 6.227 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.075 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/semanticui.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.776 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.764 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.298 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.484 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.344 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.094 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.846 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.035 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.317 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.166 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.666 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.424 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.292 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.136 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.103 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.101 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.453 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.004 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.06 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.996 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.153 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.079 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.917 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.043 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.905 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.049 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.05 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.024 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.678 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:76  column:1  ----[0m
+
+  [1mCan't use qualified name as parameter: sui/form at line 76 src/cljs/rclone/components/post.cljs[0m
+
+  [36m74[0m  [36m                                 (swap! post-db assoc[0m
+  [36m75[0m  [36m                                        :active-tab (-> data .-name)))}]))[0m
+  [33m76[0m  [1m(defn post-form[0m
+  [0m  [0m  [33m^--- Can't use qualified name as parameter: sui/form at line 76 src/cljs/rclone/components/post.cljs[0m
+  [36m77[0m  [36m  [:> sui/form {:method "GET"}[0m
+  [36m78[0m  [36m   [:> sui/forminp {:icon          "external share"[0m
+  [36m79[0m  [36m                    :value         (:url @post-db)[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.02 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.741 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:113  column:4  ----[0m
+
+  [1mcond requires an even number of forms[0m
+
+  [36m111[0m  [36m [post-tab "image"][0m
+  [36m112[0m  [36m [post-tab "link"]][0m
+  [33m113[0m  [1m(cond (:active-tab @post-db)[0m
+  [0m   [0m  [33m^--- cond requires an even number of forms[0m
+  [36m114[0m  [36m      :post [post-form])])[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.174 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.121 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:115  column:15  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/image-form[0m
+
+  [36m111[0m  [36m [post-tab "image"][0m
+  [36m112[0m  [36m [post-tab "link"]][0m
+  [36m113[0m  [36m(case (:active-tab @post-db)[0m
+  [36m114[0m  [36m  "post" [post-form][0m
+  [33m115[0m  [1m  "image" [image-form][0m
+  [0m   [0m  [33m           ^--- Use of undeclared Var rclone.components.post/image-form[0m
+  [36m116[0m  [36m  "link" [link-form])])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:116  column:14  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/link-form[0m
+
+  [36m112[0m  [36m [post-tab "link"]][0m
+  [36m113[0m  [36m(case (:active-tab @post-db)[0m
+  [36m114[0m  [36m  "post" [post-form][0m
+  [36m115[0m  [36m  "image" [image-form][0m
+  [33m116[0m  [1m  "link" [link-form])])[0m
+  [0m   [0m  [33m          ^--- Use of undeclared Var rclone.components.post/link-form[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.221 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.989 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.995 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.982 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.974 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.065 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.07 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.031 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.016 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.55 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 1.956 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs   line:85  column:1  ----[0m
+
+  [1mUnable to resolve var: about-page in this context at line 85 src/cljs/rclone/core.cljs[0m
+
+  [36m83[0m  [36m  [post/post-link])[0m
+  [36m84[0m  [36m[0m
+  [33m85[0m  [1m(def pages[0m
+  [0m  [0m  [33m^--- Unable to resolve var: about-page in this context at line 85 src/cljs/rclone/core.cljs[0m
+  [36m86[0m  [36m  {:home  #'home-page[0m
+  [36m87[0m  [36m   :about #'about-page[0m
+  [36m88[0m  [36m   :post #'post-page})[0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.952 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.459 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.263 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.36 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.17 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.111 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.351 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 1.697 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/core.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.955 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.828 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.775 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.728 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.665 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.667 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.731 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: re-dnd.events, could not locate re_dnd/events.cljs, re_dnd/events.cljc, or JavaScript source providing "re-dnd.events" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 16.215 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 4.297 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 4.507 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.952 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.854 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.723 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.988 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 1.95 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: cljs-drag-n-drop.core, could not locate cljs_drag_n_drop/core.cljs, cljs_drag_n_drop/core.cljc, or JavaScript source providing "cljs-drag-n-drop.core" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 1.666 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: cljs-drag-n-drop.core, could not locate cljs_drag_n_drop/core.cljs, cljs_drag_n_drop/core.cljc, or JavaScript source providing "cljs-drag-n-drop.core" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.8 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: cljs-drag-n-drop.core, could not locate cljs_drag_n_drop/core.cljs, cljs_drag_n_drop/core.cljc, or JavaScript source providing "cljs-drag-n-drop.core" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.785 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs  ----[0m
+
+  [1mNo such namespace: cljs-drag-n-drop.core, could not locate cljs_drag_n_drop/core.cljs, cljs_drag_n_drop/core.cljc, or JavaScript source providing "cljs-drag-n-drop.core" (Please check that namespaces with dashes use underscores in the ClojureScript file name) [0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.11 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.665 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.833 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 4.164 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.397 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.226 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.748 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:75  column:1  ----[0m
+
+  [1mParameter declaration "r/create-class" should be a vector[0m
+
+  [36m73[0m  [36m                                 (swap! post-db assoc[0m
+  [36m74[0m  [36m                                        :active-tab (-> data .-name)))}]))[0m
+  [33m75[0m  [1m(defn drop-canvas[0m
+  [0m  [0m  [33m^--- Parameter declaration "r/create-class" should be a vector[0m
+  [36m76[0m  [36m  (r/create-class[0m
+  [36m77[0m  [36m   :reagent-render[0m
+  [36m78[0m  [36m   (fn [this][0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.873 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:75  column:1  ----[0m
+
+  [1mParameter declaration "r/create-class" should be a vector[0m
+
+  [36m73[0m  [36m                                 (swap! post-db assoc[0m
+  [36m74[0m  [36m                                        :active-tab (-> data .-name)))}]))[0m
+  [33m75[0m  [1m(defn drop-canvas[0m
+  [0m  [0m  [33m^--- Parameter declaration "r/create-class" should be a vector[0m
+  [36m76[0m  [36m  (r/create-class[0m
+  [36m77[0m  [36m   :reagent-render[0m
+  [36m78[0m  [36m   (fn [this][0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.873 seconds.[0m
+[36m----  Could not Analyze  src/cljs/rclone/components/post.cljs   line:75  column:1  ----[0m
+
+  [1mParameter declaration "r/create-class" should be a vector[0m
+
+  [36m73[0m  [36m                                 (swap! post-db assoc[0m
+  [36m74[0m  [36m                                        :active-tab (-> data .-name)))}]))[0m
+  [33m75[0m  [1m(defn drop-canvas[0m
+  [0m  [0m  [33m^--- Parameter declaration "r/create-class" should be a vector[0m
+  [36m76[0m  [36m  (r/create-class[0m
+  [36m77[0m  [36m   :reagent-render[0m
+  [36m78[0m  [36m   (fn [this][0m
+
+[36m----  Analysis Error : Please see src/cljs/rclone/components/post.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:77  column:3  ----[0m
+
+  [1mWrong number of args (4) passed to reagent.core/create-class[0m
+
+  [36m73[0m  [36m                                 (swap! post-db assoc[0m
+  [36m74[0m  [36m                                        :active-tab (-> data .-name)))}]))[0m
+  [36m75[0m  [36m(defn drop-canvas[0m
+  [36m76[0m  [36m  [][0m
+  [33m77[0m  [1m  (r/create-class[0m
+  [0m  [0m  [33m  ^--- Wrong number of args (4) passed to reagent.core/create-class[0m
+  [36m78[0m  [36m   :reagent-render[0m
+  [36m79[0m  [36m   (fn [this][0m
+  [36m80[0m  [36m     [:canvas {:id "drop-file"[0m
+  [36m81[0m  [36m               :width 400[0m
+  [36m82[0m  [36m               :height 200}])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:130  column:5  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/drop-panel[0m
+
+  [36m126[0m  [36m                 :icon-position "left"[0m
+  [36m127[0m  [36m                 :type          "file"[0m
+  [36m128[0m  [36m                 :on-change     #(swap! post-db assoc[0m
+  [36m129[0m  [36m                                        :image (-> % .-target .-value))}][0m
+  [33m130[0m  [1m[drop-panel][0m
+  [0m   [0m  [33m ^--- Use of undeclared Var rclone.components.post/drop-panel[0m
+  [36m131[0m  [36m[:> sui/formbtn {:type     "submit"[0m
+  [36m132[0m  [36m                 :value    "Post"[0m
+  [36m133[0m  [36m                 :on-click #(rf/dispatch [:post])}[0m
+  [36m134[0m  [36m "Post"]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.685 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:131  column:5  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/drop-panel[0m
+
+  [36m127[0m  [36m                 :icon-position "left"[0m
+  [36m128[0m  [36m                 :type          "file"[0m
+  [36m129[0m  [36m                 :on-change     #(swap! post-db assoc[0m
+  [36m130[0m  [36m                                        :image (-> % .-target .-value))}][0m
+  [33m131[0m  [1m[drop-panel][0m
+  [0m   [0m  [33m ^--- Use of undeclared Var rclone.components.post/drop-panel[0m
+  [36m132[0m  [36m[:> sui/formbtn {:type     "submit"[0m
+  [36m133[0m  [36m                 :value    "Post"[0m
+  [36m134[0m  [36m                 :on-click #(rf/dispatch [:post])}[0m
+  [36m135[0m  [36m "Post"]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.253 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.03 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.311 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.989 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.919 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.922 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.288 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.865 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.121 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.216 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.219 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.303 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.185 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.44 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.341 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.267 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.343 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.127 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.975 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.084 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.944 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.436 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.921 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.015 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.018 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.0 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.239 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.06 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.899 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.398 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.982 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.028 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.399 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.231 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.935 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.937 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.845 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.862 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.121 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.927 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.881 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.946 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.835 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.083 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.995 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/rclone/components/post.cljs   line:98  column:70  ----[0m
+
+  [1mUse of undeclared Var rclone.components.post/path[0m
+
+  [36m 94[0m  [36m                                      name (.-name file)[0m
+  [36m 95[0m  [36m                                      path (.-webkitRelativePath file)])[0m
+  [36m 96[0m  [36m                                (.preventDefault e)[0m
+  [36m 97[0m  [36m                                (.stopPropagation e)[0m
+  [33m 98[0m  [1m                                (swap! post-db assoc :drop-text (str path "\\" name)))[0m
+  [0m   [0m  [33m                                                                     ^--- Use of undeclared Var rclone.components.post/path[0m
+  [36m 99[0m  [36m                       :leave (fn [e] (println "d1 leave"))[0m
+  [36m100[0m  [36m                       :end   (fn [e] (println "d1 end")) }))}))[0m
+  [36m101[0m  [36m(defn post-form[0m
+  [36m102[0m  [36m  [][0m
+  [36m103[0m  [36m  [:> sui/form {:method "GET"}[0m
+
+[36m----  Compiler Warning : Please see src/cljs/rclone/components/post.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.947 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.895 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.903 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.061 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.894 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.908 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/rclone/components/post.js

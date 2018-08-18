@@ -50,6 +50,11 @@
  (fn [db [_ result]]
    (merge db  (:error result))))
 
+(reg-event-db
+ :get-dropped-file-name
+ (fn [db [_ result]]
+   (js/console.log "File dropped")))
+
 (reg-event-fx
  :query-server
  [generate-query]

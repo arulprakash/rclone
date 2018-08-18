@@ -38,7 +38,7 @@
                          :name "signin"
                          :on-click #(rf/dispatch [:flip-login])}
          "Sign In"])
-      (map #(if signed-in? %) [[:> sui/menuitm {:on-click #(rf/dispatch [:set-active-page :post])} "Post"]
+      (map #(if signed-in? %) [[:> sui/menuitm {:href "#/postform"} "Post"]
                                [:> sui/menuitm "My Subreddits"]
                                [:> sui/menuitm "Preferences"]
                                [:> sui/menuitm "Logout"]])]]))
@@ -71,16 +71,17 @@
 
 (defn home-page []
   [:div.container
-   (when-let [docs @(rf/subscribe [:docs])]
-     [:div.row
-      [:div
-       [top-grids]
-       [login/login-modal]
-       ]])])
+   [:div.row
+    [:div
+     [top-grids]
+     [login/login-modal]
+     ]]])
 
 (defn post-page
   []
-  [post/post-link])
+  [:div.container
+   [post/post-link]])
+
 
 (def pages
   {:home  #'home-page
@@ -101,6 +102,9 @@
 
 (secretary/defroute "/about" []
   (rf/dispatch [:set-active-page :about]))
+
+(secretary/defroute "/postform" []
+  (rf/dispatch [:set-active-page :post]))
 
 ;; -------------------------
 ;; History

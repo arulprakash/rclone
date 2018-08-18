@@ -16,6 +16,7 @@
 (def input (component "Input"))
 (def label (component "Label"))
 (def slist (component "List"))
+(def divider (component "Divider"))
 (def header (component "Header"))
 (def grid (component "Grid"))
 (def gridc (component "Grid" "Column"))
