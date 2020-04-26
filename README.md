@@ -1,8 +1,18 @@
 # rclone
 
-generated using Luminus version "2.9.11.60"
+This is a reddit clone which i am building to learn full-stack development in Clojure
 
-FIXME
+## Stack
+
+### Backend
+
+ring
+lacinia
+
+### Frontend
+
+reagent
+re-frame
 
 ## Prerequisites
 
